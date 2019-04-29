@@ -21,9 +21,12 @@
 		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-		 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
-		 <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
+		 <script
+		   src="https://code.jquery.com/jquery-3.4.0.min.js"
+		   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+		   crossorigin="anonymous"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 
@@ -38,55 +41,45 @@
 
 	<div class="">
 
-                <!-- Header -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light padding-x">
 
-								<?php if( !is_front_page() ) :  ?>
-									<!-- Transparent header -->
-									<nav class="navbar fixed-top containerr " id="navbar" style="background-color: white;">
-								<?php else: ?>
-									<!-- White header -->
-									<nav class="navbar fixed-top containerr " id="navbar" style="background-color: transparent;">
-								<?php endif ?>
+			<a href="<?php echo home_url(); ?>">
+					<div class="navbar-brand logo">
 
-                    <!-- LOGO -->
-                    <a class="navbar-brand logo" href="<?php echo home_url();?>"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/images/logo.svg" class="d-inline-block align-top" alt=""></a>
+				    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/images/logo.png" class="" alt="Logo"/>
 
+						<div class="site-title">
 
+							<?php include 'Mobile_Detect.php';
+							$detect = new Mobile_Detect(); ?>
 
-										<!-- MOBILE TOGGLE BUTTON -->
-										<div class="menu-button">
+							<?php if ($detect->isMobile()):?>
+								<h1>Happyland Higher</br>Secondary School</h1>
+							<?php else:?>
+								<h1> <?php echo get_bloginfo('name'); ?></h1>
+							<?php endif; ?>
+					    <h2> <?php echo get_bloginfo('description'); ?> </h2>
+						</div>
 
-											<?php if( !is_front_page() ) :  ?>
+					</div>
+			</a>
 
-													<!-- current Page -->
-													<div class="current-page"> <a href="/index.php?page_id=9">Work</a> </div>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 
-												<?php endif ?>
+		  <div class="collapse navbar-collapse top-menu" id="navbarNavDropdown">
+				<?php wp_nav_menu( array('theme_location' => 'primary',
+				'depth'             => 2,
+				'container'         => '',
+				'container_class'   => '',
+				'container_id'      => '',
+				'menu_class'        => 'navbar-nav ml-auto  mr-4',
+				) ); ?>
+		  </div>
 
-													<!-- toggle Icon -->
-													<a href="#"> <div class="menuu" id="icon-toggle"></div> </a>
-										</div>
+		</nav>
 
-
-										<!-- overlay -->
-										<div class="overlay ">
-
-												<ul class="wrap-nav containerr">
-													<a class="navbar-brand logo logo-overlay" href="<?php echo home_url();?>"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/images/logo-white.svg" class="d-inline-block align-top" alt="logo"></a>
-													<?php wp_nav_menu( array('theme_location' => 'primary',
-																					'depth'             => 2,
-																					'container'         => '',
-																					'container_class'   => 'collapse navbar-collapse primary-menu',
-																					'container_id'      => 'bs-example-navbar-collapse-1',
-																					'menu_class'        => 'navbar-nav ml-auto  mr-4',
-																					) ); ?>
-													</ul>
-											</div>
-
-                </nav>
-
-
-		</header>
 
 <!-- ***********  HTML Styling (Coz php doesnt works on css) *************** -->
 		<style>

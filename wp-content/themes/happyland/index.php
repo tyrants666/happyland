@@ -3,29 +3,45 @@
 <?php get_header(); ?>
 
 
-<?php
-  if (have_posts()):
-      while (have_posts()) : the_post();
-?>
+  <article class="containerr">
 
-  <article class="">
+    <div class="mt-119 row mx-0">
 
-    <div class="row">
-      <div class="col-6 borderb">
+        <?php
 
-          <?php the_post_thumbnail('small-thumbnail'); ?>                                <!--To display featured image inside blog page -->
-            <h3 class=""><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>  <!--get title of blogs and add permalink to it -->
-            <p><?php the_content();?></p>                                                  <!--get content of titles -->
+        if (have_posts() ):
+          $flag = 0;
+          while (have_posts()) : the_post();
+          ?>
 
-      </div>
+              <?php
+               if ($flag == 0) {
+                 echo '<div class=" work-list col-sm-12 col-lg-6 pl-lg-0">';
+                 $flag = 1;
+               }
+               elseif ($flag == 1) {
+                 echo '<div class=" work-list col-sm-12 col-lg-6 pr-lg-0">';
+                 $flag = 0;
+               }
+              ?>
+                    <a href="<?php the_permalink();?>">
+                        <?php the_post_thumbnail(); ?>
+                        <h2 class=""><?php the_title();?></h2>
+
+                    <h3><?php the_excerpt(); ?></h3></a>
+                    <small><?php the_time('l, F j'); ?> </br> Category: <?php the_category(); ?></small>
+              </div>
+
+              <!-- <?php echo $flag;  ?> -->
+
+        <?php endwhile;
+              else : echo '<p>No content Found</p>';
+        endif;?>
+
     </div>
 
   </article>
 
 
-
-<?php endwhile;
-          else : echo '<p>No content Found</p>';
-        endif;
-        get_footer();
+      <?php  get_footer();
 ?>

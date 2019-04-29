@@ -1,0 +1,296 @@
+/* ************************ Media Query ***************************** */
+
+/* ************************ Faculty Archive Page ***************************** */
+@media (min-width: 992px){
+.col-lg-2-5 {
+    -ms-flex: 0 0 18%;
+    flex: 0 0 18%;
+    max-width: 18% ;
+}
+}
+
+@media (max-width: 992px) {
+
+  .padding-x{
+    padding-left: 13px;
+    padding-right: 13px;
+    /* padding-right: 18px; */
+  }
+
+
+  /* ************************ Global ***************************** */
+  p{
+    margin-top: 22px;
+  }
+  input{
+    height: 45px;
+    padding: 0 14px;
+  }
+  textarea{
+    padding: 0 14px;
+  }
+  .input-footer{
+    /* height: 45px; */
+    width: 100%;
+    padding: 0 16px;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .send-btn {
+    padding: 11px 53px;
+    font-size: none;
+  }
+  /* ************************ Header ***************************** */
+  .navbar {
+
+  }
+  .logo{
+    margin-left: 0px;
+  }
+  .logo img{
+    width: 67px;
+  }
+  .site-title {
+    padding-top: 14px;
+}
+  .logo h1{
+    width: 73px;
+    padding-left: 12px;
+    font-size: 16px;
+  }
+  .logo h2{
+    display: none;
+  }
+
+
+/* ************************ Home Page ***************************** */
+  .page-home{
+    padding-bottom: 45px;
+   }
+  .homee{
+    /* height: 350px; */
+    margin-bottom: 0;
+  }
+  .main-title{
+    margin-top: 90px;
+    padding-left: 5px;
+    /* margin-left: -13px; */
+  }
+  .main-title h1 {
+      font-size: 26px;
+      line-height: 28px;
+      width: auto;
+      color: white;
+  }
+  .down-arrow{
+    /* display: none; */
+        /* padding-right: 5%; */
+        padding-right: 10%;
+  }
+  .cardd{
+    margin-top: 40px;
+    padding: 24px 20px 30px;
+    min-height: auto;
+    }
+    .cardd h2 {
+    margin-top: 13px;
+    line-height: 35px;
+  }
+  .cardd-title ul {
+    margin-top: 10px;
+    margin-left: -18px;
+  }
+  .cardd-title li {
+    font-size: 20px;
+  }
+  .card-height1 {
+    height: auto;
+  }
+  .card-height2 {
+    height: auto;
+  }
+  .cardd-left{
+    margin-top: 0px;
+    margin-bottom: 53px;
+    padding: 14px 20px 20px;
+  }
+  .cardd-left h2 {
+    margin-top: 13px;
+    margin-bottom: 21px;
+    line-height: 28px;
+  }
+  .cardd-right{
+    margin-top: 31px;
+    min-height: 184px;
+
+  }
+
+  .cardd-title a{
+    font-size: 30px;
+  }
+  .cardd-left-title a {
+    font-size: 27px;
+  }
+  /* ************************ Archive Work Page ***************************** */
+  .mt-119 {
+      margin-top: 90px;
+  }
+  .work-list {
+    margin-bottom: 21px;
+    padding: 0;
+  }
+  .work-list img {
+    margin-bottom: 15px;
+    height: 145px;
+  }
+  .work-list h2 {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .work-list p {
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: left;
+    color: gray;
+  }
+  /* ************************ Single Work Page ***************************** */
+  .work-banner {
+    margin-bottom: 20px;
+    /* min-height: 184px; */
+  }
+  .work-title, .work-subtitle {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    padding-right: 5px;
+  }
+
+  .work-content {
+    padding-bottom: 15px;
+    font-size: 15px;
+    line-height: 21px;
+    padding-right: 0;
+  }
+  .work-content h3{
+    font-size: 20px !important;
+    margin-top: -8px;
+  }
+  .work-content p{
+    -ms-flex: 0 0 95%;
+    flex: 0 0 95%;
+    max-width: 95%;
+  }
+  .wp-block-image{
+    margin-top: 25px;
+  }
+  .row-button {
+    margin-bottom: 0px;
+  }
+  .nav-work {
+    margin: 15px 0;
+  }
+  .nav-work a {
+    padding: 20px 5px;
+  }
+  .custom-work ul{
+    flex: 0 0 95%;
+    max-width: 95%;
+  }
+  /* ************************ Staffs Page ***************************** */
+  .staff-list {
+    margin-bottom: 33px;
+  }
+  /* ************************ Contact Page ***************************** */
+  .contact-title {
+    margin-top: 96px;
+    font-size: 30px;
+  }
+  .contact-subtitle {
+  margin-top: 8px;
+  font-size: 20px;
+  }
+  #form2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .contact-label {
+    font-size: 16px;
+  }
+  .input-div {
+    margin-bottom: 15px;
+  }
+  /* ************************ About Page ***************************** */
+  .about-banner{
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .about-card{
+    margin-bottom: 35px;
+    font-size: 19px;
+    padding: 40px 17px 23px 5px;
+    line-height: 32px;
+  }
+   .about2{
+     height: 235px;
+   }
+  /* *************** Join PAge ******************************************* */
+  .mt-155{
+    margin-top: 100px;
+  }
+  .w-45 {
+    width: 100% !important;
+  }
+  /* ******************* FOOTER *********************** */
+  .row-enquiry {
+    padding-top: 29px;
+    padding-bottom: 15px;
+  }
+  .email-title {
+    font-size: 27px;
+    line-height: 42px;
+    margin-bottom: 13px;
+  }
+  .message-div{
+    margin-right: 0px;
+  }
+  .message-div, .email-div, .send{
+    padding: 0px;
+  }
+  .row2-foot {
+    font-size: 14px;
+    padding-top: 40px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+  }
+  .menu-bot{
+    margin-bottom:20px;
+  }
+  .logo-footer{
+    margin-top: -237px;
+    text-align: left;
+    margin-left: 42%;
+  }
+  .logo-footer img{
+    height: 100px;
+  }
+
+  .foot_foot{
+    line-height: none;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+  }
+  .social-icon{
+    margin-left: -5px;
+  }
+  .copyright{
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 0;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+}

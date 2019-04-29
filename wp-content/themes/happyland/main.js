@@ -5,24 +5,6 @@
   $(document).ready(function(){
 
       //Overlay
-      $(".menuu").click(function(){
-              $("body").toggleClass("overflow overflowoff");
-              $(".overlay").fadeToggle(200);
-              $("#icon-toggle").toggleClass("menuu close");
-              $(".current-page").toggle();
-          });
-
-      $('.overlay').on('click', function(){
-          $(".overlay").fadeToggle(200);
-          $("#icon-toggle").toggleClass("menuu close");
-          open = false;
-        });
-
-
-
-
-      //Right click OFF
-      $(".container2").toggleClass();
 
 
 
@@ -37,10 +19,7 @@
        $(window).resize(function(){
            if($(this).width() <= 768){
 
-               $('.overlay-effect').on('click', function(){
-                 $(".overlay-effect").toggleClass();
-                 $(".main-title").remove();
-               });
+               
 
                // $(".current-page").remove();
                $(".cardd-left").removeClass("sticky-top");

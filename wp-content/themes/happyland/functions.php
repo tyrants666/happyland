@@ -6,22 +6,19 @@
 //func to enqueue CSS & JS ************************************************************************************************************************************************
 					function landor_scripts() {
 						wp_enqueue_style( 'style', get_stylesheet_uri());
-				// 		wp_enqueue_style( 'responsive.css', get_template_directory_uri() . '/css/responsive.css');
+						wp_enqueue_style( 'responsive.css', get_template_directory_uri() . '/css/responsive.css');
 						wp_enqueue_script( 'js', get_template_directory_uri() . '/main.js', array(), '20151215', true);                              //, array(), '20151215', true
 						// wp_enqueue_style( 'Bootstrap.css', get_template_directory_uri() . '/css/bootstrap.css');
 						// wp_enqueue_style( 'page.css', get_template_directory_uri() . '/css/page.css');
-						// wp_enqueue_script( 'Bootstrap.js', get_template_directory_uri() . '/js/bootstrap.js', array(), '20151215', true);
+						wp_enqueue_script( 'Bootstrap.js', get_template_directory_uri() . '/js/other-scroll.js', array(), '20151215', true);
 					}
 					add_action('wp_enqueue_scripts', 'landor_scripts'); // action to load JS & CSS
 
-
-// Func to load jquery
-				// 	function load_js(){
-				// 		wp_enqueue_script('jquery');
-				// 	}
-				// 	add_action('wp_enqueue_scripts', 'load_js');
-
-
+					// // Func to load jquery
+					// 					function load_js(){
+					// 						wp_enqueue_script('jquery');
+					// 					}
+					// 					add_action('wp_enqueue_scripts', 'load_js');
 //Theme Setup
 					function theme_setup(){
 
@@ -41,25 +38,7 @@
 
 //Custom Scripts ************************************************************************************************************************************************
 
-				function custom_script() {
 
-						//script-1
-						wp_register_script('other-script', get_stylesheet_directory_uri() . '/js/other-scroll.js', false, null, true);
-						if(!is_page('home')){
-						    wp_enqueue_script('other-script');
-						}
-
-						//script-2
-						wp_register_script('home-script', get_stylesheet_directory_uri() . '/js/home-scroll.js', false, null, true);
-						if(is_page('home')){
-								wp_enqueue_script('home-script');
-						}
-
-						//script-3 here .......
-
-
-				}
-				add_action( 'wp_enqueue_scripts', 'custom_script' );
 
 //enabled HTTP Strict Transport Security (HSTS) header. ************************************************************************************************************************************************
 
@@ -71,21 +50,21 @@
 
 //Custom Post Types. ************************************************************************************************************************************************
 
-						function work_custom_post_type(){
+						function faculty_custom_post_type(){
 
 							$labels = array(
-									'name' => 'Work',
-									'singular_name' => 'Work',
-									'add_new' => 'Add Work',
-									'all_items' => 'All Work',
-									'add_new_item' => 'Add Work',
-									'edit_item' => 'Edit Work',
-									'new_item' => 'New Work',
-									'view_item' => 'View Work',
-									'search_item' => 'Search Work',
-									'not_found' => 'No Works Found',
-									'not_found_in_trash' => 'No works found in trash',
-									'parent_item_colon' => 'Parent Work',
+									'name' => 'Faculty',
+									'singular_name' => 'Faculty',
+									'add_new' => 'Add Faculty',
+									'all_items' => 'All Faculty',
+									'add_new_item' => 'Add Faculty',
+									'edit_item' => 'Edit Faculty',
+									'new_item' => 'New Faculty',
+									'view_item' => 'View Faculty',
+									'search_item' => 'Search Faculty',
+									'not_found' => 'No Faculty Found',
+									'not_found_in_trash' => 'No Faculty found in trash',
+									'parent_item_colon' => 'Parent Faculty',
 
 							);
 							$args = array(
@@ -104,14 +83,34 @@
 											 'thumbnail',
 									),
 									'show_in_rest'       => true,             //Add Gutenberg text editor
-									'taxanomies' => array( 'category', 'post_tag'),
+									'taxonomies' => array( 'category', 'post_tag'),
 									'menu_position' =>  2,
 									'exclude_from_search' => false
 
 							);
-							register_post_type('work', $args);          //work here is slug name that will appear in url
+							register_post_type('faculty', $args);          //work here is slug name that will appear in url
 						}
-						add_action('init','work_custom_post_type');
+						add_action('init','faculty_custom_post_type');
+
+//Enabling Category page for Custom Post Types. ************************************************************************************************************************************************
+
+						add_filter('pre_get_posts', 'query_post_type');
+						function query_post_type($query) {
+						  if( is_category() ) {
+						    $post_type = get_query_var('post_type');
+						    if($post_type)
+						        $post_type = $post_type;
+						    else
+						        $post_type = array('nav_menu_item', 'post', 'faculty'); // don't forget nav_menu_item to allow menus to work!
+						    $query->set('post_type',$post_type);
+						    return $query;
+						    }
+						}
+
+//Custom Excerpt Length ************************************************************************************************************************************************
+// add_filter( 'excerpt_length', function($length) {
+// 	return 120;
+// } );
 
 //Deregister wp-embed.min.js. ************************************************************************************************************************************************
 function my_deregister_scripts(){
