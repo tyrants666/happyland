@@ -9,7 +9,7 @@ if (have_posts()) {
         ?>
         <article class="containerr">
 
-          <div class="row mx-0">
+          <div class="row mx-0 single-blog">
 
             <!-- Work Banner -->
             <div class="mt-119 work-banner p-0 col-12 mx-0">
@@ -113,7 +113,7 @@ if (have_posts()) {
               </div>
 
               <div class="nav-work col all">
-                <a href="/index.php?page_id=9" >View all</a>
+                <a href="/index.php?page_id=7" >View all</a>
               </div>
 
               <div class="nav-work col next pr-0">

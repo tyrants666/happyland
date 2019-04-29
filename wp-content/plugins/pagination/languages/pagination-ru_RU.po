@@ -1,0 +1,517 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pagination\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-08 18:39+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"Language-Team: BestWebSoft team <wp@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11) ? 3 : "
+"((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-pgntn-settings.php:24 pagination.php:41 pagination.php:635
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/class-pgntn-settings.php:25
+msgid "Appearance"
+msgstr "Отображение"
+
+#: includes/class-pgntn-settings.php:26
+msgid "Misc"
+msgstr "Разное"
+
+#: includes/class-pgntn-settings.php:27
+msgid "Custom Code"
+msgstr "Пользовательский код"
+
+#: includes/class-pgntn-settings.php:28
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#: includes/class-pgntn-settings.php:107
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: includes/class-pgntn-settings.php:109
+msgid ""
+"Choose some page types to display plugin`s pagination in frontend of your "
+"site."
+msgstr "Выберите типы страниц для вывода блока навигации."
+
+#: includes/class-pgntn-settings.php:124 pagination.php:40 pagination.php:41
+#: pagination.php:110
+msgid "Pagination Settings"
+msgstr "Настройки Pagination"
+
+#: includes/class-pgntn-settings.php:129
+msgid "Display Pagination on"
+msgstr "Отображать навигацию на"
+
+#: includes/class-pgntn-settings.php:133
+msgid "all pages"
+msgstr "всех страницах"
+
+#: includes/class-pgntn-settings.php:135
+msgid "home page"
+msgstr "домашней странице"
+
+#: includes/class-pgntn-settings.php:137
+msgid "blog page"
+msgstr "странице блога"
+
+#: includes/class-pgntn-settings.php:139
+msgid "archive pages ( by categories, date, tags etc. )"
+msgstr "архивах (по категориям, датам, меткам и т.д.)"
+
+#: includes/class-pgntn-settings.php:140
+msgid "search results page"
+msgstr "странице вывода результатов поиска"
+
+#: includes/class-pgntn-settings.php:142
+msgid "paginated posts/pages"
+msgstr "многостраничных записях"
+
+#: includes/class-pgntn-settings.php:150 includes/class-pgntn-settings.php:289
+msgid "Close"
+msgstr "Закрыть"
+
+#: includes/class-pgntn-settings.php:154
+msgid "Pagination Type"
+msgstr "Тип навигации"
+
+#: includes/class-pgntn-settings.php:158
+msgid "Numeric pagination"
+msgstr "Числовая навигация"
+
+#: includes/class-pgntn-settings.php:161
+msgid "\"Load More\" button"
+msgstr "Кнопка \"Загрузить еще\""
+
+#: includes/class-pgntn-settings.php:162
+msgid ""
+"display a single button at the bottom of the posts/pages that when clicked "
+"loads new posts/pages via ajax"
+msgstr ""
+"отображение одной кнопки в нижней части записей/страниц, при нажатии на "
+"которую загружаются новые записи/страницы с помощью AJAX"
+
+#: includes/class-pgntn-settings.php:165
+msgid "Infinite scroll"
+msgstr "Бесконечная прокрутка"
+
+#: includes/class-pgntn-settings.php:166
+msgid ""
+"automatically loads new posts/pages as the user scrolls to the bottom of the "
+"screen"
+msgstr ""
+"автоматически загружать новые записи/страницы, когда пользователь "
+"прокручивает до нижней части экрана"
+
+#: includes/class-pgntn-settings.php:169
+msgid "Next/Previous buttons"
+msgstr "Кнопки Далее/назад"
+
+#: includes/class-pgntn-settings.php:177 includes/class-pgntn-settings.php:312
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: includes/class-pgntn-settings.php:184
+msgid "Pagination Position"
+msgstr "Отображать навигацию на"
+
+#: includes/class-pgntn-settings.php:187
+msgid "above the main content"
+msgstr "перед основным контентом"
+
+#: includes/class-pgntn-settings.php:188
+msgid "below the main content"
+msgstr "после основного контента"
+
+#: includes/class-pgntn-settings.php:189
+msgid "above and below the main content"
+msgstr "перед и после основного контента"
+
+#: includes/class-pgntn-settings.php:190
+msgid "via function only"
+msgstr "только с помощью функции"
+
+#: includes/class-pgntn-settings.php:195
+msgid "Display 'Page __ of __' Block"
+msgstr "Отобразить блок 'Страница __ из __'"
+
+#: includes/class-pgntn-settings.php:201
+msgid "Display Next/Previous Arrows"
+msgstr "Отображать стрелки Предыдущая/Следующая"
+
+#: includes/class-pgntn-settings.php:206
+msgid "text for previous page link"
+msgstr "текст для ссылки на предыдущую страницу"
+
+#: includes/class-pgntn-settings.php:208
+msgid "text for next page link"
+msgstr "текст для ссылки на следующую страницу"
+
+#: includes/class-pgntn-settings.php:213
+msgid "Type of Output"
+msgstr "Тип вывода"
+
+#: includes/class-pgntn-settings.php:217
+msgid "all numbers of pages"
+msgstr "номера всех страниц"
+
+#: includes/class-pgntn-settings.php:220
+msgid "shorthand output"
+msgstr "сокращённый вывод"
+
+#: includes/class-pgntn-settings.php:223
+msgid "numbers to either side of current page, but not including current page."
+msgstr ""
+"количество номеров страниц по обеим сторонам от текущей страницы, исключая "
+"её."
+
+#: includes/class-pgntn-settings.php:230
+msgid "Hide Standard Pagination"
+msgstr "Скрыть стандартную навигацию"
+
+#: includes/class-pgntn-settings.php:232
+msgid ""
+"Used for standard WordPress themes or themes, which use standard CSS-classes "
+"to display pagination blocks"
+msgstr ""
+"Применимо для стандартных тем WordPress или тем, которые используют "
+"стандартные CSS-классы для отображения блока навигации"
+
+#: includes/class-pgntn-settings.php:239
+msgid "posts pagination"
+msgstr "навигация по записям"
+
+#: includes/class-pgntn-settings.php:241
+msgid "on paginated posts or pages"
+msgstr "на многостраничных записях или страницах"
+
+#: includes/class-pgntn-settings.php:243
+msgid "comments pagination"
+msgstr "навигация по комментариям"
+
+#: includes/class-pgntn-settings.php:249
+msgid "Hide Custom Pagination"
+msgstr "Скрыть дополнительную навигацию"
+
+#: includes/class-pgntn-settings.php:251
+#, fuzzy
+#| msgid ""
+#| "Enter one (or more comma-separated) CSS-classes or ID of blocks which you "
+#| "would like to hide."
+msgid ""
+"Enter one ( or more comma-separated ) CSS-classes or ID of blocks which you "
+"would like to hide."
+msgstr ""
+"Введите один (или несколько разделенных запятыми) CSS классов или ID блоков, "
+"которые необходимо скрыть."
+
+#: includes/class-pgntn-settings.php:252
+msgid "Example"
+msgstr "Например"
+
+#: includes/class-pgntn-settings.php:254 includes/class-pgntn-settings.php:256
+msgid "or"
+msgstr "или"
+
+#: includes/class-pgntn-settings.php:272
+msgid "Nofollow Link"
+msgstr "Атрибут rel=\"nofollow\""
+
+#: includes/class-pgntn-settings.php:276
+msgid "Enable to add rel=\"nofollow\" attribute."
+msgstr ""
+"Включите, чтобы добавить атрибут \n"
+"rel=\"nofollow\"."
+
+#: includes/class-pgntn-settings.php:283
+msgid "Display Settings"
+msgstr "Настройка отображения"
+
+#: includes/class-pgntn-settings.php:294
+msgid "Loader Image"
+msgstr "Изображение загрузчика"
+
+#: includes/class-pgntn-settings.php:297
+#, php-format
+msgid "Max image height: %s; image types: %s."
+msgstr "Максимальная высота изображения: %s; типы изображения: %s."
+
+#: includes/class-pgntn-settings.php:299
+msgid "Current image"
+msgstr "Текущее изображение"
+
+#: includes/class-pgntn-settings.php:303
+#, fuzzy
+#| msgid "\"Load More\" button"
+msgid "Text for \"Load more\" Button"
+msgstr "Кнопка \"Загрузить еще\""
+
+#: includes/class-pgntn-settings.php:319
+msgid "Add Styles"
+msgstr "Добавить стили"
+
+#: includes/class-pgntn-settings.php:325
+msgid "Page Pagination Block width"
+msgstr "Ширина блока навигации"
+
+#: includes/class-pgntn-settings.php:331
+msgid "Pagination Align"
+msgstr "Расположение навигации"
+
+#: includes/class-pgntn-settings.php:335
+msgid "Left"
+msgstr "Слева"
+
+#: includes/class-pgntn-settings.php:336
+msgid "Center"
+msgstr "По центру"
+
+#: includes/class-pgntn-settings.php:338
+msgid "Right"
+msgstr "Справа"
+
+#: includes/class-pgntn-settings.php:343
+msgid "Left Padding"
+msgstr "Отступ слева"
+
+#: includes/class-pgntn-settings.php:349
+msgid "Right Padding"
+msgstr "Отступ справа"
+
+#: includes/class-pgntn-settings.php:355
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: includes/class-pgntn-settings.php:361
+msgid "Background Color for Current Page"
+msgstr "Цвет фона текущей страницы"
+
+#: includes/class-pgntn-settings.php:367
+msgid "Text Color for Page"
+msgstr "Цвет текста"
+
+#: includes/class-pgntn-settings.php:373
+msgid "Text Color for Current Page"
+msgstr "Цвет текста текущей страницы"
+
+#: includes/class-pgntn-settings.php:379
+msgid "Hover Color"
+msgstr "Цвет при наведении"
+
+#: includes/class-pgntn-settings.php:385
+msgid "Border Color"
+msgstr "Цвет границы"
+
+#: includes/class-pgntn-settings.php:391
+msgid "Border Width"
+msgstr "Ширина границы"
+
+#: includes/class-pgntn-settings.php:397
+msgid "Border Radius"
+msgstr "Закругление границ"
+
+#: includes/class-pgntn-settings.php:414
+msgid "Pagination"
+msgstr "Pagination"
+
+#: includes/class-pgntn-settings.php:417
+msgid ""
+"If you would like to display pagination block in a different place on your "
+"site, add the following strings into the file"
+msgstr ""
+"Если Вы хотите отобразить блок навигации в другом месте сайта, добавьте "
+"следующие строки в файл"
+
+#: includes/class-pgntn-settings.php:417
+msgid "of your theme"
+msgstr "вашей темы"
+
+#: includes/class-pgntn-settings.php:421
+msgid ""
+"If you would like to display pagination block for paginated posts or pages "
+"in a different place on your site, add the following strings into the "
+"appropriate templates source code of your theme"
+msgstr ""
+"Если вы хотите отобразить блок навигации для многостраничных записей или "
+"страниц в другом месте, добавьте следующие строки в соответствующие шаблоны "
+"Вашей темы"
+
+#: includes/class-pgntn-settings.php:425
+msgid ""
+"Paste this into the comments template if you want to display pagination for "
+"comments"
+msgstr ""
+"Вставьте этот код в шаблон комментариев, если Вы хотите отображать блок "
+"навигации для комментариев"
+
+#: pagination.php:46
+msgid "Upgrade to Pro"
+msgstr "Обновить до Pro"
+
+#: pagination.php:111
+msgid "Please enable JavaScript in your browser."
+msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+
+#: pagination.php:133
+msgid "« Previous"
+msgstr "« Предыдущая"
+
+#: pagination.php:134
+msgid "Next »"
+msgstr "Следующая »"
+
+#: pagination.php:464 pagination.php:484
+msgid "Page"
+msgstr "Страница"
+
+#: pagination.php:464 pagination.php:484 pagination.php:508 pagination.php:591
+msgid "of"
+msgstr "из"
+
+#: pagination.php:508
+msgid "Pages"
+msgstr "Страницы"
+
+#: pagination.php:591
+msgid "Comments Page"
+msgstr "Страница комментариев"
+
+#: pagination.php:636
+msgid "FAQ"
+msgstr "FAQ"
+
+#: pagination.php:637
+msgid "Support"
+msgstr "Техподдержка"
+
+#~ msgid "Display"
+#~ msgstr "Отображать"
+
+#~ msgid "General"
+#~ msgstr "Общее"
+
+#~ msgid "Notice:"
+#~ msgstr "Примечание:"
+
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Все настройки плагина восстановлены."
+
+#~ msgid "Custom code"
+#~ msgstr "Пользовательский код"
+
+#~ msgid "Go PRO"
+#~ msgstr "Обновить до Pro"
+
+#~ msgid ""
+#~ "If you would like to display pagination block for paginated posts or "
+#~ "pages in a different place on your site, add the following strings into "
+#~ "to the appropriate templates source code of your theme"
+#~ msgstr ""
+#~ "Если вы хотите отобразить блок навигации для многостраничных записей или "
+#~ "страниц в другом месте, добавьте следующие строки в соответствующие "
+#~ "шаблоны вашей темы"
+
+#~ msgid "Save Changes"
+#~ msgstr "Сохранить изменения"
+
+# Отображать навигацию на
+#~ msgid "Display pagination on"
+#~ msgstr "Отображать навигацию на"
+
+#~ msgid "Pagination type"
+#~ msgstr "Тип навигации"
+
+#~ msgid "Pagination position"
+#~ msgstr "Расположение навигации"
+
+#~ msgid "Display 'Page __ of __' block"
+#~ msgstr "Отобразить блок 'Страница __ из __'"
+
+# Отображать стрелки Предыдущая/Следующая
+#~ msgid "Display Next/Previous arrows"
+#~ msgstr "Отображать стрелки Предыдущая/Следующая"
+
+#~ msgid "Type of output"
+#~ msgstr "Тип вывода"
+
+#~ msgid "Hide standard pagination"
+#~ msgstr "Скрыть стандартную навигацию"
+
+#~ msgid "Hide custom pagination"
+#~ msgstr "Скрыть дополнительную навигацию"
+
+#~ msgid "Add styles"
+#~ msgstr "Добавить стили"
+
+#~ msgid "Page pagination block width"
+#~ msgstr "Ширина блока навигации"
+
+#~ msgid "Pagination align"
+#~ msgstr "Расположение навигации"
+
+#~ msgid "Left padding"
+#~ msgstr "Отступ слева"
+
+#~ msgid "Right padding"
+#~ msgstr "Отступ справа"
+
+#~ msgid "Background color"
+#~ msgstr "Цвет фона"
+
+# для - убрать
+#~ msgid "Background color for current page"
+#~ msgstr "Цвет фона текущей страницы"
+
+#~ msgid "Text color for page"
+#~ msgstr "Цвет текста"
+
+#~ msgid "Text color for current page"
+#~ msgstr "Цвет текста текущей страницы"
+
+#~ msgid "Border color"
+#~ msgstr "Цвет границы"
+
+#~ msgid "Border width"
+#~ msgstr "Ширина границы"
+
+#~ msgid "Border radius"
+#~ msgstr "Закругление границ"
+
+#~ msgid "Add nofollow link attribute"
+#~ msgstr "Добавить ссылке атребут \"nofollow\""
+
+# Output type
+#, fuzzy
+#~ msgid "Output type"
+#~ msgstr "Тип вывода"
+
+# сохраняются - сохранятся
+#~ msgid "If you upgrade to Pro version all your settings will be saved."
+#~ msgstr "При установке Pro версии плагина, все ваши настройки сохранятся."
+
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "Активируйте премиум опции обновившись до Pro версии"
+
+#~ msgid "everywhere"
+#~ msgstr "Повсюду"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them, please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "Настройки плагина были изменены. Чтобы сохранить их, пожалуйста, не "
+#~ "забудьте нажать кнопку 'Сохранить Изменения'."

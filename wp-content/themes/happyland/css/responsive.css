@@ -29,17 +29,7 @@
   textarea{
     padding: 0 14px;
   }
-  .input-footer{
-    /* height: 45px; */
-    width: 100%;
-    padding: 0 16px;
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-  .send-btn {
-    padding: 11px 53px;
-    font-size: none;
-  }
+
   /* ************************ Header ***************************** */
   .navbar {
 
@@ -132,6 +122,9 @@
     font-size: 27px;
   }
   /* ************************ Archive Work Page ***************************** */
+  .mt-127 {
+    margin-top: 105px;
+  }
   .mt-119 {
       margin-top: 90px;
   }
@@ -141,7 +134,9 @@
   }
   .work-list img {
     margin-bottom: 15px;
-    height: 145px;
+    height: auto;
+    /* height: 145px; */           /*Dont remove this first check effect on different screen sizes*/
+    border-radius: unset;
   }
   .work-list h2 {
     font-size: 25px;
@@ -154,6 +149,10 @@
     text-align: left;
     color: gray;
   }
+  .paginations{
+      padding-left: 0;
+  }
+  ul.page
   /* ************************ Single Work Page ***************************** */
   .work-banner {
     margin-bottom: 20px;
@@ -257,13 +256,25 @@
   .message-div, .email-div, .send{
     padding: 0px;
   }
+  .input-footer{
+    height: 45px;
+    width: 100%;
+    padding: 0 16px;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .send-btn {
+    height: 45px;
+    padding: 11px 53px;
+    font-size: none;
+    font-size: 14px;
+  }
   .row2-foot {
     font-size: 14px;
     padding-top: 40px;
     padding-left: 19px;
     padding-right: 19px;
 }
-  }
   .menu-bot{
     margin-bottom:20px;
   }
@@ -281,7 +292,6 @@
     padding-left: 19px;
     padding-right: 19px;
 }
-  }
   .social-icon{
     margin-left: -5px;
   }

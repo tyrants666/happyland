@@ -81,7 +81,6 @@ p{
  font-family: "Tiempo",Georgia,"Times New Roman",Times,serif;
 }
 
-
 h3{
   font-size: 1.7rem !important;
 }
@@ -162,7 +161,9 @@ img{
 .top-menu a:hover {
   color: #8ED8F8;
 }
-
+.top-menu ul li.current-menu-item a{
+  color: #8ED8F8;
+}
 
 
 /* ************************ Home Page ***************************** */
@@ -307,34 +308,45 @@ img{
 }
 
 /* ************************ Archive Work Page ***************************** */
-
+.mt-127{
+  margin-top: 127px;
+}
 .work-list {
   margin-bottom: 64px;
+
 }
 .work-list a {
   display: inline-block;
 }
 .work-list img {
   margin-bottom: 27px;
-  /* height:280px; */
-  height:285px;
+  height:168px;
   width:100%;
+  border-radius: 10px;
 }
 .work-list h2 {
-  font-size: 35px;
-  /* margin-bottom: 19px; */
+  font-size: 21px;
 }
 .work-list p {
   margin-top: 11px;
   /* margin-top: 19px; */
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 13px;
+  line-height: 20px;
   text-align: justify;
+  color: grey;
+  font-family: Apercu;
 }
+
 
 /* ************************ Single work page ***************************** */
 .mt-119{
   margin-top: 119px;
+}
+.single-blog img{
+  width: 100%;
+}
+.single-blog p{
+  color: #858889;
 }
 .work-banner{
   margin-bottom: 48px;
@@ -354,6 +366,7 @@ img{
     font-size: 19px;
     line-height: 28px;
 }
+
 .work-content p{
   -ms-flex: 0 0 66.666667%;
   flex: 0 0 66.666667%;
@@ -741,5 +754,63 @@ a svg:hover #instagram {
   font-size: 10px;
   line-height: 14px;
   display: none;
-  color: #a2b2bbf0;
+  /* color: #a2b2bbf0; */
+  color: #00ccff;
 }
+
+/* *************** Pagination ******************************************* */
+.paginations{
+    padding: 0;
+    padding-left: 43%;
+}
+ul.page-numbers {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.page-numbers:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ul.page-numbers li {
+    display: block;
+    float: left;
+    margin: 0 4px 4px 0;
+    text-align: center;
+}
+
+.page-numbers a,
+.page-numbers span {
+    line-height: 1.6em;
+    display: block;
+    padding: 12px 6px;
+    height: 42px;
+    width: 51px;
+    line-height: 18px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #888;
+    border-radius: 8px;
+    margin-bottom: 35px;
+}
+
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+    color: white;
+    background: #179bd9c4;
+    text-decoration: none;
+}
+
+.page-numbers:hover { text-decoration: none }

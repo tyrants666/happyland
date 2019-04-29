@@ -5,7 +5,7 @@
 
   <article class="containerr">
 
-    <div class="mt-119 row mx-0">
+    <div class="mt-127 row mx-0">
 
         <?php
 
@@ -14,16 +14,8 @@
           while (have_posts()) : the_post();
           ?>
 
-              <?php
-               if ($flag == 0) {
-                 echo '<div class=" work-list col-sm-12 col-lg-6 pl-lg-0">';
-                 $flag = 1;
-               }
-               elseif ($flag == 1) {
-                 echo '<div class=" work-list col-sm-12 col-lg-6 pr-lg-0">';
-                 $flag = 0;
-               }
-              ?>
+                <div class=" work-list col-sm-12 col-lg-3 pl-lg-0 ">
+
                     <a href="<?php the_permalink();?>">
                         <?php the_post_thumbnail(); ?>
                         <h2 class=""><?php the_title();?></h2>
@@ -37,6 +29,12 @@
         <?php endwhile;
               else : echo '<p>No content Found</p>';
         endif;?>
+
+        <!-- Pagination -->
+        <div class="paginations col-lg-12">
+          <?php wpex_pagination(); ?>
+        </div>
+
 
     </div>
 
