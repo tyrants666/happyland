@@ -93,7 +93,7 @@
 						}
 						add_action('init','faculty_custom_post_type');
 
-//Enabling Category page for Custom Post Types. ************************************************************************************************************************************************
+//Enabling to open Category pages for Custom Post Types. ************************************************************************************************************************************************
 
 						add_filter('pre_get_posts', 'query_post_type');
 						function query_post_type($query) {
@@ -108,6 +108,33 @@
 						    }
 						}
 
+
+//Enable Custom Post Type menu to get highlighted on menu list when we are on single posts or CPT page. ************************************************************************************************************************************************
+				add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
+
+					function add_current_nav_class($classes, $item) {
+
+						// Getting the current post details
+						global $post;
+
+						// Getting the post type of the current post
+						$current_post_type = get_post_type_object(get_post_type($post->ID));
+						$current_post_type_slug = $current_post_type->rewrite['slug'];
+
+						// Getting the URL of the menu item
+						$menu_slug = strtolower(trim($item->url));
+
+						// If the menu item URL contains the current post types slug add the current-menu-item class
+						if (strpos($menu_slug,$current_post_type_slug) !== false) {
+
+						   $classes[] = 'current-menu-item';
+
+						}
+
+						// Return the corrected set of classes to be added to the menu item
+						return $classes;
+
+					}
 
 //Pagination Numbered ************************************************************************************************************************************************
 						if ( !function_exists( 'wpex_pagination' ) ) {
