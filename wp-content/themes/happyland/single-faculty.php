@@ -12,14 +12,14 @@
 
             <!-- Work Banner -->
             <div class="mt-119 work-banner p-0 col-12 mx-0">
-              <h1>Faculty Profile</h1>
+              <!-- <h1>Faculty Profile</h1> -->
               <?php the_post_thumbnail(); ?>
             </div>
 
             <!-- Work Heding -->
             <div class="col-sm-12 col-lg-8 pl-0">
 
-              <h1 class="work-title"><?php the_title();?></h1>
+              <p>Name :</p> <h4 class=""><?php the_title();?></h4>
               <?php if( get_field('subtitle') ): ?>
                   <h2 class="work-subtitle"><?php the_field('subtitle'); ?></h1>
               <?php endif; ?>

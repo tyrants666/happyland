@@ -38,14 +38,27 @@
 
 //Custom Scripts ************************************************************************************************************************************************
 
+// function custom_script() {
+//
+// 		//script-1
+// 		wp_register_script('other-script', get_stylesheet_directory_uri() . '/js/other-scroll.js', false, null, true);
+// 		if(!is_page('home')){
+// 				wp_enqueue_script('other-script');
+// 		}
+//
+// 		//script-2
+// 		wp_register_script('home-script', get_stylesheet_directory_uri() . '/js/home-scroll.js', false, null, true);
+// 		if(is_page('home')){
+// 				wp_enqueue_script('home-script');
+// 		}
+//
+// 		//script-3 here .......
+//
+//
+// }
+// add_action( 'wp_enqueue_scripts', 'custom_script' );
 
 
-//enabled HTTP Strict Transport Security (HSTS) header. ************************************************************************************************************************************************
-
-                function tgm_io_strict_transport_security() {
-                    header( 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload' );
-                }
-								add_action( 'send_headers', 'tgm_io_strict_transport_security' );
 
 
 //Custom Post Types. ************************************************************************************************************************************************
@@ -75,7 +88,7 @@
 									'query_var' => true,
 									'rewrite' => true,               					//rewrite custom slug
 									'capability_type' => 'post',               //grabs default settings of premade Custom Post Types
-									'hierarchical' => false,                //We dont want to create or extend hierarchy to any work because every single post wont depend on anything so false
+									'hierarchical' => true,                //We dont want to create or extend hierarchy to any work because every single post wont depend on anything so false
 									'supports' => array(
 											 'title',
 											 'editor',
@@ -110,6 +123,7 @@
 
 
 //Enable Custom Post Type menu to get highlighted on menu list when we are on single posts or CPT page. ************************************************************************************************************************************************
+
 				add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
 
 					function add_current_nav_class($classes, $item) {
@@ -136,7 +150,26 @@
 
 					}
 
+//Redirect Specific category to specific category.php page ************************************************************************************************************************************************
+				// Inspired by a snippet by Justin Tadlock (http://justintadlock.com/) posted here: http://elliotjaystocks.com/blog/tutorial-multiple-singlephp-templates-in-wordpress/#comment-2383
+
+				add_filter( 'category_template', 'my_category_template' );
+						function my_category_template( $template ) {
+								if( is_category( 10 ) ) // We can search for categories by ID
+									$template = locate_template( array( 'custom-category.php', 'category.php' ) );
+								elseif( is_category( array( 7,8,10,15,16,17,18,19,20,21,22,23,24,13,14 ) ) ) // We can search for multiple categories by ID by passing an array
+									$template = locate_template( array( 'custom-category.php', 'category.php' ) );
+								elseif( is_category( 'food' ) ) // We can search for categories by their slug
+									$template = locate_template( array( 'custom-category.php', 'category.php' ) );
+								elseif( is_category( array( 'music', 'movies' ) ) ) // We can search for multiple categories by slug as well
+						$template = locate_template( array( 'custom-category.php', 'category.php' ) );
+
+				return $template;
+				}
+
+
 //Pagination Numbered ************************************************************************************************************************************************
+
 						if ( !function_exists( 'wpex_pagination' ) ) {
 
 							function wpex_pagination() {
@@ -174,6 +207,11 @@
 // 	return 120;
 // } );
 
+//enabled HTTP Strict Transport Security (HSTS) header. ************************************************************************************************************************************************
+  function tgm_io_strict_transport_security() {
+      header( 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload' );
+  }
+	add_action( 'send_headers', 'tgm_io_strict_transport_security' );
 
 //Deregister wp-embed.min.js. ************************************************************************************************************************************************
 function my_deregister_scripts(){
