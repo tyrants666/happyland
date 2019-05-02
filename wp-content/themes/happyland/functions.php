@@ -38,6 +38,7 @@
 
 //Custom Scripts ************************************************************************************************************************************************
 
+
 // function custom_script() {
 //
 // 		//script-1
@@ -122,6 +123,19 @@
 						}
 
 
+//Posts per Page for Custom Post Types ************************************************************************************************************************************************
+
+		function my_cptui_change_posts_per_page( $query ) {
+		    if ( is_admin() || ! $query->is_main_query() ) {
+		       return;
+		    }
+
+		    if ( is_post_type_archive( 'faculty' ) ) {
+		       $query->set( 'posts_per_page', 100 );
+		    }
+		}
+		add_filter( 'pre_get_posts', 'my_cptui_change_posts_per_page' );
+
 //Enable Custom Post Type menu to get highlighted on menu list when we are on single posts or CPT page. ************************************************************************************************************************************************
 
 				add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
@@ -150,7 +164,7 @@
 
 					}
 
-//Redirect Specific category to specific category.php page ************************************************************************************************************************************************
+//Redirect paticular category to custom category.php page ************************************************************************************************************************************************
 				// Inspired by a snippet by Justin Tadlock (http://justintadlock.com/) posted here: http://elliotjaystocks.com/blog/tutorial-multiple-singlephp-templates-in-wordpress/#comment-2383
 
 				add_filter( 'category_template', 'my_category_template' );

@@ -29,8 +29,8 @@
                         <h5 class=""><?php the_title();?></h5>
                     </a>
 
-                    <h6><?php the_category(); ?></h6>
 
+                    <h6><?php the_category(); ?></h6>
                     <small class="ta-l"> Classes: 4th 5th 8th</small></br>
                     <small class="ta-l"> Experience: 5 Years</small>
                     <small class="ta-l"> Education: M. Teaching</small>

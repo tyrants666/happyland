@@ -8,28 +8,105 @@
 ?>
         <article class="containerr">
 
-          <div class="row mx-0">
+          <div class="row mx-0 mt-161  mb-5">
 
-            <!-- Work Banner -->
-            <div class="mt-119 work-banner p-0 col-12 mx-0">
-              <!-- <h1>Faculty Profile</h1> -->
-              <?php the_post_thumbnail(); ?>
-            </div>
+                        <!-- Faculty Banner -->
+                        <div class=" work-banner p-0 col-lg-6 mx-0">
+                              <div class="img-circle-single"><?php the_post_thumbnail(); ?></div>
+                              <h5 class="faculty-title"><?php the_title();?></h5>
+                              <h3><?php the_excerpt(); ?></h3>
+                              <!-- <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6> -->
+                        </div>
 
-            <!-- Work Heding -->
-            <div class="col-sm-12 col-lg-8 pl-0">
+                        <!-- Faculty Heding -->
+                        <!-- <div class="col-sm-12 col-lg-4 pl-0 mt-lg-4 ">
+                              <h4 class="faculty-title"><?php the_title();?></h4>
+                              <h5>Classes : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                              <h5>Subjects : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                              <h5>Experience : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                              <h5>Downloads : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                              <h5>Quote : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                              <h5>Gallery: <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                        </div> -->
 
-              <p>Name :</p> <h4 class=""><?php the_title();?></h4>
-              <?php if( get_field('subtitle') ): ?>
-                  <h2 class="work-subtitle"><?php the_field('subtitle'); ?></h1>
-              <?php endif; ?>
 
-            </div>
 
-            <!-- Work content -->
-            <div class="work-content pl-0">
-              <?php the_content();?>
-            </div>
+                        <!-- *** Accordions **** -->
+                        <div class="col-sm-12 col-lg-4 mx-auto col-accord">
+
+                          <div class="accordion" id="accordionExample">
+                                  <!-- one -->
+                                  <div class="card">
+                                    <div class="card-header card1" id="headingOne">
+                                      <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          Download Assignments
+                                        </button>
+                                      </h5>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                      <div class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Two -->
+                                  <div class="card">
+                                    <div class="card-header card2" id="headingTwo">
+                                      <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Precision
+                                        </button>
+                                      </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                      <div class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Three -->
+                                  <div class="card">
+                                    <div class="card-header card3" id="headingThree">
+                                      <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Efficiency
+                                        </button>
+                                      </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                      <div class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Four -->
+                                  <div class="card">
+                                    <div class="card-header card4" id="headingThree">
+                                      <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                          Quality
+                                        </button>
+                                      </h5>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                      <div class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                          </div>
+                      </div>
+
+                      <!-- Faculty content -->
+                      <div class="work-content col-12 pl-0">
+                            <!-- <h5 class="faculty-title"><?php the_title();?></h5> -->
+                            <?php the_content();?>
+                      </div>
 
           </div>
 

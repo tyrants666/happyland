@@ -76,9 +76,11 @@ a:hover{
   color:#8ED8F8;
 }
 p{
- /* color: #858889; */
+ color: #858889;
  margin-top: 28px;
- font-family: "Tiempo",Georgia,"Times New Roman",Times,serif;
+ font-weight: 100;
+ /* font-family: "Tiempo",Georgia,"Times New Roman",Times,serif; */
+ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 h3{
@@ -164,7 +166,9 @@ img{
 .top-menu ul li.current-menu-item a{
   color: #8ED8F8;
 }
-
+.navbar-toggler-icon{
+  /* background-image: url(); */
+}
 
 /* ************************ Home Page ***************************** */
 
@@ -307,7 +311,7 @@ img{
   background-size: cover;
 }
 
-/* ************************ Archive Work Page ***************************** */
+/* ************************ Archive News Page ***************************** */
 .mt-127{
   margin-top: 127px;
 }
@@ -338,7 +342,7 @@ img{
 }
 
 
-/* ************************ Single work page ***************************** */
+/* ************************ Single News page ***************************** */
 .mt-119{
   margin-top: 119px;
 }
@@ -381,6 +385,49 @@ img{
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
     color:#858889;
+}
+/* ************************ Button Footer ***************************** */
+.bordered{
+  border-top: 2px solid #efefee;
+  width: 100%;
+}
+
+.row-button{
+  /* margin-bottom: -20px; */
+}
+.nav-work a{
+  background-color: white;
+  /* border: 2px solid #efefee; */
+  padding: 20px 32px;
+}
+.nav-work a:hover{
+  color: #8ED8F8;
+  /* background-color: #8ED8F8; */
+}
+.nav-work{
+margin: 38px 0;
+font-size: 15px;
+line-height: 56px;
+}
+.prev{
+
+}
+.prev-icon{
+  position: relative;
+    top: 6px;
+    right: 5px;
+}
+
+.all{
+  text-align: center;
+}
+.next{
+  text-align: right;
+}
+.next-icon{
+  position: relative;
+    top: 6px;
+    left: 5px;
 }
 /* ************************ Contact Page ***************************** */
 
@@ -464,49 +511,7 @@ textarea:hover{
 /* .about-card:hover{
     color: black;
 } */
-/* ************************ Button Footer ***************************** */
-.bordered{
-  border-top: 2px solid #efefee;
-  width: 100%;
-}
 
-.row-button{
-  margin-bottom: -20px;
-}
-.nav-work a{
-  background-color: white;
-  /* border: 2px solid #efefee; */
-  padding: 20px 32px;
-}
-.nav-work a:hover{
-  color: #8ED8F8;
-  /* background-color: #8ED8F8; */
-}
-.nav-work{
-margin: 70px 0;
-font-size: 15px;
-line-height: 56px;
-}
-.prev{
-
-}
-.prev-icon{
-  position: relative;
-    top: 6px;
-    right: 5px;
-}
-
-.all{
-  text-align: center;
-}
-.next{
-  text-align: right;
-}
-.next-icon{
-  position: relative;
-    top: 6px;
-    left: 5px;
-}
 /* *************** Join PAge ******************************************* */
 .mt-155{
   margin-top: 155px;
@@ -524,7 +529,70 @@ line-height: 56px;
 }
 
 
-/* ***************** Faculty Archive ******************** */
+/* ***************** Single Faculty   ******************** */
+.mt-161{
+  margin-top: 161px;
+}
+.img-circle-single {
+    height: 157px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+.img-circle-single img {
+    border-radius: 50%;
+    width: 187px;
+    height: 185px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.faculty-title{
+  text-align: center;
+}
+/* **** Accordion **** */
+.card1{
+  background: #58cced;
+  margin-top: 7px;
+}
+.card11{
+  background: #00ccff;
+}
+.card22{
+  background: #9bd964;
+}
+.card2{
+  /* background: #ff8750; */
+  background: #3895d3;
+}
+.card3{
+  background: #4064d7;
+}
+.card4{
+  background: #1E47CD;
+  /* background: #ff8750; */
+}
+
+.card{
+  border: none;
+  margin-top: 4px;
+}
+.card-header{
+    /* border-radius: 10px !important; */
+    border-radius: 32px !important;
+}
+.btn-link{
+ color: #ffffff;
+ text-decoration-style: none;
+ font-size: 16px;
+}
+.btn-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.card-body{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: slategray;
+}
+
+/* ***************** Archive Faculty ******************** */
 .ta-l{
   text-align: left !important;
 }

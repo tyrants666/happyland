@@ -219,6 +219,18 @@
   .input-div {
     margin-bottom: 15px;
   }
+  /* ***************** Single Faculty   ******************** */
+  .mt-161{
+    margin-top: 130px;
+  }
+  .faculty-title{
+   text-align: center;
+  }
+  /*  Accordion */
+  .col-accord{
+    padding: 0;
+  }
+
   /* ************************ About Page ***************************** */
   .about-banner{
     height: 150px;
