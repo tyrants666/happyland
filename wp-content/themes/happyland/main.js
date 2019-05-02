@@ -19,7 +19,7 @@
        $(window).resize(function(){
            if($(this).width() <= 768){
 
-               
+
 
                // $(".current-page").remove();
                $(".cardd-left").removeClass("sticky-top");
@@ -43,3 +43,25 @@
         })
         .resize();//trigger resize on page load
   });
+
+  // ******************* Animated Hamburer Menu Toggle ***********************
+
+  (function () {
+    var i, resize;
+    // i = setInterval(function () {
+    //   return $(".navbar-toggler").toggleClass("cross");
+    // }, 1500);
+
+    $(".navbar-toggler").click(function () {
+      clearInterval(i);
+      return $(".navbar-toggler").toggleClass("cross");
+    });
+
+    resize = function () {
+      return $("body").css({
+        "margin-top": ~~((window.innerHeight - 150) / 2) + "px" });
+    };
+
+    $(window).resize(resize);
+    resize();
+  }).call(this);
