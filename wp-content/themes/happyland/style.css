@@ -185,7 +185,7 @@ cursor: pointer;
 -ms-transform: translate3d(0, 0, 0);
 transform: translate3d(0, 0, 0);
 }
-path {
+.navbar-toggler svg path {
 fill: none;
 -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
 -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
