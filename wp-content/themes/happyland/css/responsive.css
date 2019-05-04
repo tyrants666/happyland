@@ -19,6 +19,12 @@
 
 
   /* ************************ Global ***************************** */
+  .mt-150 {
+      margin-top: 110px;
+  }
+  .mt-125 {
+      margin-top: 105px;
+  }
   p{
     margin-top: 22px;
   }
@@ -152,8 +158,10 @@
   .paginations{
       padding-left: 0;
   }
-  ul.page
   /* ************************ Single Work Page ***************************** */
+  .mt--138{
+    margin-top: -100px;
+  }
   .work-banner {
     margin-bottom: 20px;
     /* min-height: 184px; */
@@ -163,10 +171,11 @@
     font-size: 26px;
     line-height: 30px;
     padding-right: 5px;
+    margin-top: 0;
   }
 
   .work-content {
-    padding-bottom: 15px;
+    padding-bottom: 0;
     font-size: 15px;
     line-height: 21px;
     padding-right: 0;
@@ -197,8 +206,53 @@
     max-width: 95%;
   }
   /* ************************ Staffs Page ***************************** */
+  .mt-135{
+    margin-top: 106px;
+  }
+  .form-search{
+    margin-top: 15px;
+    padding-right: 8px;
+  }
+  .download-single{
+    height: 64px;
+    padding: 8% 0 0 43%;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .h22 {
+      font-size: 34px;
+  }
+  .mt-50 {
+      margin-top: 40px;
+  }
   .staff-list {
     margin-bottom: 33px;
+  }
+  /* ***************** Single Faculty   ******************** */
+  .bg-img-prop{
+    height: 63px;
+    padding: 6% 0 0 41%;
+  }
+  .faculty-banner{
+    margin-bottom: 5px;
+  }
+  .faculty-banner h3 {
+    font-size: 20px !important;
+    padding: 0;
+  }
+  .img-circle-single {
+    margin-bottom: 25px;
+  }
+  .img-circle-single img {
+    width: 155px;
+    height: 151px;
+  }
+  .faculty-title{
+    text-align: center;
+  }
+  /*  Accordion */
+  .col-accord{
+    padding: 0;
   }
   /* ************************ Contact Page ***************************** */
   .contact-title {
@@ -219,17 +273,6 @@
   .input-div {
     margin-bottom: 15px;
   }
-  /* ***************** Single Faculty   ******************** */
-  .mt-161{
-    margin-top: 130px;
-  }
-  .faculty-title{
-   text-align: center;
-  }
-  /*  Accordion */
-  .col-accord{
-    padding: 0;
-  }
 
   /* ************************ About Page ***************************** */
   .about-banner{
@@ -246,12 +289,19 @@
      height: 235px;
    }
   /* *************** Join PAge ******************************************* */
-  .mt-155{
+  /* .mt-100{
     margin-top: 100px;
-  }
+  } */
   .w-45 {
     width: 100% !important;
   }
+  /* *************** Download PAge ******************************************* */
+  .bg-img-prop-download{
+    height: 63px;
+    padding: 25px 8px 0 42%;
+
+  }
+
   /* ******************* FOOTER *********************** */
   .row-enquiry {
     padding-top: 29px;
@@ -303,6 +353,8 @@
     line-height: none;
     padding-left: 19px;
     padding-right: 19px;
+    padding-top: 10px;
+    padding-bottom: 13px;
 }
   .social-icon{
     margin-left: -5px;

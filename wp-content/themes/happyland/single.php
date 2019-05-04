@@ -7,12 +7,12 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-        <article class="containerr">
+        <article class="containerr mt-125">
 
           <div class="row mx-0 single-blog">
 
             <!-- Work Banner -->
-            <div class="mt-119 work-banner p-0 col-12 mx-0">
+            <div class=" work-banner p-0 col-12 mx-0">
               <?php the_post_thumbnail(); ?>
             </div>
 
@@ -109,19 +109,18 @@ if (have_posts()) {
                ?>
 
               <div class="nav-work col prev pl-0">
-                <a class="prevv" href=" <?php echo  $next_post_link ?>"  ><i class="material-icons prev-icon"> arrow_back </i>Previous</a>
+                <a class="prevv" href=" <?php echo $previous_post_link ?>"  ><i class="material-icons prev-icon"> arrow_back </i>Previous</a>
               </div>
 
               <div class="nav-work col all">
-                <a href="/index.php?page_id=7" >View all</a>
+                <a href="/index.php?page_id=9" >View all</a>
               </div>
 
               <div class="nav-work col next pr-0">
-                <a class="nextt" href="<?php echo $previous_post_link ?>"> Next <i class="material-icons next-icon"> arrow_forward </i></a>
+                <a class="nextt" href="<?php echo  $next_post_link ?>"> Next <i class="material-icons next-icon"> arrow_forward </i></a>
               </div>
       </div>
 
   </article>
-
 
 <?php get_footer(); ?>

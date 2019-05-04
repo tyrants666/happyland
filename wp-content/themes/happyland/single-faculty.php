@@ -8,26 +8,15 @@
 ?>
         <article class="containerr">
 
-          <div class="row mx-0 mt-161  mb-5">
+          <div class="row mx-0 mt-150  ">
 
                         <!-- Faculty Banner -->
-                        <div class=" work-banner p-0 col-lg-6 mx-0">
+                        <div class=" faculty-banner p-0 col-lg-6 mx-0 mb-lg-5">
                               <div class="img-circle-single"><?php the_post_thumbnail(); ?></div>
                               <h5 class="faculty-title"><?php the_title();?></h5>
                               <h3><?php the_excerpt(); ?></h3>
                               <!-- <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6> -->
                         </div>
-
-                        <!-- Faculty Heding -->
-                        <!-- <div class="col-sm-12 col-lg-4 pl-0 mt-lg-4 ">
-                              <h4 class="faculty-title"><?php the_title();?></h4>
-                              <h5>Classes : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
-                              <h5>Subjects : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
-                              <h5>Experience : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
-                              <h5>Downloads : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
-                              <h5>Quote : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
-                              <h5>Gallery: <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
-                        </div> -->
 
 
 
@@ -40,13 +29,21 @@
                                     <div class="card-header card1" id="headingOne">
                                       <h5 class="mb-0">
                                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          Download Assignments
+                                          Profile
                                         </button>
                                       </h5>
                                     </div>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                       <div class="card-body">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                                        <h4 class="faculty-title"><?php the_title();?></h4>
+                                        <h5>Classes : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                                        <h5>Subjects : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                                        <h5>Experience : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                                        <h5>Downloads : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                                        <h5>Quote : <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+                                        <h5>Gallery: <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6></h5>
+
                                       </div>
                                     </div>
                                   </div>
@@ -56,13 +53,68 @@
                                     <div class="card-header card2" id="headingTwo">
                                       <h5 class="mb-0">
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Precision
+                                          Download Assignments
                                         </button>
                                       </h5>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                       <div class="card-body">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                                        <!-- Download Button 1 -->
+                                        <?php $file = get_field('assignment_1'); ?>
+                                        <?php
+                                        if( $file ): ?>
+                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
+                                              <div class="bg-img-prop download-single1 col-12">
+                                                    <?php the_field('assignment_1_name'); ?>
+                                              </div>
+                                            </a>
+                                        <?php endif; ?>
+                                        <!-- Download Button 2 -->
+                                        <?php $file = get_field('assignment_2'); ?>
+                                        <?php
+                                        if( $file ): ?>
+                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
+                                              <div class="bg-img-prop download-single2 col-12">
+                                                    <?php the_field('assignment_2_name'); ?>
+                                              </div>
+                                            </a>
+                                        <?php endif; ?>
+                                        <!-- Download Button 3 -->
+                                        <?php $file = get_field('assignment_3'); ?>
+                                        <?php
+                                        if( $file ): ?>
+                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
+                                              <div class="bg-img-prop download-single3 col-12">
+                                                    <?php the_field('assignment_3_name'); ?>
+                                              </div>
+                                            </a>
+                                        <?php endif; ?>
+                                        <!-- Download Button 4 -->
+                                        <?php $file = get_field('assignment_4'); ?>
+                                        <?php
+                                        if( $file ): ?>
+                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
+                                              <div class="bg-img-prop download-single4 col-12">
+                                                    <?php the_field('assignment_4_name'); ?>
+                                              </div>
+                                            </a>
+                                        <?php endif; ?>
+                                        <!-- Download Button 5 -->
+                                        <?php $file = get_field('assignment_5'); ?>
+                                        <?php
+                                        if( $file ): ?>
+                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
+                                              <div class="bg-img-prop download-single5 col-12">
+                                                    <?php the_field('assignment_5_name'); ?>
+                                              </div>
+                                            </a>
+                                        <?php endif; ?>
+
+
+
+                                        <!-- End__ Download Button  -->
+
                                       </div>
                                     </div>
                                   </div>
@@ -103,8 +155,7 @@
                       </div>
 
                       <!-- Faculty content -->
-                      <div class="work-content col-12 pl-0">
-                            <!-- <h5 class="faculty-title"><?php the_title();?></h5> -->
+                      <div class="work-content col-12 pl-0 mt-4">
                             <?php the_content();?>
                       </div>
 
@@ -186,7 +237,7 @@
                ?>
 
               <div class="nav-work col prev pl-0">
-                <a class="prevv" href=" <?php echo  $next_post_link ?>"  ><i class="material-icons prev-icon"> arrow_back </i>Previous</a>
+                <a class="prevv" href=" <?php echo $previous_post_link ?>"  ><i class="material-icons prev-icon"> arrow_back </i>Previous</a>
               </div>
 
               <div class="nav-work col all">
@@ -194,7 +245,7 @@
               </div>
 
               <div class="nav-work col next pr-0">
-                <a class="nextt" href="<?php echo $previous_post_link ?>"> Next <i class="material-icons next-icon"> arrow_forward </i></a>
+                <a class="nextt" href="<?php echo  $next_post_link ?>"> Next <i class="material-icons next-icon"> arrow_forward </i></a>
               </div>
       </div>
 

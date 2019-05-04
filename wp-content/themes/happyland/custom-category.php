@@ -3,10 +3,10 @@
 <?php get_header(); ?>
 
 
-  <article class="containerr">
+  <article class="containerr mt-135">
 
-    <center><h2 style="margin-top: 125px">OUR FACULTIES</h2></center>
-    <div class="mt-119 row mx-0" style="margin-top: 70px">
+    <center><h2 class="h22">Our Faculties</h2></center>
+    <div class="row mx-0 mt-70">
 
         <?php
 
@@ -29,8 +29,8 @@
                         <h5 class=""><?php the_title();?></h5>
                     </a>
 
-                    <h6><?php the_category(); ?></h6>
 
+                    <h6><?php the_category(); ?></h6>
                     <small class="ta-l"> Classes: 4th 5th 8th</small></br>
                     <small class="ta-l"> Experience: 5 Years</small>
                     <small class="ta-l"> Education: M. Teaching</small>

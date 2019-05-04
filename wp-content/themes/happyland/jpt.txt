@@ -13,3 +13,37 @@ background: linear-gradient(to bottom, #00f260, #113f9c);
 
 font-family: 'Source Sans Pro', sans-serif;
 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+mt--122
+
+    padding: 29px 8px 0 12%;
+
+
+
+    Dear Sir / Ma'am,
+
+        We are based out of Biratnagar, Nepal and we were looking to start a e-commerce website. Our scope of work is as follows
+
+        1. Developing an appealing website which is very user friendly
+        2. Products to be displayed should have categoriesand tagging such as applied industry, brand, type of product.
+        3. When the user is browsing a product he should get options like related products, recently purchased, max sold product etc.
+        4. Payment processing system such as COD, deposit in account and esewa, netbanking etc
+        5. Delivery tracking starting after purchase to delivery
+        6. Customer satisfaction guaging with feedback and reviews
+        7. Reports required such as maximum sold products, repeated customer based on company name or mobile number,
+        8. Inventory management and reports related to it
+        9. The entire website should be available on Android and iPhone ios
+        10. Backend we should have a database where we can punch in brand, supplier name, price offerred, duty as per hs code, transprtation, other expenses, profit percentage to            be added so that we can arrive at a selling price.
+        11. Creating an app
+        12. Handover entire source code along with the credentials.
+        13. Post production Maintenance.
+
+
+        With regards to above please inform how you can help with our above project along with the cost and delivery terms.
+
+        Also we would like to know why we should go with you and how can you help with a woo-commerce & non Wordpress (custom build e-commercesite).
+        Lets us know the Pros & Cons of both woo-commerce & a custom build e-commerce site along with the respective cost & deadline to finish the projects.
+
+
+        Regards,
+        Rohit Agarwal.

@@ -1,7 +1,7 @@
 
 <?php get_header(); ?>
 
-<article class="containerr">
+<article class="containerr mt-100 ">
   <?php
 $postData = $uploadedFile = $statusMsg = '';
 $msgClass = 'errordiv';
@@ -48,7 +48,7 @@ if(isset($_POST['submit2'])){
             if($uploadStatus == 1){
 
                 // Recipient
-                $toEmail = 'bigadcompany@gmail.com';
+                $toEmail = 'akashyadav.iiita@gmail.com';
 
                 // Sender
                 $from = $_POST['email2'];
@@ -60,6 +60,8 @@ if(isset($_POST['submit2'])){
                 // Message
                 $htmlContent = '<h2>Join Request Submitted</h2>
                     <p><b>Name:</b> '.$name.'</p>
+                    <p><b>Name:</b> '.$phone.'</p>
+                    <p><b>Name:</b> '.$position.'</p>
                     <p><b>Email:</b> '.$email.'</p>';
 
                 // Header for sender info
@@ -126,24 +128,18 @@ if(isset($_POST['submit2'])){
 ?>
 
 
-    <div class="row mx-0">
+    <div class="row mx-0" style="margin-bottom:17px">
 
-        <!-- Work Heding -->
-        <div class="mt-155 col-sm-12 col-lg-8 pl-0">
-            <h1 class="work-title">Join Us</h1>
-            <p class="work-content" style="padding-bottom:0;">Creativity is exciting as well as challenging. At BigAdCo., we are continuously striving to do better each day and bring together interesting perspectives that unfolds into amazing ideas and solutions. We believe, when people and work come together, it becomes an experience.</p>
-            <p class="work-content">If you are someone who loves the dynamic world of creativity, are driven by your work and want to showcase your talent at the right platform, you should join us.</p>
-            <!-- <h3>Click below to drop in your CVs.</h3> -->
-        </div>
 
         <!-- Work content -->
-        <div class="work-content col-sm-12 col-lg-8 pl-0">
+        <div class="work-content col-sm-12 col-lg-5 pl-0 mx-auto">
 			<!-- Display submission status -->
             <?php if(!empty($statusMsg)){ ?>
                 <p style="color:green;" class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
             <?php } ?>
 
-            <!-- Display contact form -->
+            <h1 class="work-title" style="color:#89a2e7;">Join Us</h1>
+      <!-- Display contact form -->
 			<form action="" method="post" id="form3" enctype="multipart/form-data">
 
                 <label for="fieldEmail" class="email-title">Drop in your CVs.</label>
@@ -151,10 +147,16 @@ if(isset($_POST['submit2'])){
                 <div class="">
 
                   <div class="email-div">
-                    <input class="input-footer w-45" name="name2" type="text" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" placeholder="Enter your name" required="" autocomplete="off">
+                    <input class="input-footer w-45" name="name2" type="text" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" placeholder="Full name" required="" autocomplete="off">
                   </div>
                   <div class="">
-                    <input class="input-footer w-45" name="email2" type="email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required="" placeholder="Enter your email address" >
+                    <input class="input-footer w-45" name="email2" type="email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required="" placeholder="Email address" >
+                  </div>
+                  <div class="">
+                    <input class="input-footer w-45" name="phone2" type="number" value="<?php echo !empty($postData['phone'])?$postData['phone']:''; ?>" required="" placeholder="Phone number" >
+                  </div>
+                  <div class="">
+                    <input class="input-footer w-45" name="position2" type="text" value="<?php echo !empty($postData['position'])?$postData['position']:''; ?>" required="" placeholder="Desired Position" >
                   </div>
 
                   <div class="custom-file w-45">
@@ -163,12 +165,15 @@ if(isset($_POST['submit2'])){
                   </div>
 
                   <div class="send">
-                    <button type="submit" name="submit2" value="Submit" class="send-btn">Submit</button>
+                    <button type="submit" name="submit2" value="Submit" class="send-btn2">Submit</button>
                   </div>
                   <p class="p1"><?php echo $loginsuccess; ?></p>
 
                 </div>
           </form>
+        </div>
+        <div class="col-sm-12 col-lg-6 bg-join">
+
         </div>
 
     </div>

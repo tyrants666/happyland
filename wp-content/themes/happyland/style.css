@@ -10,9 +10,10 @@ Text Domain:
 Tags:
 */
 
-
 /*********************************** Global ****************************************/
-
+.mt-150 {
+    margin-top: 150px;
+}
 /* ********************** containerr ****************************** */
 ::-webkit-scrollbar {
     display: none;
@@ -98,8 +99,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     text-rendering: optimizeSpeed;
+    margin:0 !important;
 }
-
+.mt-125{
+  margin-top: 125px;
+}
 img{
   pointer-events: none;
   /* width: 100%; */
@@ -114,6 +118,9 @@ img{
 .padding-x{
   padding-left: 70px;
   padding-right: 70px;
+}
+.mt--110{
+  margin-top: -110px;
 }
 /* ************************ Header ***************************** */
 .navbar{
@@ -193,8 +200,8 @@ fill: none;
 -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
 transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
 stroke-width: 30px;
-stroke-linecap: round;
-stroke: #808080;
+stroke-linecap: unset;
+stroke: #469bb5;
 stroke-dashoffset: 0px;
 }
 path#top,
@@ -356,8 +363,8 @@ stroke-dasharray: 1px 220px;
 }
 
 /* ************************ Archive News Page ***************************** */
-.mt-127{
-  margin-top: 127px;
+.mt-135{
+  margin-top: 135px;
 }
 .work-list {
   margin-bottom: 64px;
@@ -387,8 +394,8 @@ stroke-dasharray: 1px 220px;
 
 
 /* ************************ Single News page ***************************** */
-.mt-119{
-  margin-top: 119px;
+.mt--138{
+  margin-top: -138px;
 }
 .single-blog img{
   width: 100%;
@@ -397,20 +404,23 @@ stroke-dasharray: 1px 220px;
   color: #858889;
 }
 .work-banner{
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+  text-align: center;
 }
 
 .work-title, .work-subtitle{
   font-weight: bold;
   font-size: 35px;
   line-height: 43px;
+  margin-top: 30px;
 }
 .work-subtitle{
   color:#858889;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .work-content {
-    padding-bottom: 43px;
+    padding-bottom: 15px;
     font-size: 19px;
     line-height: 28px;
 }
@@ -557,25 +567,60 @@ textarea:hover{
 } */
 
 /* *************** Join PAge ******************************************* */
-.mt-155{
-  margin-top: 155px;
+.mt-100{
+  margin-top:100px;
+}
+.email-title{
+  color: #8495a7;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 43px;
+  margin-bottom: 31px;
+}
+.bg-join{
+  background-image: url(images/join.svg);
+  background-position: 17px -31px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .w-45 {
-  width: 55% !important;
+  /* width: 55% !important; */
   margin-bottom: 12px;
 }
 .custom-file-label{
-  border-radius: 0;
+  border-radius: 23px;
   font-size: 15px;
   padding-left: 6.5%;
   padding-top: 7px;
   border: 1px solid #ced4da82;
 }
-
-
+.custom-file-label::after {
+    padding: .375rem 1rem;
+    color: #ffffff;
+    background-color: #89a2e7;
+    border-radius: 0 1.25rem 1.25rem 0;
+}
+.send-btn2{
+  height: 55px;
+  font-size: 12px;
+  padding: 12px 32px;
+  background: white;
+  border: 2px solid #efefee;
+  border-radius: 55px;
+  color: #858889;
+}
+.send-btn2:hover{
+  border-color: #8ED8F8;
+  background-color: #8ED8F8;
+  /* color: black; */
+}
 /* ***************** Single Faculty   ******************** */
-.mt-161{
-  margin-top: 161px;
+.faculty-banner{
+  text-align: center;
+}
+.faculty-banner h3 {
+  font-size: 22px !important;
+      padding: 0 60px;
 }
 .img-circle-single {
     height: 157px;
@@ -590,20 +635,14 @@ textarea:hover{
 }
 .faculty-title{
   text-align: center;
+      font-size: 24px;
 }
 /* **** Accordion **** */
 .card1{
   background: #58cced;
   margin-top: 7px;
 }
-.card11{
-  background: #00ccff;
-}
-.card22{
-  background: #9bd964;
-}
 .card2{
-  /* background: #ff8750; */
   background: #3895d3;
 }
 .card3{
@@ -611,7 +650,6 @@ textarea:hover{
 }
 .card4{
   background: #1E47CD;
-  /* background: #ff8750; */
 }
 
 .card{
@@ -619,15 +657,17 @@ textarea:hover{
   margin-top: 4px;
 }
 .card-header{
-    /* border-radius: 10px !important; */
-    border-radius: 32px !important;
+    border-radius: 10px !important;
+    /* border-radius: 32px !important; */
 }
 .btn-link{
  color: #ffffff;
  text-decoration-style: none;
  font-size: 16px;
+
 }
-.btn-link:hover{
+.btn-link:hover,
+.btn-link:focus{
     color: white;
     text-decoration: none;
 }
@@ -635,8 +675,84 @@ textarea:hover{
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   color: slategray;
 }
+/* **** Download Button **** */
+.bg-img-prop{
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 81px;
+  padding: 8% 8px 0 40%;
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+.download-single1{
+  background-image: url(images/down1.svg);
+}
+.download-single2{
+  background-image: url(images/down2.svg);
+}
+.download-single3{
+  background-image: url(images/down3.svg);
+}
+.download-single4{
+  background-image: url(images/down4.svg);
+}
+.download-single5{
+  background-image: url(images/down5.svg);
+}
+
+a.down-faculty-a{
+  color: azure !important;
+}
+a.down-faculty-a:hover{
+  color: #5a6a79 !important;
+}
 
 /* ***************** Archive Faculty ******************** */
+.form-search{
+  margin-top: -51px;
+  padding-right: 9px;
+}
+.search-faculty {
+  border-radius: 10px;
+}
+.search-faculty input {
+  border-radius: 29px;
+  height: 43px;
+  /* margin-bottom: 12px; */
+  padding: 0 40px 0 24px;
+  font-size: 13px;
+  color: #858889;
+  background: #f7f7f7;
+  line-height: 58px;
+  border: 2px solid transparent;
+  display: block;
+  outline: none;
+  transition: all 100ms linear 0ms;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: none;
+}
+.search-faculty button {
+  position: relative;
+  margin-top: 12px;
+  margin-left: -40px;
+  margin-bottom: 5px;
+  background: transparent;
+  border: none;
+}
+.search-icon{
+  color: #928d8d;
+}
+.search-icon:hover {
+    color: #2ec3e6;
+}
+.h22{
+  font-size: 41px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 100;
+}
+.mt-50 {
+    margin-top: 50px;
+}
 .ta-l{
   text-align: left !important;
 }
@@ -725,6 +841,17 @@ textarea:hover{
   padding-left: 8px;
   color: darkgrey;
 }
+/* *************** Downloads Page ******************************************* */
+.bg-img-prop-download{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 81px;
+  padding: 33px 8px 0 12%;
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+
 /* *************** Foooter ******************************************* */
 .footer{
   color: #a2b2bbf0;
@@ -750,7 +877,7 @@ textarea:hover{
   /* padding-bottom: 20px; */
   padding-bottom: 60px;
 }
-.email-title{
+.email-name{
   color: white;
   font-weight: bold;
   font-size: 31px;
@@ -861,7 +988,7 @@ a svg:hover #instagram {
 }
 .copyright2{
   text-align: left;
-  padding-top: 20px;
+  padding-top: 11px;
   padding-left: 0;
   font-size: 10px;
   line-height: 14px;

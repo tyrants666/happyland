@@ -3,18 +3,25 @@
 <?php get_header(); ?>
 
 
-  <article class="containerr">
+  <article class="containerr mt-135">
 
-    <center><h2 style="margin-top: 125px">OUR FACULTIES</h2></center>
-    <div class="mt-119 row mx-0" style="margin-top: 70px">
+    <center><h2 class="h22">Our Faculties</h2></center>
 
+    <div class="search-faculty">
+        <form class="form-inline form-search" role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
+          <input class="col-sm-10 col-lg-4 ml-auto" name="s" type="text" placeholder="Search Faculty" autocomplete="off">
+          <input type="hidden" name="post_type" value="faculty" /> <!-- // hidden 'faculty' value -->
+          <button class="" type="submit" alt="Search" value="search" name="button"><i class="material-icons search-icon "> search </i></button>
+        </form>
+    </div>
+
+    <div class="row mx-0 mt-50">
         <?php
 
         if (have_posts() ):
           $flag = 0;
           while (have_posts()) : the_post();
           ?>
-
                 <!-- Random Background colour -->
                 <?php
                 // $bg = array('#9bd964','#b388ff','#ff8282d4','#29b6f6bd','#b9b198');
@@ -43,6 +50,12 @@
               else : echo '<p>No content Found</p>';
         endif;?>
 
+
+
+    </div>
+    <!-- Pagination -->
+    <div class="paginations col-lg-12">
+      <?php wpex_pagination(); ?>
     </div>
 
   </article>

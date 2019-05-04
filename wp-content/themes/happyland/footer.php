@@ -21,7 +21,7 @@
 
         <form action="#subForm" method="post" id="subForm">
 
-              <label for="fieldEmail" class="email-title">Contact Us</label>
+              <label for="fieldEmail" class="email-name">Contact Us</label>
 
               <div class="form-row">
 
@@ -44,7 +44,7 @@
         <div class=" col-lg-2 p-0">
           <nav class="menu-bot">
             <span>Navigations</span>
-            <?php wp_nav_menu( array('theme_location' => 'primary',
+            <?php wp_nav_menu( array('theme_location' => 'footer',
     				'depth'             => 2,
     				'container'         => '',
     				'container_class'   => '',

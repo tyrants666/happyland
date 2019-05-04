@@ -131,7 +131,7 @@
 		    }
 
 		    if ( is_post_type_archive( 'faculty' ) ) {
-		       $query->set( 'posts_per_page', 100 );
+		       $query->set( 'posts_per_page', 15 );
 		    }
 		}
 		add_filter( 'pre_get_posts', 'my_cptui_change_posts_per_page' );
@@ -171,7 +171,7 @@
 						function my_category_template( $template ) {
 								if( is_category( 10 ) ) // We can search for categories by ID
 									$template = locate_template( array( 'custom-category.php', 'category.php' ) );
-								elseif( is_category( array( 7,8,10,15,16,17,18,19,20,21,22,23,24,13,14 ) ) ) // We can search for multiple categories by ID by passing an array
+								elseif( is_category( array( 7,8,9,10,15,16,17,18,19,20,21,22,23,24,13,14 ) ) ) // We can search for multiple categories by ID by passing an array
 									$template = locate_template( array( 'custom-category.php', 'category.php' ) );
 								elseif( is_category( 'food' ) ) // We can search for categories by their slug
 									$template = locate_template( array( 'custom-category.php', 'category.php' ) );
@@ -181,6 +181,19 @@
 				return $template;
 				}
 
+//Search Result for custom post type ************************************************************************************************************************************************
+
+function template_chooser($template)
+{
+  global $wp_query;
+  $post_type = get_query_var('post_type');
+  if( $wp_query->is_search && $post_type == 'faculty' )
+  {
+    return locate_template('custom-category.php');  //  redirect to custom-category.php
+  }
+  return $template;
+}
+add_filter('template_include', 'template_chooser');
 
 //Pagination Numbered ************************************************************************************************************************************************
 
