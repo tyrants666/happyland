@@ -164,14 +164,18 @@ img{
   padding:10px;
 }
 .top-menu a {
-  color: #000000c2;
+  /* color: #000000c2; */
+  color: #525f5fc2;
   text-decoration: none;
 }
 .top-menu a:hover {
-  color: #8ED8F8;
+  /* color: #8ED8F8; */
+  color: #109fdc;
 }
 .top-menu ul li.current-menu-item a{
-  color: #8ED8F8;
+  /* color: #8ED8F8; */
+  color: #109fdc;
+  /* border-bottom: 2px solid #9a9696; */
 }
 /* Hamburger Animation */
 .navbar-toggler {
@@ -486,61 +490,17 @@ line-height: 56px;
 /* ************************ Contact Page ***************************** */
 
 .contact-title{
-  margin-top: 150px;
-  font-size: 70px;
+  margin-top: 135px;
+  font-size: 43px;
   line-height: 75px;
+  color: #1ba2dd;
 }
 .contact-subtitle{
-  margin-top: 75px
+  text-align: center;
+  font-size: 20px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
-#form2{
-  margin-top: 65px;
-  margin-bottom: 65px;
-}
-.input-div{
-  margin-bottom: 35px;
-}
-.contact-label{
-  display: block;
-  margin-bottom: 12px;
-  font-size: 21px;
-  line-height: 25px
-}
-.input1{
-  height: 60px;
-  width: 100%;
-  padding: 0 24px;
-  font-size: 16px;
-  color: #858889;
-  background: #f7f7f7;
-  line-height: 58px;
-  border: 2px solid transparent;
-  display: block;
-  outline: none;
-  transition: all 100ms linear 0ms;
-  -webkit-font-smoothing: antialiased;
-  box-shadow: none;
-}
-.input1:hover{
-  border: 2px solid #efefee;
-}
-textarea{
-  padding: 0 24px;
-  font-size: 16px;
-  width: 100%;
-  color: #858889;
-  background: #f7f7f7;
-  line-height: 58px;
-  border: 2px solid transparent;
-  display: block;
-  outline: none;
-  transition: all 100ms linear 0ms;
-  -webkit-font-smoothing: antialiased;
-  box-shadow: none;
-}
-textarea:hover{
-  border: 2px solid #efefee;
-}
+
 /* ************************ About Page ***************************** */
 .about-banner{
   padding: 25%;
@@ -847,11 +807,24 @@ a.down-faculty-a:hover{
   background-repeat: no-repeat;
   background-position: center;
   height: 81px;
-  padding: 33px 8px 0 12%;
+  /* padding: 33px 8px 0 12%; */
   margin-bottom: 10px;
   line-height: 16px;
+  /* border: 1px solid black; */
+  display: grid;
 }
-
+.bg-img-prop-download img {
+    width: 100%;
+    height: 72px;
+}
+.bg-img-prop-download p {
+  /* border: 1px solid red; */
+  color: white;
+  margin: 0;
+  margin-top: -45px;
+  margin-left: 115px;
+  font-size: 16px;
+}
 /* *************** Foooter ******************************************* */
 .footer{
   color: #a2b2bbf0;
@@ -875,7 +848,7 @@ a.down-faculty-a:hover{
 .form-row{
   font-size: 16px;
   /* padding-bottom: 20px; */
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 .email-name{
   color: white;
@@ -936,7 +909,14 @@ form {
   font-size: 16px;
   background: #113f9c;
   padding-top: 55px;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
+}
+.row3-foot{
+  color: white;
+  font-size: 16px;
+  background: #113f9c;
+  padding-top: 44px;
+  padding-bottom: 28px;
 }
 .menu-bot ul{
   padding-left: 0;
@@ -952,11 +932,11 @@ form {
   line-height: 22px;
 }
 .logo-footer{
-  display: grid;
-  height: 165px;
-  margin-top: -104px;
-  text-align: center;
-  margin-left: 30%;
+  /* display: grid; */
+  /* height: 165px; */
+  margin-top: -115px;
+  /* text-align: center; */
+  margin-left: 19%;
 }
 .logo-footer img{
   height: 170px;
@@ -965,6 +945,7 @@ form {
 .address{
   margin-top: 10px;
   color: #a2b2bbf0;
+  padding-left:24px;
 }
 
 .foot_foot{
@@ -997,6 +978,10 @@ a svg:hover #instagram {
   color: #00ccff;
 }
 
+/* *************** Privacy Policy ******************************************* */
+.pp img {
+    width: 71%;
+}
 /* *************** Pagination ******************************************* */
 .paginations{
     padding: 0;

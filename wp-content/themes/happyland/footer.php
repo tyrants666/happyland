@@ -39,12 +39,27 @@
 
               </div>
         </form>
+      </div>
+<div class="row mx-0 row3-foot padding-x">
 
         <!-- ********  Footer menu ******* -->
         <div class=" col-lg-2 p-0">
           <nav class="menu-bot">
             <span>Navigations</span>
             <?php wp_nav_menu( array('theme_location' => 'footer',
+    				'depth'             => 2,
+    				'container'         => '',
+    				'container_class'   => '',
+    				'container_id'      => '',
+    				'menu_class'        => '',
+    				) ); ?>
+          </nav>
+        </div>
+        <!-- ********  Footer menu ******* -->
+        <div class=" col-lg-2 p-0">
+          <nav class="menu-bot">
+            <span>Navigations</span>
+            <?php wp_nav_menu( array('theme_location' => 'footer2',
     				'depth'             => 2,
     				'container'         => '',
     				'container_class'   => '',
@@ -61,6 +76,7 @@
       <!-- ********  Logo Big ******* -->
           <div class=" logo-footer col-lg-2 col-sm-12">
             <a href=" <?php echo home_url(); ?>"> <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/images/logo.png" class="footer-logo" alt="Logo"></a>
+            <a href=" https://goo.gl/maps/8QE3g4h4tc1yH5JR7" target="_blank">
             <address class=" address ">
               Lanka tole<br>
               Rajbiraj - 6,
@@ -68,6 +84,7 @@
               State - 2,
               NEPAL
             </address>
+          </a>
           </div>
 
 

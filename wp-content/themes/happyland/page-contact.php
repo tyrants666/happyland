@@ -1,95 +1,36 @@
 
 <?php get_header(); ?>
 
-<article class="containerr">
+<article class="containerr mb-3 mb-lg-5">
 
-  <?php
-        if(isset($_POST['submit1'])){
+  <h2 class="contact-title"><?php the_title();?></h2>
 
-          $to = "bigadcompany@gmail.com"; // this is your Email address
-          $from = $_POST['name1'];
-          $subject = "Contacts";
-          $message =" Enquiry Details:" . "\n\n" .
-                    " Name: " . $_POST['name1'] . "\n" .
-                    " Email: " . $_POST['email1'] . "\n" .
-                    " Phone: " . $_POST['phone1'] . "\n" .
-                    " City: " . $_POST['city1'] . "\n" .
-                    " Country: " . $_POST['country1'] . "\n" .
-                    " Job: " . $_POST['job1'] . "\n" .
-                    " Company: " . $_POST['company1'] . "\n" .
-                    " Message: " . $_POST['message1'] . "\n" ;
-          $headers = "From: " . $from;
-          mail($to,$subject,$message,$headers);
-          $loginsuccess = "Mail Sent. Thank you , we will contact you shortly.";
-        }
-    ?>
+    <div class="row mx-0 mt-2 mb-2 mt-lg-5 mb-lg-5">
 
-    <div class="row mx-0">
+          <div class="col-lg-3 p-0">
+            <h2 class="contact-subtitle" >Phone</h2>
+          </div>
+          <div class="col-lg-3 p-0">
+            <h2 class="contact-subtitle" >Address</h2>
+          </div>
+          <div class="col-lg-3 p-0">
+            <h2 class="contact-subtitle" >Email</h2>
+          </div>
+          <div class="col-lg-3 p-0">
+            <h2 class="contact-subtitle" >Working Hours</h2>
+          </div>
 
-        <div class="col-12 p-0">
-          <h1 class="contact-title">Let’s connect</h1>
-        </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="row mx-0 ">
 
         <div class="col-12 p-0">
-          <h2 class="contact-subtitle" >What can we do for your business?</h2>
+          <h2 class="" >Find us on map</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1784.6384725367798!2d86.75054010070902!3d26.54336954737803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eefa99c32cf5a5%3A0x3fdfc85bc957c8b4!2sHappyland+H.+S.+School!5e0!3m2!1sen!2snp!4v1557031131658!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
-        <div class="col-12 p-0">
-
-          <form action="#form2" method="post" id="form2">
-
-                <div class="col-sm-12 col-lg-8 p-0">
-
-                  <div class=" input-div form-group">
-                    <label class="contact-label">Full name*</label>
-                    <input class="input1" name="name1" type="text" autocomplete="off" required>
-                  </div>
-
-                  <div class=" input-div form-group">
-                    <label class="contact-label">Email*</label>
-                    <input class="input1" name="email1" type="email" autocomplete="off" required>
-                  </div>
-
-                  <div class=" input-div form-group">
-                    <label class="contact-label">Phone</label>
-                    <input class="input1" name="phone1" type="number" autocomplete="off">
-                  </div>
-
-                  <div class=" input-div form-group">
-                    <label class="contact-label">City</label>
-                    <input class="input1" name="city1" type="text" autocomplete="off">
-                  </div>
-
-                  <div class=" input-div form-group">
-                    <label class="contact-label">Country</label>
-                    <input class="input1" name="country1" type="text" autocomplete="off">
-                  </div>
-
-                  <div class=" input-div form-group">
-                    <label class="contact-label">Job title</label>
-                    <input class="input1" name="job1" type="text" autocomplete="off">
-                  </div>
-
-                  <div class=" input-div form-group">
-                    <label class="contact-label">Company</label>
-                    <input class="input1" name="company1" type="text" autocomplete="off">
-                  </div>
-
-                  <div class="input-div form-group">
-                      <label class="contact-label">How can we help you?</label>
-                      <textarea class="" name="message1" rows="3"></textarea>
-                  </div>
-
-                  <div class=" send">
-                    <button type="submit" name="submit1" value="Submitt" class="send-btn">Submit</button>
-                  </div>
-                  <p class="p1"><?php echo $loginsuccess; ?></p>
-
-                </div>
-          </form>
-
-        </div>
-
+    </div>
 
 </article>
 
