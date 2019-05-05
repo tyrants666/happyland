@@ -18,7 +18,9 @@ mt--122
 
     padding: 29px 8px 0 12%;
 
-
+    Contact Page -
+    1. Material icon added
+    2. Hamburger menu colours changed
 
 
 

@@ -5,18 +5,22 @@
 
   <h2 class="contact-title"><?php the_title();?></h2>
 
-    <div class="row mx-0 mt-2 mb-2 mt-lg-5 mb-lg-5">
+    <div class="row mx-0 mt-2 mb-2 mt-lg-5 mb-lg-5 row-contact">
 
           <div class="col-lg-3 p-0">
+            <i class="material-icons">call</i>
             <h2 class="contact-subtitle" >Phone</h2>
           </div>
           <div class="col-lg-3 p-0">
+            <i class="material-icons">place</i>
             <h2 class="contact-subtitle" >Address</h2>
           </div>
           <div class="col-lg-3 p-0">
+            <i class="material-icons">alternate_email</i>
             <h2 class="contact-subtitle" >Email</h2>
           </div>
           <div class="col-lg-3 p-0">
+            <i class="material-icons">access_time</i>
             <h2 class="contact-subtitle" >Working Hours</h2>
           </div>
 

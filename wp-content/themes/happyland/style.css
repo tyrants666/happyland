@@ -205,7 +205,8 @@ fill: none;
 transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
 stroke-width: 30px;
 stroke-linecap: unset;
-stroke: #469bb5;
+stroke: #136ed0;
+/* stroke: #469bb5; */
 stroke-dashoffset: 0px;
 }
 path#top,
@@ -494,6 +495,10 @@ line-height: 56px;
   font-size: 43px;
   line-height: 75px;
   color: #1ba2dd;
+}
+.row-contact i{
+  font-size: 50px;
+  color: #45b4e9;
 }
 .contact-subtitle{
   text-align: center;
