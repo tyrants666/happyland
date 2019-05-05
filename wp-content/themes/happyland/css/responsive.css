@@ -142,7 +142,7 @@
     margin-bottom: 15px;
     height: auto;
     /* height: 145px; */           /*Dont remove this first check effect on different screen sizes*/
-    border-radius: unset;
+    /* border-radius: unset; */
   }
   .work-list h2 {
     font-size: 25px;
