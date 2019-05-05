@@ -48,9 +48,9 @@
 
   (function () {
     var i, resize;
-    i = setInterval(function () {
-      return $(".navbar-toggler").toggleClass("cross");
-    }, 1500);
+    // i = setInterval(function () {
+    //   return $(".navbar-toggler").toggleClass("cross");
+    // }, 1500);
 
     $(".navbar-toggler").click(function () {
       clearInterval(i);
