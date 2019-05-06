@@ -830,10 +830,8 @@ a.down-faculty-a:hover{
   background-repeat: no-repeat;
   background-position: center;
   height: 81px;
-  /* padding: 33px 8px 0 12%; */
   margin-bottom: 10px;
   line-height: 16px;
-  /* border: 1px solid black; */
   display: grid;
 }
 .bg-img-prop-download img {

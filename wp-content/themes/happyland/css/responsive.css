@@ -297,8 +297,7 @@
   }
   /* *************** Download PAge ******************************************* */
   .bg-img-prop-download{
-    /* height: auto; */
-    /* padding: 25px 8px 0 42%; */
+    margin-bottom: -7px;
     padding: 0
   }
   /* *************** Privacy Policy ******************************************* */
