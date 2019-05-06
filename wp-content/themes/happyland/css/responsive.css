@@ -285,9 +285,13 @@
      height: 235px;
    }
   /* *************** Join PAge ******************************************* */
-  /* .mt-100{
-    margin-top: 100px;
-  } */
+  .join-us{
+    color:#1ba2dd;
+  }
+  .custom-file-label::after {
+      color: #ffffff;
+      background-color: #1ba2dd;
+  }
   .w-45 {
     width: 100% !important;
   }

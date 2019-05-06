@@ -138,7 +138,7 @@ if(isset($_POST['submit2'])){
                 <p style="color:green;" class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
             <?php } ?>
 
-            <h1 class="work-title" style="color:#89a2e7;">Join Us</h1>
+            <h1 class="work-title join-us">Join Us</h1>
       <!-- Display contact form -->
 			<form action="" method="post" id="form3" enctype="multipart/form-data">
 

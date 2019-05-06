@@ -124,7 +124,13 @@ img{
 }
 /* ************************ Header ***************************** */
 .navbar{
-  background: #f0f0f585
+  /* background: #f0f0f585; */
+  background: #feffff9e;
+  /* background-image: url(images/navbar.svg); */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border-bottom: 1px solid #113f9c; */
 }
 .logo{
   display: -webkit-box;
@@ -164,8 +170,8 @@ img{
   padding:10px;
 }
 .top-menu a {
-  /* color: #000000c2; */
   color: #525f5fc2;
+  /* color: #ffffff; */
   text-decoration: none;
 }
 .top-menu a:hover {
@@ -543,6 +549,9 @@ line-height: 56px;
 /* *************** Join PAge ******************************************* */
 .mt-100{
   margin-top:100px;
+}
+.join-us{
+  color:#89a2e7;
 }
 .email-title{
   color: #8495a7;
