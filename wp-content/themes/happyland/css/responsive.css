@@ -255,23 +255,15 @@
     padding: 0;
   }
   /* ************************ Contact Page ***************************** */
+  .row-contact p{
+    margin: 4px 15px;
+  }
   .contact-title {
     margin-top: 96px;
     font-size: 30px;
   }
-  /* .contact-subtitle {
-  margin-top: 8px;
-  font-size: 20px;
-  } */
-  #form2 {
-    margin-top: 30px;
-    margin-bottom: 40px;
-  }
-  .contact-label {
-    font-size: 16px;
-  }
-  .input-div {
-    margin-bottom: 15px;
+  .col-cont{
+     margin-top: 15px;
   }
 
   /* ************************ About Page ***************************** */

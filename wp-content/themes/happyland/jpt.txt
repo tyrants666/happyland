@@ -9,7 +9,8 @@ background: linear-gradient(to right, #cb2d3e, #ef473a);
 background: linear-gradient(to bottom, #00f260, #113f9c);
 #0e3e9e
 
-
+<a href="mailto:happylandsecondaryschool@gmail.com"><p class="email-p long-email">happylandsecondaryschool@gmail.com</p></a>
+<a href="mailto:happylandsecondaryschool@gmail.com"><p class="email-p d-lg-none">happylandsecondaryschool @gmail.com</p></a>
 
 font-family: 'Source Sans Pro', sans-serif;
 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -24,67 +25,15 @@ mt--122
 
 
 
-    <?php get_header(); ?>
+<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+font-family: 'Caveat', cursive;
 
-    <article class="containerr mt-125 mb-5">
+Sacramento
+Caveat
+Amatic SC
 
-      <center><h2 class="h22 mb-5">Downloads</h2></center>
+#1bddbb green
 
-
-      <!-- Download Button 1 -->
-      <?php $file = get_field('admission_form'); ?>
-      <?php
-      if( $file ): ?>
-          <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-            <div class=" col-lg-3 col-sm-12 bg-img-prop-download download-single1 mx-auto">
-                  Admission Form
-            </div>
-          </a>
-      <?php endif; ?>
-      <!-- Download Button 2 -->
-      <?php $file = get_field('calendar'); ?>
-      <?php
-      if( $file ): ?>
-          <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-            <div class="bg-img-prop-download download-single2 col-lg-3 col-sm-12">
-                  Calendar
-            </div>
-          </a>
-      <?php endif; ?>
-
-      <!-- Download Button 3 -->
-      <?php $file = get_field('file-3'); ?>
-      <?php
-      if( $file ): ?>
-          <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-            <div class="bg-img-prop-download download-single3 col-lg-3 col-sm-12 ml-auto">
-                  <?php the_field('file-3-name'); ?>
-            </div>
-          </a>
-      <?php endif; ?>
-      <!-- Download Button 4 -->
-      <?php $file = get_field('file-4'); ?>
-      <?php
-      if( $file ): ?>
-          <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-            <div class="bg-img-prop-download download-single4 col-lg-3 col-sm-12">
-                  <?php the_field('file-4-name'); ?>
-            </div>
-          </a>
-      <?php endif; ?>
-      <!-- Download Button 5 -->
-      <?php $file = get_field('file-5'); ?>
-      <?php
-      if( $file ): ?>
-          <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-            <div class="bg-img-prop-download download-single5 col-lg-3 col-sm-12 mx-auto">
-                  <?php the_field('file-5-name'); ?>
-            </div>
-          </a>
-      <?php endif; ?>
-
-
-
-    </article>
-
-    <?php  get_footer(); ?>
+ok no problem if you can recover it its ok or please create a new one with short email address like Example :
+happylandschool@gmail.com
+hlhss@gmail.com  

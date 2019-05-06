@@ -78,8 +78,8 @@
             <a href=" <?php echo home_url(); ?>"> <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/images/logo.png" class="footer-logo" alt="Logo"></a>
             <a href=" https://goo.gl/maps/8QE3g4h4tc1yH5JR7" target="_blank">
             <address class=" address ">
-              Lanka tole<br>
-              Rajbiraj - 6,
+              Sarbodaya tole<br>
+              Rajbiraj - 3,
               Saptari<br>
               State - 2,
               NEPAL

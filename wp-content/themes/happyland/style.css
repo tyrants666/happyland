@@ -496,12 +496,20 @@ line-height: 56px;
   line-height: 75px;
   color: #1ba2dd;
 }
+.row-contact{
+    text-align: center;
+}
 .row-contact i {
   font-size: 50px;
-  color: #45b4e9;
+  color: #1ba2dd;
 }
 .row-contact p {
-  font-size: 22px;
+  font-size: 15px;
+  /* font-family: 'Caveat', cursive; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 4px 12px;
+  text-align: left;
 }
 
 /* ************************ About Page ***************************** */
