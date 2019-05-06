@@ -513,9 +513,9 @@ line-height: 56px;
   color: #1ba2dd;
 }
 .row-contact p {
-  font-size: 15px;
+  font-size: 17px;
   /* font-family: 'Caveat', cursive; */
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   font-weight: 600;
   margin: 4px 12px;
   text-align: left;
