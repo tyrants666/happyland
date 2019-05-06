@@ -259,8 +259,12 @@
     margin: 4px 15px;
   }
   .contact-title {
-    margin-top: 96px;
+    margin-top: 110px;
     font-size: 30px;
+    line-height: 30px;
+  }
+  .mt-135{
+    margin-top: 96px;
   }
   .col-cont{
      margin-top: 15px;

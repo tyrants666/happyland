@@ -491,10 +491,13 @@ line-height: 56px;
 /* ************************ Contact Page ***************************** */
 
 .contact-title{
-  margin-top: 135px;
+  margin-top: 130px;
   font-size: 43px;
-  line-height: 75px;
+  line-height: 66px;
   color: #1ba2dd;
+}
+.mt-135{
+  margin-top: 135px;
 }
 .row-contact{
     text-align: center;

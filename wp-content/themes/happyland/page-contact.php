@@ -34,8 +34,8 @@
 
           <div class="col-cont col-lg-3 d-inline-flex p-0 mx-auto">
             <i class="material-icons" style="color:">access_time</i>
-            <p> Sun - Thu : &nbsp; <?php the_field('sun-thu'); ?></br>
-              Fri :&emsp; <?php the_field('fri'); ?></p>
+            <p> Sun-Thu : &nbsp; <?php the_field('sun-thu'); ?></br>
+              Friday :&emsp;&nbsp; <?php the_field('fri'); ?></p>
             </div>
 
 
