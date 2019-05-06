@@ -230,8 +230,8 @@
   }
   /* ***************** Single Faculty   ******************** */
   .bg-img-prop{
-    height: 63px;
-    padding: 6% 0 0 41%;
+    /* height: 63px; */
+    padding: 7% 16px 0 41%;
   }
   .faculty-banner{
     margin-bottom: 5px;
