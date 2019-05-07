@@ -4,8 +4,10 @@
 
   $(document).ready(function(){
 
-      //contact page
-
+    //Toggle Sidebar
+    $('.navbar-toggler').on('click', function(){
+        $(".sidepanel").toggleClass("w-250 w-0");
+    });
 
 
   });   //End jquery document ready
@@ -20,7 +22,9 @@
            if($(this).width() <= 768){
 
 
-
+             $("#navbarNavDropdown").addClass("sidepanel w-0");
+             $("#navbarNavDropdown").removeClass("top-menu collapse");
+             
                // $(".current-page").remove();
                $(".cardd-left").removeClass("sticky-top");
                $(".cardd-left").removeClass("col-lg-4-5");
@@ -48,7 +52,7 @@
 
 
   // **************************  NAVBAR Scroll Down (fade) || scroll up (Show)  **************************************
-  
+
   $(function () {
 
     'use strict';

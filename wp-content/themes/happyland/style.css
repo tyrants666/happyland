@@ -130,7 +130,6 @@ img{
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  /* border-bottom: 1px solid #113f9c; */
 }
 .logo{
   display: -webkit-box;
@@ -183,6 +182,7 @@ img{
   color: #109fdc;
   /* border-bottom: 2px solid #9a9696; */
 }
+
 /* Hamburger Animation */
 .navbar-toggler {
 background: rgba(0, 123, 255, 0.01);
@@ -230,6 +230,46 @@ stroke-dashoffset: -650px;
 .cross path#middle {
 stroke-dashoffset: -115px;
 stroke-dasharray: 1px 220px;
+}
+
+/* Sidebar*/
+
+.w-250{
+  width: 250px;
+}
+.w-0{
+  width: 0;
+}
+.sidepanel  {
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #042567;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d3e2e8;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
 }
 
 /* ************************ Home Page ***************************** */
