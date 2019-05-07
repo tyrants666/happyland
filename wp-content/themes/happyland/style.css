@@ -605,6 +605,9 @@ line-height: 56px;
   font-size: 22px !important;
       padding: 0 60px;
 }
+.faculty-banner h6 {
+  font-size: 20px;
+}
 .img-circle-single {
     height: 157px;
     text-align: center;

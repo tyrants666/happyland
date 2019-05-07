@@ -14,6 +14,7 @@
                         <div class=" faculty-banner p-0 col-lg-6 mx-0 mb-lg-5">
                               <div class="img-circle-single"><?php the_post_thumbnail(); ?></div>
                               <h5 class="faculty-title"><?php the_title();?></h5>
+                              <h6><?php the_category(); ?></h6>
                               <h3><?php the_excerpt(); ?></h3>
                               <!-- <h6 class="work-subtitle"><?php the_field('subtitle'); ?></h6> -->
                         </div>
