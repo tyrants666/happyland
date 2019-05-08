@@ -10,7 +10,7 @@
           <div class="col-cont col-lg-2 d-inline-flex p-0">
             <i class="material-icons" style="color:#904fb1e6">call </i>
             <a href="tel:+9773120160">
-                <p>+977-31520160</p>
+                <p>+977 - 31520160</p>
             </a>
           </div>
 
