@@ -900,6 +900,16 @@ a.down-faculty-a:hover{
 .bg-img-prop-download p:hover{
   color:#827373;
 }
+/* *************** Events Calendar Page ******************************************* */
+#main-content{
+      margin-top: 130px;
+}
+#main-content h1{
+      color:#1ba2dd;
+}
+.mec-single-event .mec-event-content {
+    padding: 0;
+}
 /* *************** Foooter ******************************************* */
 .footer{
   color: #a2b2bbf0;

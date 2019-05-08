@@ -314,6 +314,14 @@
   .pp img {
       width: 100%;
   }
+  /* *************** Event Calendar  ******************************************* */
+  #main-content{
+        margin-top: 100px;
+  }
+  #main-content h1{
+        font-size: 25px;
+  }
+
   /* ******************* FOOTER *********************** */
   .row-enquiry {
     padding-top: 29px;

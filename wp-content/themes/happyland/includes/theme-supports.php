@@ -6,7 +6,7 @@
 									 add_image_size('small-thumbnail', 180, 120, true);    //true means hard cropping
 									 add_image_size('banner-thumbnail', 920, 210, true);
 
-                   //Custom Excerpt Length
+                   // Custom Excerpt Length
                    // add_filter( 'excerpt_length', function($length) {
                    // 	return 120;
                    // } );
