@@ -78,7 +78,7 @@
 
 
 			<!-- Hamburger Menu -->
-		  <div class="navbar-toggler" style="border-color: transparent;" >
+		  <div class="navbar-toggle" style="border-color: transparent;" >
 				<svg viewBox="0 0 800 600">
 			    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
 			    <path d="M300,320 L540,320" id="middle"></path>
@@ -88,12 +88,12 @@
 
 			<!-- Sidebar -->
 			<div  class="sidepanel w-0">
-				<?php wp_nav_menu( array('theme_location' => 'primary',
+				<?php wp_nav_menu( array('theme_location' => 'side-menu',
 				'depth'             => 2,
 				'container'         => '',
 				'container_class'   => '',
 				'container_id'      => '',
-				'menu_class'        => 'navbar-nav ml-auto  mr-4',
+				'menu_class'        => '',
 				) ); ?>
 			</div>
 

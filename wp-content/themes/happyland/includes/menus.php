@@ -6,6 +6,7 @@ function menu_register(){
                  'primary' => __('Primary Menu'),
                  'footer' => __('Footer Menu'),
                  'footer2' => __('Footer Menu 2'),
+                 'side-menu' => __('Sidebar Menu'),
          ));
 
 }

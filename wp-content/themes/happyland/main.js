@@ -5,7 +5,7 @@
   $(document).ready(function(){
 
     //Toggle Sidebar
-    $('.navbar-toggler').on('click', function(){
+    $('.navbar-toggle').on('click', function(){
         $(".sidepanel").toggleClass("w-250 w-0");
     });
 
@@ -86,9 +86,9 @@
     //   return $(".navbar-toggler").toggleClass("cross");
     // }, 1500);
 
-    $(".navbar-toggler").click(function () {
+    $(".navbar-toggle").click(function () {
       clearInterval(i);
-      return $(".navbar-toggler").toggleClass("cross");
+      return $(".navbar-toggle").toggleClass("cross");
     });
 
     resize = function () {

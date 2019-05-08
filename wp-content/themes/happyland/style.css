@@ -184,16 +184,16 @@ img{
 }
 
 /* Hamburger Animation */
-.navbar-toggler {
-background: rgba(0, 123, 255, 0.01);
+.navbar-toggle {
+/* background: rgba(0, 123, 255, 0.01); */
 margin: 0;
 padding: 0;
 text-align: center;
 }
-.navbar-toggler svg {
-width: 94px;
+.navbar-toggle svg {
+width: 70px;
 height: 57px;
-margin-right: -19px;
+/* margin-right: -19px; */
 margin-left: -24px;
 cursor: pointer;
 -webkit-transform: translate3d(0, 0, 0);
@@ -201,8 +201,9 @@ cursor: pointer;
 -o-transform: translate3d(0, 0, 0);
 -ms-transform: translate3d(0, 0, 0);
 transform: translate3d(0, 0, 0);
+margin-right: 18px;
 }
-.navbar-toggler svg path {
+.navbar-toggle svg path {
 fill: none;
 -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
 -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
@@ -253,6 +254,13 @@ stroke-dasharray: 1px 220px;
   box-shadow: 0 1px 38px #0757ff;
 }
 
+.sidepanel ul {
+  padding-left: 0px;
+}
+.sidepanel ul li {
+  padding-bottom: 3px;
+}
+
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -263,10 +271,10 @@ stroke-dasharray: 1px 220px;
 }
 
 .sidepanel a:hover {
-  color: #f1f1f1;
+  color: #3ab0e2;
 }
 
-.sidepanel .closebtn {
+.sidepanel{
   position: absolute;
   top: 0;
   right: 25px;
