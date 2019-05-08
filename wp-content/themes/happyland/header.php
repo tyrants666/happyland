@@ -92,6 +92,23 @@
 				'container_id'      => '',
 				'menu_class'        => '',
 				) ); ?>
+
+					<div class="row-icons ">
+
+							<a href="tel:+9773120160">
+								<i class="material-icons sidebar-icons">call </i>
+							</a>
+
+							<a href="mailto:happylandsecondaryschool@gmail.com">
+								<i class="material-icons sidebar-icons">alternate_email</i>
+							</a>
+
+							<a href=" https://goo.gl/maps/8QE3g4h4tc1yH5JR7" target="_blank">
+								<i class="material-icons sidebar-icons">place</i>
+							</a>
+
+					</div>
+
 			</div>
 
 			<style media="screen">

@@ -280,7 +280,17 @@ stroke-dasharray: 1px 220px;
   right: 25px;
   font-size: 36px;
 }
-
+.row-icons{
+  margin-left: 20px;
+  margin-top: 15px;
+  display: inline-flex;
+}
+.row-icons a{
+  padding-left: 10px;
+}
+.sidebar-icons{
+  font-size: 36px
+}
 /* ************************ Home Page ***************************** */
 
 .page-home{
