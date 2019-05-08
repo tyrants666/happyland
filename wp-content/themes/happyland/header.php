@@ -76,6 +76,7 @@
 			) ); ?>
 		</div>
 
+
 			<!-- Hamburger Menu -->
 		  <div class="navbar-toggler" style="border-color: transparent;" >
 				<svg viewBox="0 0 800 600">
@@ -85,7 +86,16 @@
 			  </svg>
 		  </div>
 
-
+			<!-- Sidebar -->
+			<div  class="sidepanel w-0">
+				<?php wp_nav_menu( array('theme_location' => 'primary',
+				'depth'             => 2,
+				'container'         => '',
+				'container_class'   => '',
+				'container_id'      => '',
+				'menu_class'        => 'navbar-nav ml-auto  mr-4',
+				) ); ?>
+			</div>
 
 			<style media="screen">
 

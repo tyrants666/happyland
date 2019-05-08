@@ -250,6 +250,7 @@ stroke-dasharray: 1px 220px;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  box-shadow: 0 1px 38px #0757ff;
 }
 
 .sidepanel a {

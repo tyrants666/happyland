@@ -22,9 +22,9 @@
            if($(this).width() <= 768){
 
 
-             $("#navbarNavDropdown").addClass("sidepanel w-0");
-             $("#navbarNavDropdown").removeClass("top-menu collapse");
-             
+             // $("#navbarNavDropdown").addClass("sidepanel w-0");
+             // $("#navbarNavDropdown").removeClass("top-menu collapse");
+
                // $(".current-page").remove();
                $(".cardd-left").removeClass("sticky-top");
                $(".cardd-left").removeClass("col-lg-4-5");
