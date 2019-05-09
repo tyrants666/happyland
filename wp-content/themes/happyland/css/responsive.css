@@ -63,9 +63,9 @@
     /* height: 63px; */
   }
 
+  /* Remove below 2 class to make hamburger menu big; */
   .sidepanel a{
     padding: 8px 8px 5px 32px;
-    /* font-size: 23px; */
   }
   .row-icons a {
       padding: 4px 6px 0px 13px !important;
@@ -285,7 +285,9 @@
   .col-cont{
      margin-top: 15px;
   }
-
+  .phone-p{
+    padding-top:6px;
+  }
   /* ************************ About Page ***************************** */
   .about-banner{
     height: 150px;

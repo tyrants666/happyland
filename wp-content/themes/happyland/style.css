@@ -293,7 +293,6 @@ stroke-dasharray: 1px 220px;
   display: inline-flex;
 }
 .row-icons a{
-    /* padding: 8px 0px 0px 20px !important; */
   padding-left: 10px;
 }
 .sidebar-icons{
@@ -588,6 +587,7 @@ line-height: 56px;
   margin: 4px 12px;
   text-align: left;
 }
+
 
 /* ************************ About Page ***************************** */
 .about-banner{
