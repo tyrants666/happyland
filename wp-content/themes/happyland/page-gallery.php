@@ -12,8 +12,8 @@
 
                         <!-- Faculty Title -->
                         <div class="p-0 mb col-12 ">
-                          <div class="overlay-effect"></div>
 
+                              <!-- Carousel -->
                               <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                                   <div class="carousel-inner">
 
@@ -26,8 +26,52 @@
                                     <div class="carousel-item bg-prop bg3">
                                     </div>
 
+                                    <div class="carousel-item bg-prop bg4">
+                                    </div>
+
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+
                                   </div>
                               </div>
+
+                              <!-- Caraousel Background Image ACF -->
+                              <style media="screen">
+
+                                  <?php if( get_field('slider_1') ): ?>
+                                  .bg1{
+                                    background-image: url('<?php the_field('slider_1') ?>');
+                                   }
+                                  <?php endif; ?>
+
+                                  <?php if( get_field('slider_2') ): ?>
+                                  .bg2{
+                                    background-image: url('<?php the_field('slider_2') ?>');
+                                   }
+                                  <?php endif; ?>
+
+                                  <?php if( get_field('slider_3') ): ?>
+                                  .bg3{
+                                    background-image: url('<?php the_field('slider_3') ?>');
+                                   }
+                                  <?php endif; ?>
+
+                                  <?php if( get_field('slider_4') ): ?>
+                                  .bg4{
+                                    background-image: url('<?php the_field('slider_4') ?>');
+                                   }
+                                  <?php endif; ?>
+
+                              </style>
+
+
+
 
                         </div>
 

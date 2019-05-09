@@ -9,6 +9,23 @@
         $(".sidepanel").toggleClass("w-250 w-0");
     });
 
+    // Carousel Bootstrap //
+
+          //interval
+          $('.carousel').carousel({
+            interval: 2000
+          });
+          //Prev
+          $(".carousel-control-prev").click(function(){
+            $("#carouselExampleSlidesOnly").carousel("prev");
+          });
+          //Next
+          $(".carousel-control-next").click(function(){
+            $("#carouselExampleSlidesOnly").carousel("next");
+          });
+
+    //New
+
 
   });   //End jquery document ready
 

@@ -131,8 +131,8 @@ img{
 }
 /* ************************ Header ***************************** */
 .navbar{
-  /* background: #f0f0f585; */
-  background: #feffff9e;
+  /* background: #feffff9e; */
+  background: white;
   /* background-image: url(images/navbar.svg); */
   background-position: right;
   background-repeat: no-repeat;
@@ -1091,7 +1091,7 @@ a svg:hover #instagram {
   background-position: center;
   background-repeat: no-repeat;
 }
-.bg1{
+/* .bg1{
   background-image: url(images/teacher1.jpg);
 }
 .bg2{
@@ -1099,7 +1099,7 @@ a svg:hover #instagram {
 }
 .bg3{
   background-image: url(images/school.jpg);
-}
+} */
 .overlay-effect {
   display: none;
 	position:absolute;
