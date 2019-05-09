@@ -310,6 +310,9 @@
     padding: 0
   }
   /* *************** Gallery Page ******************************************* */
+  .mt-128 {
+      margin-top: 90px;
+  }
   .carousel-item{
     height: 240px;
   }
