@@ -63,11 +63,13 @@
     /* height: 63px; */
   }
 
-  /* .sidepanel a{
-    padding: 8px 8px 0px 32px;
-    font-size: 23px;
-  } */
-
+  .sidepanel a{
+    padding: 8px 8px 5px 32px;
+    /* font-size: 23px; */
+  }
+  .row-icons a {
+      padding: 4px 0px 0px 13px !important;
+  }
 /* ************************ Home Page ***************************** */
   .page-home{
     padding-bottom: 45px;
