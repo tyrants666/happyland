@@ -1,7 +1,15 @@
+
+<?php if( get_field('top_heading') ): ?>
+<h1><?php the_field('top_heading'); ?></h1>
+<?php endif; ?>
+
 #171942    for body background
+
+
 
 wp id - wp-akash
 wp password - 9AABfQB5oXJjLylo&h
+
 
 850 90
 #00cf7661;
@@ -12,19 +20,14 @@ background: linear-gradient(to right, #cb2d3e, #ef473a);
 background: linear-gradient(to bottom, #00f260, #113f9c);
 #0e3e9e
 
-<a href="mailto:happylandsecondaryschool@gmail.com"><p class="email-p long-email">happylandsecondaryschool@gmail.com</p></a>
-<a href="mailto:happylandsecondaryschool@gmail.com"><p class="email-p d-lg-none">happylandsecondaryschool @gmail.com</p></a>
 
+font-family: "Poppins", sans-serif;
+font-family: "Apercu";
+font-family: 'Caveat', cursive;
+font-family: 'Montserrat', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
-mt--122
-
-    padding: 29px 8px 0 12%;
-
-    Contact Page -
-    1. Material icon added
-    2. Hamburger menu colours changed
 
 
 
@@ -37,6 +40,36 @@ Amatic SC
 
 #1bddbb green
 
-ok no problem if you can recover it its ok or please create a new one with short email address like Example :
 happylandschool@gmail.com
 hlhss@gmail.com
+
+
+
+
+
+
+
+<?php get_header(); ?>
+
+<article class="page-home">
+
+  <!-- Row 1 -->
+          <div class="row row-homee mx-0 sticky-top">
+            <div class="col-sm-12 col-lg-12 homee">
+
+              <div class="main-title containerr">
+
+              </div>
+            </div>
+
+          </div>
+
+          <?php if( is_active_sidebar( 'widgetized-page-before-content-widget-area' ) ) : ?>
+          	<aside class="widgetized-page-before-content-widget-area">
+          		<?php dynamic_sidebar( 'widgetized-page-before-content-widget-area' ); ?>
+          	</aside>
+          <?php endif; ?>
+
+</article>
+<?php get_sidebar('right'); ?>
+<?php get_footer(); ?>

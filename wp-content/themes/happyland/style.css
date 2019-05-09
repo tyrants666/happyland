@@ -18,6 +18,13 @@ Tags:
 ::-webkit-scrollbar {
     display: none;
   }
+  @font-face {
+  font-family: 'Nucleo';
+  src: url('../fonts/nucleo.eot');
+  src: url('../fonts/nucleo.eot') format('embedded-opentype'), url('../fonts/nucleo.woff2') format('woff2'), url('../fonts/nucleo.woff') format('woff'), url('../fonts/nucleo.ttf') format('truetype'), url('../fonts/nucleo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face{
   font-family:Apercu;
   src:url(fonts/Apercu_Pro_Bold.ttf)
@@ -321,10 +328,10 @@ stroke-dasharray: 1px 220px;
   /* margin-left: 60.5px; */
 }
 .main-title h1{
-  font-size: 70px;
-  line-height: 75px;
+  font-size: 41px;
+  /* line-height: 75px; */
   width: 83.3333333333%;
-  color: white;
+  color: #7078b5;
 }
 
 /* Cardd */
@@ -572,9 +579,10 @@ line-height: 56px;
   color: #1ba2dd;
 }
 .row-contact p {
-  font-size: 15px;
+  font-size: 14px;
   /* font-family: 'Caveat', cursive; */
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin: 4px 12px;
   text-align: left;
@@ -1073,6 +1081,47 @@ a svg:hover #instagram {
   color: #00ccff;
 }
 
+/* *************** Gallery ******************************************* */
+.mt-128{
+  margin-top: 128px;
+}
+.bg-prop{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg1{
+  background-image: url(images/teacher1.jpg);
+}
+.bg2{
+  background-image: url(images/girl.jpg);
+}
+.bg3{
+  background-image: url(images/school.jpg);
+}
+.overlay-effect {
+  display: none;
+	position:absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	background:black;
+	z-index:99;
+  left: 0;
+      opacity: 0.4;
+}
+.carousel-item{
+  height: 440px;
+  overflow: hidden;
+}
+.carousel-item:hover{
+  transform: scale(1.08);
+}
+.carousel-inner img{
+  /* height: 100%; */
+  /* filter: blur(5px); */
+  /* overflow: hidden; */
+}
 /* *************** Privacy Policy ******************************************* */
 .pp img {
     width: 71%;

@@ -77,11 +77,11 @@ elseif($week_start == 5) // Friday
                         if(!isset($label['style']) or (isset($label['style']) and !trim($label['style']))) continue;
                         if ( $label['style']  == 'mec-label-featured' )
                         {
-                            $label_style = esc_html__( 'Featured' , 'modern-events-calendar-lite');
+                            $label_style = esc_html__( 'Featured' , 'modern-events-calendar-lite' );
                         } 
                         elseif ( $label['style']  == 'mec-label-canceled' )
                         {
-                            $label_style = esc_html__( 'Canceled' , 'modern-events-calendar-lite');
+                            $label_style = esc_html__( 'Canceled' , 'modern-events-calendar-lite' );
                         }
                     }
                     endif;
@@ -105,6 +105,8 @@ elseif($week_start == 5) // Friday
                     $location_image = isset($location['thumbnail']) ? esc_url($location['thumbnail'] ) : '' ;
                     $location_address = isset($location['address']) ? $location['address'] : '' ;
                     $image = !empty($event->data->featured_image['full']) ? esc_html($event->data->featured_image['full']) : '' ;
+                    $price_schema = isset($event->data->meta['mec_cost']) ? $event->data->meta['mec_cost'] : '' ; 
+                    $currency_schema = isset($settings['currency']) ? $settings['currency'] : '' ;
                     $events_str .= '
                     <script type="application/ld+json">
                     {
@@ -118,6 +120,11 @@ elseif($week_start == 5) // Friday
                             "name" 		: "' . $location_name . '",
                             "image"		: "' . $location_image  . '",
                             "address"	: "' .  $location_address . '"
+                        },
+                        "offers": {
+                            "url": "'. $event->data->permalink .'",
+                            "price": "' . $price_schema.'",
+                            "priceCurrency" : "' . $currency_schema .'"
                         },
                         "performer":  '. $speakers . ',
                         "description" 	: "' . esc_html(preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="figure">$1</div>', $event->data->post->post_content)) . '",

@@ -24,7 +24,7 @@ if ( ! $mec_name ) {
 		[
 			'mandatory' => '0',
 			'type'      => 'name',
-			'label'     => esc_html__( 'Name', 'modern-events-calendar-lite'),
+			'label'     => esc_html__( 'Name', 'modern-events-calendar-lite' ),
 		]
 	);
 }
@@ -35,7 +35,7 @@ if ( ! $mec_email ) {
 		[
 			'mandatory' => '0',
 			'type'      => 'mec_email',
-			'label'     => esc_html__( 'Email', 'modern-events-calendar-lite'),
+			'label'     => esc_html__( 'Email', 'modern-events-calendar-lite' ),
 		]
 	);
 }
@@ -44,7 +44,7 @@ if ( ! $mec_email ) {
 <div class="wns-be-container">
 
 	<div id="wns-be-infobar">
-		<a href="" id="" class="dpr-btn dpr-save-btn"><?php _e( 'Save Changes', 'modern-events-calendar-lite'); ?></a>
+		<a href="" id="" class="dpr-btn dpr-save-btn"><?php _e( 'Save Changes', 'modern-events-calendar-lite' ); ?></a>
 	</div>
 
 	<div class="wns-be-sidebar">
@@ -57,7 +57,7 @@ if ( ! $mec_email ) {
 						<i class="sl-arrow-down"></i>
 					</span>
 					<i class="mec-sl-settings"></i>
-					<span class="wns-be-group-menu-title"><?php _e( 'Settings', 'modern-events-calendar-lite'); ?></span>
+					<span class="wns-be-group-menu-title"><?php _e( 'Settings', 'modern-events-calendar-lite' ); ?></span>
 				</a>
 			</li>
 
@@ -65,14 +65,14 @@ if ( ! $mec_email ) {
 				<li class="wns-be-group-menu-li active">
 					<a href="<?php echo $this->main->add_qs_var( 'tab', 'MEC-reg-form' ); ?>" id="" class="wns-be-group-tab-link-a">
 						<i class="mec-sl-layers"></i>
-						<span class="wns-be-group-menu-title"><?php _e( 'Booking Form', 'modern-events-calendar-lite'); ?></span>
+						<span class="wns-be-group-menu-title"><?php _e( 'Booking Form', 'modern-events-calendar-lite' ); ?></span>
 					</a>
 				</li>
 
 				<li class="wns-be-group-menu-li">
 					<a href="<?php echo $this->main->add_qs_var( 'tab', 'MEC-gateways' ); ?>" id="" class="wns-be-group-tab-link-a">
 						<i class="mec-sl-wallet"></i>
-						<span class="wns-be-group-menu-title"><?php _e( 'Payment Gateways', 'modern-events-calendar-lite'); ?></span>
+						<span class="wns-be-group-menu-title"><?php _e( 'Payment Gateways', 'modern-events-calendar-lite' ); ?></span>
 					</a>
 				</li>
 			<?php endif; ?>
@@ -80,42 +80,42 @@ if ( ! $mec_email ) {
 			<li class="wns-be-group-menu-li">
 				<a href="<?php echo $this->main->add_qs_var( 'tab', 'MEC-notifications' ); ?>" id="" class="wns-be-group-tab-link-a">
 					<i class="mec-sl-envelope"></i>
-					<span class="wns-be-group-menu-title"><?php _e( 'Notifications', 'modern-events-calendar-lite'); ?></span>
+					<span class="wns-be-group-menu-title"><?php _e( 'Notifications', 'modern-events-calendar-lite' ); ?></span>
 				</a>
 			</li>
 
 			<li class="wns-be-group-menu-li">
 				<a href="<?php echo $this->main->add_qs_var( 'tab', 'MEC-styling' ); ?>" id="" class="wns-be-group-tab-link-a">
 					<i class="mec-sl-equalizer"></i>
-					<span class="wns-be-group-menu-title"><?php _e( 'Styling Options', 'modern-events-calendar-lite'); ?></span>
+					<span class="wns-be-group-menu-title"><?php _e( 'Styling Options', 'modern-events-calendar-lite' ); ?></span>
 				</a>
 			</li>
 
 			<li class="wns-be-group-menu-li">
 				<a href="<?php echo $this->main->add_qs_var( 'tab', 'MEC-customcss' ); ?>" id="" class="wns-be-group-tab-link-a">
 					<i class="mec-sl-wrench"></i>
-					<span class="wns-be-group-menu-title"><?php _e( 'Custom CSS', 'modern-events-calendar-lite'); ?></span>
+					<span class="wns-be-group-menu-title"><?php _e( 'Custom CSS', 'modern-events-calendar-lite' ); ?></span>
 				</a>
 			</li>
 
 			<li class="wns-be-group-menu-li">
 				<a href="<?php echo $this->main->add_qs_var( 'tab', 'MEC-messages' ); ?>" id="" class="wns-be-group-tab-link-a">
 					<i class="mec-sl-bubble"></i>
-					<span class="wns-be-group-menu-title"><?php _e( 'Messages', 'modern-events-calendar-lite'); ?></span>
+					<span class="wns-be-group-menu-title"><?php _e( 'Messages', 'modern-events-calendar-lite' ); ?></span>
 				</a>
 			</li>
 
 			<li class="wns-be-group-menu-li">
 				<a href="<?php echo $this->main->add_qs_var( 'tab', 'MEC-ie' ); ?>" id="" class="wns-be-group-tab-link-a">
 					<i class="mec-sl-refresh"></i>
-					<span class="wns-be-group-menu-title"><?php _e( 'Import / Export', 'modern-events-calendar-lite'); ?></span>
+					<span class="wns-be-group-menu-title"><?php _e( 'Import / Export', 'modern-events-calendar-lite' ); ?></span>
 				</a>
 			</li>
 
 			<!-- <li class="wns-be-group-menu-li">
 				<a href="<?php echo $this->main->add_qs_var( 'tab', 'MEC-support' ); ?>" id="" class="wns-be-group-tab-link-a">
 					<i class="mec-sl-support"></i>
-					<span class="wns-be-group-menu-title"><?php _e( 'Support', 'modern-events-calendar-lite'); ?></span>
+					<span class="wns-be-group-menu-title"><?php _e( 'Support', 'modern-events-calendar-lite' ); ?></span>
 				</a>
 			</li> -->
 
@@ -128,7 +128,7 @@ if ( ! $mec_email ) {
 
 		<div id="wns-be-content">
 			<div class="wns-be-group-tab">
-				<h2><?php _e( 'Booking Form', 'modern-events-calendar-lite'); ?></h2>
+				<h2><?php _e( 'Booking Form', 'modern-events-calendar-lite' ); ?></h2>
 				<div class="mec-container">
 					<?php do_action( 'before_mec_reg_fields_form' ); ?>
 					<form id="mec_reg_fields_form">
@@ -177,25 +177,25 @@ if ( ! $mec_email ) {
 								?>
 							</ul>
 							<div id="mec_reg_form_field_types">
-								<button type="button" class="button red" data-type="name"><?php _e( 'MEC Name', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button red" data-type="mec_email"><?php _e( 'MEC Email', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="text"><?php _e( 'Text', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="email"><?php _e( 'Email', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="date"><?php _e( 'Date', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="tel"><?php _e( 'Tel', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="file"><?php _e( 'File', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="textarea"><?php _e( 'Textarea', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="checkbox"><?php _e( 'Checkboxes', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="radio"><?php _e( 'Radio Buttons', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="select"><?php _e( 'Dropdown', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="agreement"><?php _e( 'Agreement', 'modern-events-calendar-lite'); ?></button>
-								<button type="button" class="button" data-type="p"><?php _e( 'Paragraph', 'modern-events-calendar-lite'); ?></button>
+								<button type="button" class="button red" data-type="name"><?php _e( 'MEC Name', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button red" data-type="mec_email"><?php _e( 'MEC Email', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="text"><?php _e( 'Text', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="email"><?php _e( 'Email', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="date"><?php _e( 'Date', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="tel"><?php _e( 'Tel', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="file"><?php _e( 'File', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="textarea"><?php _e( 'Textarea', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="checkbox"><?php _e( 'Checkboxes', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="radio"><?php _e( 'Radio Buttons', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="select"><?php _e( 'Dropdown', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="agreement"><?php _e( 'Agreement', 'modern-events-calendar-lite' ); ?></button>
+								<button type="button" class="button" data-type="p"><?php _e( 'Paragraph', 'modern-events-calendar-lite' ); ?></button>
 							</div>
 							<?php do_action( 'mec_reg_fields_form_end' ); ?>
 						</div>
 						<div class="mec-form-row">
 							<?php wp_nonce_field( 'mec_options_form' ); ?>
-							<button  style="display: none;" id="mec_reg_fields_form_button" class="button button-primary mec-button-primary" type="submit"><?php _e( 'Save Changes', 'modern-events-calendar-lite'); ?></button>
+							<button  style="display: none;" id="mec_reg_fields_form_button" class="button button-primary mec-button-primary" type="submit"><?php _e( 'Save Changes', 'modern-events-calendar-lite' ); ?></button>
 						</div>
 					</form>
 					<?php do_action( 'after_mec_reg_fields_form' ); ?>
@@ -250,7 +250,7 @@ if ( ! $mec_email ) {
 	</div>
 
 	<div id="wns-be-footer">
-		<a href="" id="" class="dpr-btn dpr-save-btn"><?php _e( 'Save Changes', 'modern-events-calendar-lite'); ?></a>
+		<a href="" id="" class="dpr-btn dpr-save-btn"><?php _e( 'Save Changes', 'modern-events-calendar-lite' ); ?></a>
 	</div>
 
 </div>
@@ -270,8 +270,8 @@ jQuery("#mec_reg_fields_form").on('submit', function(event)
 	event.preventDefault();
 
 	// Add loading Class to the button
-	jQuery(".dpr-save-btn").addClass('loading').text("<?php echo esc_js( esc_attr__( 'Saved', 'modern-events-calendar-lite') ); ?>");
-	jQuery('<div class="wns-saved-settings"><?php echo esc_js( esc_attr__( 'Settings Saved!', 'modern-events-calendar-lite') ); ?></div>').insertBefore('#wns-be-content');
+	jQuery(".dpr-save-btn").addClass('loading').text("<?php echo esc_js( esc_attr__( 'Saved', 'modern-events-calendar-lite' ) ); ?>");
+	jQuery('<div class="wns-saved-settings"><?php echo esc_js( esc_attr__( 'Settings Saved!', 'modern-events-calendar-lite' ) ); ?></div>').insertBefore('#wns-be-content');
 
 	var fields = jQuery("#mec_reg_fields_form").serialize();
 	jQuery.ajax(
@@ -286,7 +286,7 @@ jQuery("#mec_reg_fields_form").on('submit', function(event)
 		{
 			// Remove the loading Class to the button
 			setTimeout(function(){
-				jQuery(".dpr-save-btn").removeClass('loading').text("<?php echo esc_js( esc_attr__( 'Save Changes', 'modern-events-calendar-lite') ); ?>");
+				jQuery(".dpr-save-btn").removeClass('loading').text("<?php echo esc_js( esc_attr__( 'Save Changes', 'modern-events-calendar-lite' ) ); ?>");
 				jQuery('.wns-saved-settings').remove();
 				jQuery('.mec-loarder-wrap').remove();
 			}, 1000);
@@ -295,7 +295,7 @@ jQuery("#mec_reg_fields_form").on('submit', function(event)
 		{
 			// Remove the loading Class to the button
 			setTimeout(function(){
-				jQuery(".dpr-save-btn").removeClass('loading').text("<?php echo esc_js( esc_attr__( 'Save Changes', 'modern-events-calendar-lite') ); ?>");
+				jQuery(".dpr-save-btn").removeClass('loading').text("<?php echo esc_js( esc_attr__( 'Save Changes', 'modern-events-calendar-lite' ) ); ?>");
 				jQuery('.wns-saved-settings').remove();
 				jQuery('.mec-loarder-wrap').remove();
 			}, 1000);

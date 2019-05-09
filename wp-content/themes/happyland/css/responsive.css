@@ -81,7 +81,7 @@
       font-size: 26px;
       line-height: 28px;
       width: auto;
-      color: white;
+      color: #7078b5;
   }
   .down-arrow{
     /* display: none; */
@@ -307,9 +307,13 @@
   }
   /* *************** Download PAge ******************************************* */
   .bg-img-prop-download{
-    /* margin-bottom: -7px; */
     padding: 0
   }
+  /* *************** Gallery Page ******************************************* */
+  .carousel-item{
+    height: 240px;
+  }
+
   /* *************** Privacy Policy ******************************************* */
   .pp img {
       width: 100%;

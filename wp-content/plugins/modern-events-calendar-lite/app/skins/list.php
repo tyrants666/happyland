@@ -138,7 +138,7 @@ class MEC_skin_list extends MEC_skins
         $this->args['meta_query'] = $this->meta_query();
         
         // Tag
-        //$this->args['tag'] = $this->tag_query();
+        $this->args['tag'] = $this->tag_query();
         
         // Author
         $this->args['author'] = $this->author_query();
@@ -146,7 +146,7 @@ class MEC_skin_list extends MEC_skins
         // Pagination Options
         $this->paged = get_query_var('paged', 1);
         $this->limit = (isset($this->skin_options['limit']) and trim($this->skin_options['limit'])) ? $this->skin_options['limit'] : 12;
-        
+
         $this->args['posts_per_page'] = $this->limit;
         $this->args['paged'] = $this->paged;
         

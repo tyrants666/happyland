@@ -10,7 +10,7 @@
 
 	/* #CSS Base & Typography
 	================================================== */
-	.mec-wrap , .mec-wrap div { font-family: 'Montserrat', Helvetica, Arial, sans-serif;}
+	.mec-wrap, .mec-wrap div:not([class^="elementor-"]) { font-family: 'Montserrat', Helvetica, Arial, sans-serif;}
 	.mec-wrap h1, .mec-wrap h2, .mec-wrap h3, .mec-wrap h4, .mec-wrap h5, .mec-wrap h6,
 	.entry-content .mec-wrap h1, .entry-content .mec-wrap h2, .entry-content .mec-wrap h3,.entry-content  .mec-wrap h4, .entry-content .mec-wrap h5, .entry-content .mec-wrap h6  { font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #171c24; font-weight: 300; font-style:inherit; letter-spacing: normal; clear: none;}
 	.mec-wrap h1 { font-size: 50px; line-height: 1.16; margin-bottom: 12px; letter-spacing: -1px;}
@@ -1727,6 +1727,7 @@
 	/* MEC Single Modal
 	-------------------------------- */
 	.mec-single-modal.mec-single-modern .mec-single-title { text-align: center; padding: 15px 10px 0; }
+	.admin-bar .mec-single-modal.mec-single-modern .mec-single-title {padding-top: 40px;}
 	.mec-single-modal.mec-single-modern .mec-single-event-bar { padding: 5px; }
 	.mec-single-modal.mec-single-modern .mec-single-event-bar > div dd {font-size: 13px;}
 	.mec-single-modal.mec-single-modern .mec-single-event-bar > div h3 {font-size: 15px;}
@@ -2323,7 +2324,7 @@
 	
 	/* # Booking Modal
 	================================================== */
-	.lity-content .mec-events-meta-group-booking { max-width: 520px; width: 520px; padding: 20px 50px; background: #fff; }
+	.lity-content .mec-events-meta-group-booking { width: 100%; padding: 20px 50px; background: #fff; }
 	.lity-content .mec-events-meta-group-booking .mec-booking form > h4 { text-transform: uppercase; font-size: 15px; font-weight: 700; color: #313131; border-bottom: 4px solid #ebebeb; width: 100%; display: block; padding-bottom: 10px; position: relative; text-align: center; }
 	.lity-content .mec-events-meta-group-booking .mec-booking form > h4:before { padding: 1px 35px; border-bottom: 4px solid #40d9f1; font-size: 6px; content: ""; text-align: center; position: absolute; bottom: -4px; margin-left: -35px; left: 50%; }
 	.lity-content .mec-events-meta-group-booking label, .lity-content .mec-events-meta-group-booking .mec-event-ticket-name, .lity-content .mec-events-meta-group-booking .mec-event-ticket-price, .lity-content .mec-events-meta-group-booking .mec-event-ticket-available, .lity-content .mec-events-meta-group-booking .mec-ticket-variation-name, .lity-content .mec-events-meta-group-booking .mec-ticket-variation-price { color: #424242; font-size: 12px; font-weight: 300; letter-spacing: 0; margin: 3px 0; clear: none; padding: 5px 1em 3px 0; }

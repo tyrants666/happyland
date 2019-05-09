@@ -449,7 +449,7 @@ class MEC_skins extends MEC_base
         $seconds_end = strtotime($end);
 
         $order = "`tstart` ASC";
-        $where = "(`tstart`>='".$seconds_start."' AND `tend`<='".$seconds_end."') OR (`tstart`<='".$seconds_end."' AND `tend`>='".$seconds_end."') OR (`tstart`<='".$seconds_start."' AND `tend`>='".$seconds_start."')";
+        $where_OR = "(`tstart`>='".$seconds_start."' AND `tend`<='".$seconds_end."') OR (`tstart`<='".$seconds_end."' AND `tend`>='".$seconds_end."') OR (`tstart`<='".$seconds_start."' AND `tend`>='".$seconds_start."')";
         // (Start: In, Finish: In) OR (Start: Before or In, Finish: After) OR (Start: Before, Finish: In or After)
 
         if($this->show_only_expired_events)
@@ -461,15 +461,23 @@ class MEC_skins extends MEC_base
             elseif($this->hide_time_method == 'end') $column = 'tend';
 
             $order = "`tstart` DESC";
-            $where = "`".$column."`<'".$seconds_start."'";
+            $where_OR = "`".$column."`<'".$seconds_start."'";
         }
         elseif($this->show_ongoing_events)
         {
             $now = time();
-            $where = "(`tstart`<='".$now."' AND `tend`>='".$now."')";
+            $where_OR = "(`tstart`<='".$now."' AND `tend`>='".$now."')";
         }
 
-        $query = "SELECT * FROM `#__mec_dates` WHERE ".$where." ORDER BY ".$order;
+        $where_AND = '1';
+
+        // Exclude Events
+        if(isset($this->atts['exclude']) and is_array($this->atts['exclude']) and count($this->atts['exclude'])) $where_AND .= " AND `post_id` NOT IN (".implode(',', $this->atts['exclude']).")";
+
+        // Include Events
+        if(isset($this->atts['include']) and is_array($this->atts['include']) and count($this->atts['include'])) $where_AND .= " AND `post_id` IN (".implode(',', $this->atts['include']).")";
+
+        $query = "SELECT * FROM `#__mec_dates` WHERE (".$where_OR.") AND (".$where_AND.") ORDER BY ".$order;
         $mec_dates = $this->db->select($query, 'loadObjectList');
 
         // Today and Now
@@ -597,6 +605,10 @@ class MEC_skins extends MEC_base
                     {
                         // Next Offset
                         $this->next_offset = ($query->post_count-($query->current_post+1)) >= 0 ? ($query->current_post+1)+$this->offset : 0;
+
+                        // Restore original Post Data
+                        wp_reset_postdata();
+
                         break 2;
                     }
                 }

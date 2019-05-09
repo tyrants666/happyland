@@ -4,7 +4,7 @@ Donate link: https://webnus.net
 Tags: Event, Events, Calendar, Booking, Schedule, Organizer, Venue
 Requires at least: 4.0.0
 Tested up to: 5.2
-Stable tag: 4.2.0
+Stable tag: 4.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -192,6 +192,20 @@ You can see [plugin documentation here](https://webnus.net/dox/modern-events-cal
 
 == Changelog ==
 
+= 4.2.1 =
+- Added: "attachment_url" to MEC RSS
+- Added: Offers (event price) to schema structure
+- Fixed: Displaying comment form on MEC pages when comment is disabled
+- Fixed: Displaying wrong content and title on the event detail pages
+- Fixed: Next event module
+- Fixed: Booking form in the modal window
+- Fixed: Google Maps module in the modal window
+- Fixed: Displaying Total attendees, name , email in notifications
+- Fixed: CSV export "unknown" field
+- Fixed: Displaying extra fields in booking system
+- Fixed: Email in woocommerce paymant
+- Fixed: Some minor issues
+
 = 4.2.0 =
 - Compatibility: WordPress 5.2
 - Added: Additional Location feature
@@ -204,7 +218,7 @@ You can see [plugin documentation here](https://webnus.net/dox/modern-events-cal
 - Added: Norwegian (Bokmål) language
 - Fixed: Some issues in RSS feed of events regarding showing content and excerpt
 - Fixed: Attached image in frontend submission form
-- Fixed: Exporting custom day events to Google Calendar in manual export and automated syncronization
+- Fixed: Exporting custom day events to Google Calendar in manual export and automated synchronization
 
 = 4.1.0 =
 - Added: Tag and Speaker filter to shortcodes

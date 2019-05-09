@@ -46,7 +46,7 @@ do_action('rss_tag_pre', 'rss2');
         <?php if(!get_option('rss_use_excerpt')): $content = $this->feed->content($event->ID, 'rss2'); ?>
             <content:encoded><![CDATA[<?php echo $content; ?>]]></content:encoded>
         <?php endif; ?>
-        
+        <wp:attachment_url><![CDATA[<?php echo $this->feed->attachment($event->ID); ?>]]></wp:attachment_url>
         <?php if(get_comments_number($event->ID) or comments_open($event->ID)): ?>
 		<wfw:commentRss><?php echo esc_url(get_post_comments_feed_link($event->ID, 'rss2')); ?></wfw:commentRss>
 		<slash:comments><?php echo get_comments_number($event->ID); ?></slash:comments>

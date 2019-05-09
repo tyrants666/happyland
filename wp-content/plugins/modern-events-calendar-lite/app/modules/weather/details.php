@@ -45,7 +45,7 @@ if(!is_array($weather) or (is_array($weather) and !count($weather))) return;
             <div class="mec-weather-summary">
                 <div class="mec-weather-summary-report"><?php echo $weather['summary']; ?></div>
                 <?php if(isset($weather['temperature'])): ?>
-                <div class="mec-weather-summary-temp"><?php  echo round( $weather['temperature']);?> <var><?php _e( ' °C', 'modern-events-calendar-lite'); ?></var></div>
+                <div class="mec-weather-summary-temp"><?php  echo round( $weather['temperature']);?> <var><?php _e( ' °C', 'modern-events-calendar-lite' ); ?></var></div>
                 <?php endif; ?>
             </div>
             <div class="mec-weather-extras">

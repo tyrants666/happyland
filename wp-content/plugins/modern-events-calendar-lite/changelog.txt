@@ -1,4 +1,18 @@
-﻿v 4.2.0 – 30 April 2019
+﻿v 4.2.1 – 7 May 2019
+- Added: "attachment_url" to MEC RSS
+- Added: Offers (event price) to schema structure
+- Fixed: Displaying comment form on MEC pages when comment is disabled
+- Fixed: Displaying wrong content and title on the event detail pages
+- Fixed: Next event module
+- Fixed: Booking form in the modal window
+- Fixed: Google Maps module in the modal window
+- Fixed: Displaying Total attendees, name , email in notifications
+- Fixed: CSV export "unknown" field
+- Fixed: Displaying extra fields in booking system
+- Fixed: Email in woocommerce paymant
+- Fixed: Some minor issues
+
+v 4.2.0 – 30 April 2019
 - Compatibility: WordPress 5.2
 - Added: Additional Location feature
 - Added: MEC_Name and MEC_Email field to edit booking form
@@ -10,7 +24,7 @@
 - Added: Norwegian (Bokmål) language
 - Fixed: Some issues in RSS feed of events regarding showing content and excerpt
 - Fixed: Attached image in frontend submission form
-- Fixed: Exporting custom day events to Google Calendar in manual export and automated syncronization
+- Fixed: Exporting custom day events to Google Calendar in manual export and automated synchronization
 
 v 4.1.0 – 22 April 2019
 - Added: Tag and Speaker filter to shortcodes

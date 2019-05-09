@@ -4,17 +4,33 @@
 <article class="page-home">
 
   <!-- Row 1 -->
-          <div class="row row-homee mx-0 sticky-top">
-            <div class="col-sm-12 col-lg-12 homee">
+          <div class="row row-homee mx-0">
+            <!-- col-6 -->
+            <div class="col-12 p-0">
+              <?php echo do_shortcode('[smartslider3 slider=2]');?>
 
-              <div class="main-title containerr">
+              <div class="main-title">
+                  <h1>Happyland Higher Secondary School</h1>
+              </div>
+            </div>
 
-                <?php if( get_field('top_heading') ): ?>
-                     <h1><?php the_field('top_heading'); ?></h1>
-                <?php endif; ?>
+          </div>
+  <!-- Row 2 -->
+          <div class="row mx-0  border">
+            <div class="col-sm-12 col-lg-12">
+
+              <div class="main-title ">
+                  <h1>ROw 2 col 12</h1>
+
+                  <ul>
+                    Courses
+                    <li>Nursery to 10</li>
+                    <li>+2 science</li>
+                    <li>+2 Commerce</li>
+                    <li>Coaching</li>
+                  </ul>
 
               </div>
-              <center class="down-arrow"> <a href="#card" > <img src="<?php echo get_bloginfo('template_directory'); ?>/images/arrow.svg" alt=""> </a></center>
             </div>
 
           </div>

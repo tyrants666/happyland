@@ -4184,10 +4184,11 @@ class MEC_main extends MEC_base
         
         // Include Google Maps Javascript API
         $gm_include = apply_filters('mec_gm_include', true);
-        if($gm_include) wp_enqueue_script('googlemap', '//maps.googleapis.com/maps/api/js?libraries=places'.((isset($settings['google_maps_api_key']) and trim($settings['google_maps_api_key']) != '') ? '&key='.$settings['google_maps_api_key'] : ''));
-        
-        // Google Maps Rich Marker
-        wp_enqueue_script('mec-richmarker-script', $this->asset('packages/richmarker/richmarker.min.js'));
+        if ( $this->getPRO() ) {
+            if($gm_include) wp_enqueue_script('googlemap', '//maps.googleapis.com/maps/api/js?libraries=places'.((isset($settings['google_maps_api_key']) and trim($settings['google_maps_api_key']) != '') ? '&key='.$settings['google_maps_api_key'] : ''));
+            // Google Maps Rich Marker
+            wp_enqueue_script('mec-richmarker-script', $this->asset('packages/richmarker/richmarker.min.js'));
+        }
     }
     
     /**

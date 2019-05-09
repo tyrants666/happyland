@@ -37,6 +37,17 @@ class MEC_feed extends MEC_base
         $permalink = get_post_permalink($post_id);
         return esc_url(apply_filters('the_permalink_rss', $permalink));
     }
+
+    /**
+     * @author Webnus <info@webnus.biz>
+     * @param int $post_id
+     * @return string
+     */
+    public function attachment($post_id)
+    {
+        $featured_link = get_the_post_thumbnail_url($post_id,'full');
+        return esc_url(apply_filters('the_attachment_rss', $featured_link));
+    }
     
     /**
      * @author Webnus <info@webnus.biz>

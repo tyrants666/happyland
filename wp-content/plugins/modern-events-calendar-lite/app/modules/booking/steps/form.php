@@ -32,7 +32,7 @@ if ( ! $mec_name ) {
     $reg_fields[] = [
         'mandatory' => '0',
 		'type'      => 'name',
-		'label'     => esc_html__( 'Name', 'modern-events-calendar-lite'),
+		'label'     => esc_html__( 'Name', 'modern-events-calendar-lite' ),
 	];
 }
 
@@ -40,7 +40,7 @@ if ( ! $mec_email ) {
     $reg_fields[] = [
         'mandatory' => '0',
         'type'      => 'mec_email',
-        'label'     => esc_html__( 'Email', 'modern-events-calendar-lite'),
+        'label'     => esc_html__( 'Email', 'modern-events-calendar-lite' ),
     ];
 }
 ?>

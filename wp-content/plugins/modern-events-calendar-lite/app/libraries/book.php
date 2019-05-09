@@ -630,9 +630,15 @@ class MEC_book extends MEC_base
     {
         $attendees = get_post_meta($book_id, 'mec_attendees', true);
         $count = 0;
+     
         if(is_array($attendees)) {
-            foreach ( $attendees as $attendee) {
-                if (!isset($attendee[0]['MEC_TYPE_OF_DATA']) && $attendee[0]['MEC_TYPE_OF_DATA'] != 'attachment') {
+            foreach ( $attendees as $key => $attendee) {
+                if ($key === 'attachments') {
+                    continue;
+                }
+                if (!isset($attendee[0]['MEC_TYPE_OF_DATA'])) {
+                    $count++;
+                } else if ($attendee[0]['MEC_TYPE_OF_DATA'] != 'attachment') {
                     $count++;
                 }
             }

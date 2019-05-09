@@ -1234,7 +1234,7 @@ class MEC_feature_events extends MEC_base
                 [
                     'mandatory' => '0',
                     'type'      => 'name',
-                    'label'     => esc_html__( 'Name', 'modern-events-calendar-lite'),
+                    'label'     => esc_html__( 'Name', 'modern-events-calendar-lite' ),
                 ]
             );
         }
@@ -1245,7 +1245,7 @@ class MEC_feature_events extends MEC_base
                 [
                     'mandatory' => '0',
                     'type'      => 'mec_email',
-                    'label'     => esc_html__( 'Email', 'modern-events-calendar-lite'),
+                    'label'     => esc_html__( 'Email', 'modern-events-calendar-lite' ),
                 ]
             );
         }
@@ -1303,19 +1303,19 @@ class MEC_feature_events extends MEC_base
                         ?>
                     </ul>
                     <div id="mec_reg_form_field_types">
-                        <button type="button" class="button red" data-type="name"><?php _e( 'MEC Name', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button red" data-type="mec_email"><?php _e( 'MEC Email', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="text"><?php _e( 'Text', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="email"><?php _e( 'Email', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="date"><?php _e( 'Date', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="tel"><?php _e( 'Tel', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="file"><?php _e( 'File', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="textarea"><?php _e( 'Textarea', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="checkbox"><?php _e( 'Checkboxes', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="radio"><?php _e( 'Radio Buttons', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="select"><?php _e( 'Dropdown', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="agreement"><?php _e( 'Agreement', 'modern-events-calendar-lite'); ?></button>
-                        <button type="button" class="button" data-type="p"><?php _e( 'Paragraph', 'modern-events-calendar-lite'); ?></button>
+                        <button type="button" class="button red" data-type="name"><?php _e( 'MEC Name', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button red" data-type="mec_email"><?php _e( 'MEC Email', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="text"><?php _e( 'Text', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="email"><?php _e( 'Email', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="date"><?php _e( 'Date', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="tel"><?php _e( 'Tel', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="file"><?php _e( 'File', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="textarea"><?php _e( 'Textarea', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="checkbox"><?php _e( 'Checkboxes', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="radio"><?php _e( 'Radio Buttons', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="select"><?php _e( 'Dropdown', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="agreement"><?php _e( 'Agreement', 'modern-events-calendar-lite' ); ?></button>
+                        <button type="button" class="button" data-type="p"><?php _e( 'Paragraph', 'modern-events-calendar-lite' ); ?></button>
                     </div>
                     <input type="hidden" id="mec_new_reg_field_key" value="<?php echo $i+1; ?>" />
                     <div class="mec-util-hidden">

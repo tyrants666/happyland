@@ -4,6 +4,7 @@
 					include( get_template_directory() . '/includes/menus.php' );
 					include( get_template_directory() . '/includes/assets.php' );
 					include( get_template_directory() . '/includes/security.php' );
+					include( get_template_directory() . '/includes/widgets.php' );
 					include( get_template_directory() . '/includes/theme-supports.php' );
 					include( get_template_directory() . '/includes/pagination-numbered.php' );
 					include( get_template_directory() . '/includes/categories-custom-archive.php' );
@@ -17,6 +18,7 @@
 
 					add_action('wp_enqueue_scripts', 'assets');
 					add_action('after_setup_theme', 'menu_register');
+					add_action( 'widgets_init', 'register_widgets' );
 					add_action('after_setup_theme', 'theme_support');
 					add_filter( 'category_template', 'category_custom_archive' );
 					add_action( 'wp_security', 'security' );

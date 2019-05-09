@@ -283,6 +283,11 @@ if ( !empty($event->data->speakers))
 		"image"			: "<?php echo esc_url($location['thumbnail'] ); ?>",
 		"address"		: "<?php echo (isset($location['address']) ? $location['address'] : ''); ?>"
 	},
+    "offers": {
+        "url": "<?php echo get_the_permalink(); ?>",
+        "price": "<?php echo $event->data->meta['mec_cost'] ?>",
+        "priceCurrency" : "<?php echo isset($settings['currency']) ? $settings['currency'] : ''; ?>"
+    },
 	"performer": <?php echo $speakers; ?>,
 	"description" 	: "<?php  echo esc_html(preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="figure">$1</div>', get_the_content())); ?>",
 	"image" 		: "<?php echo esc_html($event->data->featured_image['full']); ?>",

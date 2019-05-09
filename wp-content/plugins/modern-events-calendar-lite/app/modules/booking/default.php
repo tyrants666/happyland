@@ -252,8 +252,7 @@ function mec_book_form_submit'.$uniqueid.'()
     // Add loading Class to the button
     jQuery("#mec_book_form'.$uniqueid.' button[type=submit]").addClass("loading");
     jQuery("#mec_booking_message'.$uniqueid.'").removeClass("mec-success mec-error").hide();
-    
-    
+       
     var fileToUpload = false;
     
     var data = jQuery("#mec_book_form'.$uniqueid.'").serialize();

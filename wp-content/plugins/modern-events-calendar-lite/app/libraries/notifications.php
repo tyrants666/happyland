@@ -288,6 +288,9 @@ class MEC_notifications extends MEC_base
         // Send the emails
         foreach($attendees as $attendee)
         {
+            if (isset($attendee[0]['MEC_TYPE_OF_DATA'])) {
+                continue;
+            }
             $to = $attendee['email'];
             $message = isset($this->notif_settings['booking_reminder']['content']) ? $this->content($this->notif_settings['booking_reminder']['content'], $book_id, $attendee) : '';
 
@@ -555,6 +558,9 @@ class MEC_notifications extends MEC_base
         $reg_fields = $this->main->get_reg_fields($event_id);
         foreach($attendees as $attendee)
         {
+            if (isset($attendee[0]['MEC_TYPE_OF_DATA'])) {
+                continue;
+            }
             $reg_form = isset($attendee['reg']) ? $attendee['reg'] : array();
 
             $attendees_full_info .= __('Name', 'modern-events-calendar-lite').': '.((isset($attendee['name']) and trim($attendee['name'])) ? $attendee['name'] : '---')."\r\n";

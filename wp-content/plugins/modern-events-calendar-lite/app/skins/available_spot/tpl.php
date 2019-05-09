@@ -4,7 +4,7 @@ defined('MECEXEC') or die();
 
 $styling = $this->main->get_styling();
 $event = $this->events[0];
-
+$settings = $this->main->get_settings();
 // Event is not valid!
 if(!isset($event->data)) return;
 
@@ -28,11 +28,11 @@ foreach( $event->data->labels as $label)
     if(!isset($label['style']) or (isset($label['style']) and !trim($label['style']))) continue;
     if ( $label['style']  == 'mec-label-featured' )
     {
-        $label_style = esc_html__( 'Featured' , 'modern-events-calendar-lite');
+        $label_style = esc_html__( 'Featured' , 'modern-events-calendar-lite' );
     } 
     elseif ( $label['style']  == 'mec-label-canceled' )
     {
-        $label_style = esc_html__( 'Canceled' , 'modern-events-calendar-lite');
+        $label_style = esc_html__( 'Canceled' , 'modern-events-calendar-lite' );
     }
 }
 endif;
@@ -114,6 +114,11 @@ if ( !empty($event->data->speakers))
                 "image"			: "<?php echo (isset($location['thumbnail']) ? esc_url($location['thumbnail'] ) : '');; ?>",
                 "address"		: "<?php echo (isset($location['address']) ? $location['address'] : ''); ?>"
             },
+            "offers": {
+                            "url": "<?php echo $event->data->permalink; ?>",
+                            "price": "<?php echo isset($event->data->meta['mec_cost']) ? $event->data->meta['mec_cost'] : '' ; ?>",
+                            "priceCurrency" : "<?php echo isset($settings['currency']) ? $settings['currency'] : ''; ?>"
+                        },
             "performer": <?php echo $speakers; ?>,
             "description" 	: "<?php  echo esc_html(preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="figure">$1</div>', $event->data->post->post_content)); ?>",
             "image" 		: "<?php echo !empty($event->data->featured_image['full']) ? esc_html($event->data->featured_image['full']) : '' ; ?>",

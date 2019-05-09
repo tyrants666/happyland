@@ -13,15 +13,18 @@ var mecSingleEventDisplayer = {
             success: function(response)
             {
                 jQuery('.mec-modal-result').removeClass("mec-modal-preloader");
-                lity(jQuery.parseHTML(response));
-                if (image_popup != 0) {
-                    if (jQuery('.lity-content .mec-events-content a img').length > 0) {
-                        jQuery('.lity-content .mec-events-content a img').each(function () {
+                lity(response);
+
+                if(image_popup != 0)
+                {
+                    if(jQuery('.lity-content .mec-events-content a img').length > 0)
+                    {
+                        jQuery('.lity-content .mec-events-content a img').each(function()
+                        {
                             jQuery(this).closest('a').attr('data-lity', '');
                         });
                     }
                 }
-                
             },
             error: function()
             {
