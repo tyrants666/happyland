@@ -59,10 +59,14 @@
   }
   .navbar-toggle svg {
     width: 94px;
-    margin-right: -19px;
+    margin-right: -25px;
     /* height: 63px; */
-
   }
+
+  /* .sidepanel a{
+    padding: 8px 8px 0px 32px;
+    font-size: 23px;
+  } */
 
 /* ************************ Home Page ***************************** */
   .page-home{

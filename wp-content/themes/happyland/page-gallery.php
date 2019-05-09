@@ -6,12 +6,12 @@
     while (have_posts()) {
         the_post();
 ?>
-        <article class="mt-128">
+        <article class="mt-128 containerr">
 
           <div class="row mx-0 mb-4 mb-lg-5">
 
                         <!-- Faculty Title -->
-                        <div class=" mx-auto mb col-12">
+                        <div class="p-0 mb col-12 ">
                           <div class="overlay-effect"></div>
 
                               <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -32,7 +32,7 @@
                         </div>
 
                         <!-- Faculty content -->
-                      <div class="mx-auto col-12 col-lg-11 mt-4 ">
+                      <div class="mx-auto col-12 col-lg-12 mt-4 p-0">
                         <h1 class="h22" style="text-align: center;"><?php the_title();?></h1>
 
                             <?php the_content();?>

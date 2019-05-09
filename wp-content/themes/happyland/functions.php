@@ -31,7 +31,7 @@
 							add_filter('template_include', 'faculty_search_result_archive');
 
 					// add_action('Assets', 'load_js');
-					// add_action( 'Assets_cutom', 'assets_custompage' );
+					// add_action( 'init', 'assets_custompage' );
 
 
 ?>
