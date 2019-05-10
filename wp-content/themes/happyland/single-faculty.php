@@ -125,13 +125,39 @@
                                     <div class="card-header card3" id="headingThree">
                                       <h5 class="mb-0">
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          Efficiency
+                                          Contact Details
                                         </button>
                                       </h5>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                      <div class="card-body">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                      <div class="card-body contact-body">
+
+                                        <!-- Phone. -->
+                                        <div class=" faculty-contact">
+                                          <a href="tel:+9773120160">
+                                              <i class="material-icons" style="color:#904fb1e6">call</i>
+                                              <p class="phone-p mt-2">+977 - 31520160</p>
+                                          </a>
+                                        </div>
+
+                                        <!-- Address. -->
+                                        <div class=" faculty-contact">
+                                          <a href=" https://goo.gl/maps/8QE3g4h4tc1yH5JR7" target="_blank">
+                                              <i class="material-icons" style="color:#e43d3b">place</i>
+                                              <p class="address-p">
+                                                Sarbodaya tole, Happyland Quater, Rajbiraj
+                                              </p>
+                                            </a>
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class=" faculty-contact">
+                                          <a href="mailto:happylandsecondaryschool@gmail.com">
+                                            <i class="material-icons" style="color:#19ce19">alternate_email</i>
+                                            <p class="email-p mt-3">mbraisir1978@gmail.com</p>
+                                          </a>
+                                        </div>
+
                                       </div>
                                     </div>
                                   </div>

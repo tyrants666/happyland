@@ -237,10 +237,18 @@
       margin-top: 40px;
   }
   .staff-list {
+    height: 285px;
     margin-bottom: 33px;
   }
   .staff-list small{
-    padding-left: 23px;
+    padding-left: 9%;
+  }
+  .fac-face{
+    display: flex;
+    font-size: 47px;
+    color: #5a90ca;
+    margin-left: 187px;
+    margin-top: -44px;
   }
   /* ***************** Single Faculty   ******************** */
   .bg-img-prop{

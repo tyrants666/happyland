@@ -760,7 +760,22 @@ a.down-faculty-a{
 a.down-faculty-a:hover{
   color: #5a6a79 !important;
 }
-
+.contact-body p {
+  padding: 0;
+  font-size: 15px;
+  margin: 5px 15px;
+  font-family: "Poppins", sans-serif;
+  line-height: 24px;
+  font-weight: 300;
+}
+.contact-body i{
+  font-size: 40px;
+  margin-top: 5px;
+  /* display: flex; */
+}
+.contact-body a{
+  display: -webkit-inline-box;
+}
 /* ***************** Archive Faculty ******************** */
 .form-search{
   margin-top: -51px;
@@ -831,10 +846,9 @@ a.down-faculty-a:hover{
 .staff-list {
   margin-bottom: 75px;
   padding: 24px;
-  /* padding-bottom: 92px; */
+  padding-bottom: 35px;
   /* height: 283px; */
   /* height: 300px; */
-
   border-radius: 20px;
   margin-top: 40px;
   background-color: #fff;
@@ -896,6 +910,9 @@ a.down-faculty-a:hover{
   color: darkgrey;
   text-align: center;
   font-family: "Poppins", sans-serif;
+}
+.fac-face{
+  display: none;
 }
 /* *************** Downloads Page ******************************************* */
 .bg-img-prop-download{

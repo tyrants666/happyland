@@ -42,6 +42,8 @@
                     <small class="ta-l"> <b>Experience</b>: &ensp;  5 Years</small></br>
                     <small class="ta-l"> <b>Education</b>: &ensp;  M. Teaching</small>
 
+                    <i class="material-icons fac-face">email</i>
+
               </div>
 
               <!-- <?php echo $flag;  ?> -->
