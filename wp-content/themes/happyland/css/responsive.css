@@ -19,6 +19,9 @@
 
 
   /* ************************ Global ***************************** */
+  .page404{
+    padding: 35% 0;
+  }
   .mt-150 {
       margin-top: 110px;
   }
@@ -79,7 +82,6 @@
     margin-bottom: 0;
   }
   .main-title{
-    margin-top: 90px;
     padding-left: 5px;
     /* margin-left: -13px; */
   }
@@ -89,6 +91,14 @@
       width: auto;
       color: #7078b5;
   }
+  .col3{
+    padding: 32% 0;
+  }
+
+
+
+
+
   .down-arrow{
     /* display: none; */
         /* padding-right: 5%; */

@@ -14,6 +14,17 @@ Tags:
 .mt-150 {
     margin-top: 150px;
 }
+.bg-property{
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page404{
+  background-image: url(images/404.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 14% 0;
+  background-position: center;
+}
 /* ********************** containerr ****************************** */
 ::-webkit-scrollbar {
     display: none;
@@ -299,40 +310,63 @@ stroke-dasharray: 1px 220px;
   font-size: 36px
 }
 /* ************************ Home Page ***************************** */
-
+.mt-101{
+     margin-top: 101px;
+}
 .page-home{
   padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+ }
+.page-home img{
+  width: 100%;
  }
 
-.homee{
-  background-image: url(images/landing.svg);
-  height: 100vh;
+ .main-title{
+   /* position: relative; */
+ }
+ .main-title h1{
+   font-size: 27px;
+   /* width: 83.3333333333%; */
+   color: #7078b5;
+ }
+ .btn-contact{
+   color: white;
+   background-color: #136ed0;
+   border-radius: 26px;
+   padding: 13px 30px;
+   border: none;
+   margin-top: 16px;
+   font-size: 16px;
+ }
+ .btn-contact:hover,
+ .btn-contact:focus{
+   outline: none;
+   background-color: #1b98ce;
+   font-size: 16px;
+ }
+.col2{
+  background-image: url(images/draw.png);
+  background-size: cover;
+  height: auto;
   width: 100%;
   margin-bottom: 35px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
+  padding: 14% 0;
+}
+.col3{
+  background-image: url(images/3.svg);
+  height: auto;
+  width: 100%;
+  margin-bottom: 35px;
+  padding: 14% 0;
 }
 
-.homee a{
+/* .col1 a{
   position: absolute;
   bottom: 70px;
   z-index: 10;
   width: 34px;
-}
+} */
 
-.main-title{
-  position: relative;
-  margin-top: 135px;
-  /* margin-left: 60.5px; */
-}
-.main-title h1{
-  font-size: 41px;
-  /* line-height: 75px; */
-  width: 83.3333333333%;
-  color: #7078b5;
-}
 
 /* Cardd */
 
@@ -807,6 +841,7 @@ a.down-faculty-a:hover{
   margin-bottom: 5px;
   background: transparent;
   border: none;
+  outline: none;
 }
 .search-icon{
   color: #928d8d;

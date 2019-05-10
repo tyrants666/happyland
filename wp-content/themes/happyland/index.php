@@ -27,7 +27,7 @@
               <!-- <?php echo $flag;  ?> -->
 
         <?php endwhile;
-              else : echo '<p>No content Found</p>';
+              else : echo '<p class="col-lg-5 col-12 mb-5 page404 mx-auto"></p>';
         endif;?>
 
         <!-- Pagination -->
