@@ -132,31 +132,35 @@
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                       <div class="card-body contact-body">
 
+                                      <?php if( get_field('phone') ): ?>
                                         <!-- Phone. -->
                                         <div class=" faculty-contact">
-                                          <a href="tel:+9773120160">
+                                          <a href="tel:+977<?php the_field('phone') ?>">
                                               <i class="material-icons" style="color:#904fb1e6">call</i>
-                                              <p class="phone-p mt-2">+977 - 31520160</p>
+                                              <p class="phone-p mt-2">+977 - <?php the_field('phone') ?></p>
                                           </a>
                                         </div>
+                                      <?php endif; ?>
 
+                                      <?php if( get_field('address') ): ?>
                                         <!-- Address. -->
                                         <div class=" faculty-contact">
-                                          <a href=" https://goo.gl/maps/8QE3g4h4tc1yH5JR7" target="_blank">
+                                          <a href="#">
                                               <i class="material-icons" style="color:#e43d3b">place</i>
-                                              <p class="address-p">
-                                                Sarbodaya tole, Happyland Quater, Rajbiraj
-                                              </p>
-                                            </a>
+                                              <p class="address-p"><?php the_field('address') ?></p>
+                                          </a>
                                         </div>
+                                      <?php endif; ?>
 
+                                      <?php if( get_field('email') ): ?>
                                         <!-- Email -->
                                         <div class=" faculty-contact">
                                           <a href="mailto:happylandsecondaryschool@gmail.com">
                                             <i class="material-icons" style="color:#19ce19">alternate_email</i>
-                                            <p class="email-p mt-3">mbraisir1978@gmail.com</p>
+                                            <p class="email-p mt-3"> <?php the_field("email") ?> </p>
                                           </a>
                                         </div>
+                                      <?php endif; ?>
 
                                       </div>
                                     </div>
