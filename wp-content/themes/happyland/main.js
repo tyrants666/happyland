@@ -9,6 +9,7 @@
         $(".sidepanel").toggleClass("w-250 w-0");
     });
 
+
     // Carousel Bootstrap //
 
           //interval

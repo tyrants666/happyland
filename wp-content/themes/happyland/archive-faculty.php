@@ -29,7 +29,7 @@
                 // $i = rand(0, count($bg)-1);
                 // $colour = "$bg[$i]";
                 ?>
-                <div class=" staff-list col-sm-12 col-lg-2-5 mx-auto " style="background:<?php echo $colour; ?>;">
+                <div class=" staff-list col-11 col-lg-2-5 mx-auto " style="background:<?php echo $colour; ?>;">
 
                     <a href="<?php the_permalink();?>">
                         <div class="img-circle"><?php the_post_thumbnail(); ?></div>
@@ -38,9 +38,9 @@
 
 
                     <h6><?php the_category(); ?></h6>
-                    <small class="ta-l"> Classes: 4th 5th 8th</small></br>
-                    <small class="ta-l"> Experience: 5 Years</small>
-                    <small class="ta-l"> Education: M. Teaching</small>
+                    <small class="ta-l"> <b>Classes</b>: &ensp; 4th 5th 8th</small></br>
+                    <small class="ta-l"> <b>Experience</b>: &ensp;  5 Years</small></br>
+                    <small class="ta-l"> <b>Education</b>: &ensp;  M. Teaching</small>
 
               </div>
 

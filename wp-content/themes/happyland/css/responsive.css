@@ -239,6 +239,9 @@
   .staff-list {
     margin-bottom: 33px;
   }
+  .staff-list small{
+    padding-left: 23px;
+  }
   /* ***************** Single Faculty   ******************** */
   .bg-img-prop{
     margin-bottom: 0;

@@ -812,12 +812,12 @@ a.down-faculty-a:hover{
 }
 .post-categories{
   list-style: none;
-  display: inline-flex;
   padding-left: 1px;
   margin-bottom: 0;
 }
 .post-categories li{
   padding-left: 5px;
+  display: contents;
 }
 .post-categories li a{
   color: #858889;
@@ -831,8 +831,8 @@ a.down-faculty-a:hover{
 .staff-list {
   margin-bottom: 75px;
   padding: 24px;
-  padding-bottom: 92px;
-  height: 283px;
+  /* padding-bottom: 92px; */
+  /* height: 283px; */
   /* height: 300px; */
 
   border-radius: 20px;
@@ -894,6 +894,8 @@ a.down-faculty-a:hover{
 .staff-list small{
   padding-left: 8px;
   color: darkgrey;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 /* *************** Downloads Page ******************************************* */
 .bg-img-prop-download{
@@ -1117,11 +1119,6 @@ a svg:hover #instagram {
 }
 .carousel-item:hover{
   transform: scale(1.08);
-}
-.carousel-inner img{
-  /* height: 100%; */
-  /* filter: blur(5px); */
-  /* overflow: hidden; */
 }
 /* *************** Privacy Policy ******************************************* */
 .pp img {
