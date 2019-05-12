@@ -255,10 +255,11 @@
   }
   .fac-face{
     display: flex;
-    font-size: 47px;
-    color: #5a90ca;
-    margin-left: 187px;
-    margin-top: -44px;
+    font-size: 33px;
+    color: #a9b1c6;
+    /* margin-left: 187px; */
+    float: right;
+    margin-top: -24px;
   }
   /* ***************** Single Faculty   ******************** */
   .bg-img-prop{
@@ -330,6 +331,9 @@
   }
   .w-45 {
     width: 100% !important;
+  }
+  .send-btn2 {
+    background: #1ba2dd;
   }
   /* *************** Download PAge ******************************************* */
   .bg-img-prop-download{
