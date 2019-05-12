@@ -43,10 +43,10 @@
     <!-- HOSTEL -->
     <div class="row mx-0">
 
-      <h2 class="hostel-title">Visit hostel</h2>
         <!-- DETAILS -->
         <div class=" col-12 col-lg-12 mr-auto pb-3 pl-0 p-0 details ">
 
+          <h2 class="hostel-title">Visit hostel</h2>
             <h5>Hostel Warden: <p> &ensp; <?php the_field('warden'); ?> </p></h5>
             <h5>Visit Hours: <p>&ensp;&nbsp;<?php the_field('hours'); ?></p></h5>
             <h5>Visit Days: <p>&ensp;&nbsp;<?php the_field('days'); ?></p></h5>
@@ -58,7 +58,7 @@
            </h5>
            </a>
             <!-- img hostel-->
-            <div class=" ml-auto pb-lg-5 hostel ">
+            <div class=" ml-auto hostel ">
             </div>
 
         </div>

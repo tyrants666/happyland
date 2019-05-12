@@ -624,14 +624,14 @@ line-height: 56px;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 308px;
-  margin-top: -62px;
+  height: 300px;
+  margin-top: -165px;
 }
 
 .hostel-title{
-  font-size: 43px;
+  font-size: 42px;
   line-height: 66px;
-  color: #1ba2dd;
+  color: #54c798;
 }
 .details p {
   font-family: "Poppins", sans-serif;
@@ -645,7 +645,7 @@ line-height: 56px;
 .details h5{
   display: inline-block;
   color: #60736b;
-  margin: 23px;
+  margin: 34px 46px 23px 3px;
 }
 .details i {
   margin-left: 20px;
