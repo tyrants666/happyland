@@ -28,7 +28,6 @@
           </div>
           <div class="col-cont col-lg-3 d-inline-flex p-0 mx-auto">
             <i class="material-icons" style="color:#19ce19">alternate_email</i>
-            <!-- <a href="mailto:happylandsecondaryschool@gmail.com"><p class="email-p long-email">happylandsecondaryschool@gmail.com</p></a> -->
             <a href="mailto:happylandsecondaryschool@gmail.com"><p class="email-p">happylandsecondaryschool @gmail.com</p></a>
           </div>
 
@@ -38,6 +37,31 @@
               Friday :&emsp;&nbsp; <?php the_field('fri'); ?></p>
             </div>
 
+
+    </div>
+
+    <!-- HOSTEL -->
+    <div class="row mx-0">
+
+      <h2 class="hostel-title">Visit hostel</h2>
+        <!-- DETAILS -->
+        <div class=" col-12 col-lg-12 mr-auto pb-3 pl-0 p-0 details ">
+
+            <h5>Hostel Warden: <p> &ensp; <?php the_field('warden'); ?> </p></h5>
+            <h5>Visit Hours: <p>&ensp;&nbsp;<?php the_field('hours'); ?></p></h5>
+            <h5>Visit Days: <p>&ensp;&nbsp;<?php the_field('days'); ?></p></h5>
+            <a href="tel:+977<?php the_field('call'); ?>">
+            <h5>Call us:
+                <p>&ensp;&nbsp;+977 - <?php the_field('call'); ?>
+                    <i class="material-icons">call</i>
+               </p>
+           </h5>
+           </a>
+            <!-- img hostel-->
+            <div class=" ml-auto pb-lg-5 hostel ">
+            </div>
+
+        </div>
 
     </div>
 

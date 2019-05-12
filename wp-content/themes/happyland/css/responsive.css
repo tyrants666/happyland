@@ -307,6 +307,21 @@
   .phone-p{
     padding-top:6px;
   }
+  .details h5{
+    display: -webkit-box;
+    color: #60736b;
+    margin: 8px 8px 14px 8px;
+    font-size: 16px;
+  }
+  .details p{
+    margin-left: 0;
+    font-size: 13px;
+  }
+  .hostel{
+      height: 181px;
+      margin-bottom: -25px;
+      margin-top: 0;
+  }
   /* ************************ About Page ***************************** */
   .about-banner{
     height: 150px;
