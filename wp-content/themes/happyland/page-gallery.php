@@ -72,7 +72,7 @@
                                   <?php endif; ?>
 
                                   <?php if( get_field('slider_5') ): ?>
-                                  .bg4{
+                                  .bg5{
                                     background-image: url('<?php the_field('slider_5') ?>');
                                    }
                                   <?php endif; ?>
