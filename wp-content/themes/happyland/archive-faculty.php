@@ -41,8 +41,10 @@
                     <small class="ta-l"> <b>Classes</b>: &ensp; 4th 5th 8th</small></br>
                     <small class="ta-l"> <b>Experience</b>: &ensp;  5 Years</small></br>
                     <small class="ta-l"> <b>Education</b>: &ensp;  M. Teaching</small>
-
-                    <i class="material-icons fac-face">send</i>
+                    
+                    <a href="<?php the_permalink();?>">
+                      <i class="material-icons fac-face">send</i>
+                    </a>
 
               </div>
 
