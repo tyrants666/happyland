@@ -1,3 +1,6 @@
+    background: linear-gradient(90deg, rgb(37, 218, 176) 0%, rgb(156, 232, 72) 100%);
+    background-image: linear-gradient( 21deg, rgba(27,173,128,1) 0.6%, rgba(0,255,177,1) 101.1% );
+
 Katatonia - In The White
 
 <?php if( get_field('top_heading') ): ?>
@@ -13,7 +16,7 @@ wp id - wp-akash
 wp password - 9AABfQB5oXJjLylo&h
 
 
-850 90
+
 #00cf7661;
 background: #4a75d269;
 
@@ -35,10 +38,10 @@ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue"
 
 <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 font-family: 'Caveat', cursive;
+              Sacramento
+              Caveat
+              Amatic SC
 
-Sacramento
-Caveat
-Amatic SC
 
 #1bddbb green
 

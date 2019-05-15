@@ -24,7 +24,7 @@
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
       </div>
 
-      <div align="center" class="col-12 col-lg-3-5 border-fac mx-auto" style="background: linear-gradient(90deg, rgba(151,224,0,1) 0%, rgba(241,242,0,1) 100%);">
+      <div align="center" class="col-12 col-lg-3-5 border-fac mx-auto" style="background-image: linear-gradient(to right, #a0e860 0%, #00deaa 100%);">
         <img src=" <?php echo get_bloginfo('template_directory');?>/images/coaching2.svg" alt="">
         <h2 align="center" class="">Coaching</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
