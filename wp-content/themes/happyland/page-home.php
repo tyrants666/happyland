@@ -3,6 +3,28 @@
 
 <article class="page-home mt-101 ">
 
+  <!-- Row 2 -->
+  <div class="row mx-0">
+
+    <!-- Search-->
+    <!-- <div class="search-faculty">
+        <form class="form-inline form-search" role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
+          <input class="col-sm-10 col-lg-4 ml-auto" name="s" type="text" placeholder="Search Faculty" autocomplete="off">
+          <input type="hidden" name="" value="" />
+          <button class="" type="submit" alt="Search" value="search" name="button"><i class="material-icons search-icon "> search </i></button>
+        </form>
+    </div> -->
+
+    <!-- col4-->
+    <div class="col-lg-10-5 mx-auto p-0">
+
+      <?php echo do_shortcode('[smartslider3 slider=2]');?>
+
+    </div>
+
+
+
+  </div>
   <!-- Row 1 -->
           <div class="row row1 mx-0">
 
@@ -21,29 +43,8 @@
             <div class="col-lg-6 bg-property col2 mx-auto">
             </div>
 
-          </div>
-  <!-- Row 2 -->
-          <div class="row mx-0">
-
             <!-- col-3 -->
             <div class="col-lg-6 bg-property col3 mr-auto">
-            </div>
-
-            <!-- col4-->
-            <div class="col-12 p-0">
-
-                <?php echo do_shortcode('[smartslider3 slider=2]');?>
-                  <h1>ROw 2 col 12</h1>
-
-                  <ul>
-                    Courses
-                    <li>Nursery to 10</li>
-                    <li>+2 science</li>
-                    <li>+2 Commerce</li>
-                    <li>Coaching</li>
-                  </ul>
-
-              </div>
             </div>
 
           </div>

@@ -320,7 +320,11 @@ stroke-dasharray: 1px 220px;
 .page-home img{
   width: 100%;
  }
-
+ .col-lg-10-5{
+  -ms-flex: 0 0 84%;
+  flex: 0 0 84%;
+  max-width: 84%;
+ }
  .main-title{
    /* position: relative; */
  }
@@ -913,8 +917,6 @@ a.down-faculty-a:hover{
   margin-bottom: 75px;
   padding: 24px;
   padding-bottom: 35px;
-  /* height: 283px; */
-  /* height: 300px; */
   border-radius: 20px;
   margin-top: 40px;
   background-color: #fff;
@@ -964,6 +966,7 @@ a.down-faculty-a:hover{
 }
 
 .staff-list h5{
+  color: #484847;
   text-align: center;
 }
 .staff-list h6{
@@ -1014,6 +1017,148 @@ a.down-faculty-a:hover{
 .mec-single-event .mec-event-content {
     padding: 0;
 }
+
+/* *************** Gallery ******************************************* */
+.mt-128{
+  margin-top: 128px;
+}
+.bg-prop{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* .bg1{
+  background-image: url(images/teacher1.jpg);
+}
+.bg2{
+  background-image: url(images/girl.jpg);
+}
+.bg3{
+  background-image: url(images/school.jpg);
+} */
+.overlay-effect {
+  display: none;
+	position:absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	background:black;
+	z-index:99;
+  left: 0;
+      opacity: 0.4;
+}
+.carousel-item{
+  height: 440px;
+  overflow: hidden;
+}
+.carousel-item:hover{
+  transform: scale(1.08);
+}
+/* *************** Privacy Policy ******************************************* */
+.pp img {
+    width: 71%;
+}
+/* *************** Pagination ******************************************* */
+.paginations{
+    padding: 0;
+    padding-left: 43%;
+}
+ul.page-numbers {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.page-numbers:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ul.page-numbers li {
+    display: block;
+    float: left;
+    margin: 0 4px 4px 0;
+    text-align: center;
+}
+
+.page-numbers a,
+.page-numbers span {
+    line-height: 1.6em;
+    display: block;
+    padding: 12px 6px;
+    height: 42px;
+    width: 51px;
+    line-height: 18px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #888;
+    border-radius: 8px;
+    margin-bottom: 35px;
+}
+
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+    color: white;
+    background: #179bd9c4;
+    text-decoration: none;
+}
+
+.page-numbers:hover { text-decoration: none }
+
+/* *************** FACILITIES ******************************************* */
+.col-lg-3-5{
+  -ms-flex: 0 0 23%;
+  flex: 0 0 23%;
+  max-width: 23%;
+}
+.border-fac{
+  border-radius: 12px;
+  /* border: 1px solid #eadada; */
+  padding: 45px 25px 25px 25px;
+}
+.facilty{
+    margin-bottom: 62px;
+}
+.facilty img {
+  height: 135px;
+  height: 123px;
+  width: 100%;
+}
+.facilty p {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+.facilty h2 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  /* color: #8c8b8a; */
+  color: #ffffff;
+  font-family: 'Caveat', cursive;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Apercu"; */
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
+}
+.cute{
+  background-image: url(images/cute.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 208px;
+}
+
 /* *************** Foooter ******************************************* */
 .footer{
   color: #a2b2bbf0;
@@ -1166,100 +1311,3 @@ a svg:hover #instagram {
   /* color: #a2b2bbf0; */
   color: #00ccff;
 }
-
-/* *************** Gallery ******************************************* */
-.mt-128{
-  margin-top: 128px;
-}
-.bg-prop{
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-/* .bg1{
-  background-image: url(images/teacher1.jpg);
-}
-.bg2{
-  background-image: url(images/girl.jpg);
-}
-.bg3{
-  background-image: url(images/school.jpg);
-} */
-.overlay-effect {
-  display: none;
-	position:absolute;
-	top:0;
-	height:100%;
-	width:100%;
-	background:black;
-	z-index:99;
-  left: 0;
-      opacity: 0.4;
-}
-.carousel-item{
-  height: 440px;
-  overflow: hidden;
-}
-.carousel-item:hover{
-  transform: scale(1.08);
-}
-/* *************** Privacy Policy ******************************************* */
-.pp img {
-    width: 71%;
-}
-/* *************** Pagination ******************************************* */
-.paginations{
-    padding: 0;
-    padding-left: 43%;
-}
-ul.page-numbers {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-}
-
-.page-numbers:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
-
-ul.page-numbers li {
-    display: block;
-    float: left;
-    margin: 0 4px 4px 0;
-    text-align: center;
-}
-
-.page-numbers a,
-.page-numbers span {
-    line-height: 1.6em;
-    display: block;
-    padding: 12px 6px;
-    height: 42px;
-    width: 51px;
-    line-height: 18px;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: 400;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    color: #888;
-    border-radius: 8px;
-    margin-bottom: 35px;
-}
-
-.page-numbers a span { padding: 0 }
-
-.page-numbers a:hover,
-.page-numbers.current,
-.page-numbers.current:hover {
-    color: white;
-    background: #179bd9c4;
-    text-decoration: none;
-}
-
-.page-numbers:hover { text-decoration: none }
