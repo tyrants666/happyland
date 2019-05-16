@@ -360,8 +360,12 @@
     background: #1ba2dd;
   }
   /* *************** Download PAge ******************************************* */
-  .bg-img-prop-download{
-    padding: 0
+  .col-lg-3-52{
+    flex: 0 0 99%;
+    max-width: 99%;
+  }
+  .notice{
+    padding: 26px 18px;
   }
   /* *************** Gallery Page ******************************************* */
   .mt-128 {
