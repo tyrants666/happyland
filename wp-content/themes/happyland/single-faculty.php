@@ -65,53 +65,57 @@
                                         <?php $file = get_field('assignment_1'); ?>
                                         <?php
                                         if( $file ): ?>
-                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-                                              <div class="bg-img-prop download-single1 col-12">
-                                                    <?php the_field('assignment_1_name'); ?>
-                                              </div>
-                                            </a>
+                                        <div class="download-faculty">
+                                          <a target="#" class="" href="<?php echo $file['url']; ?>">
+                                          <p><?php the_field('assignment_1_name'); ?></p>
+                                          <i class="material-icons"> cloud_download </i>
+                                        </a>
+                                        </div>
                                         <?php endif; ?>
                                         <!-- Download Button 2 -->
                                         <?php $file = get_field('assignment_2'); ?>
                                         <?php
                                         if( $file ): ?>
-                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-                                              <div class="bg-img-prop download-single2 col-12">
-                                                    <?php the_field('assignment_2_name'); ?>
-                                              </div>
-                                            </a>
+                                        <div class="download-faculty">
+                                          <a target="#" class="" href="<?php echo $file['url']; ?>">
+                                          <p><?php the_field('assignment_2_name'); ?></p>
+                                          <i class="material-icons"> cloud_download </i>
+                                        </a>
+                                        </div>
                                         <?php endif; ?>
                                         <!-- Download Button 3 -->
                                         <?php $file = get_field('assignment_3'); ?>
                                         <?php
                                         if( $file ): ?>
-                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-                                              <div class="bg-img-prop download-single3 col-12">
-                                                    <?php the_field('assignment_3_name'); ?>
-                                              </div>
-                                            </a>
+                                        <div class="download-faculty">
+                                          <a target="#" class="" href="<?php echo $file['url']; ?>">
+                                          <p><?php the_field('assignment_3_name'); ?></p>
+                                          <i class="material-icons"> cloud_download </i>
+                                        </a>
+                                        </div>
                                         <?php endif; ?>
                                         <!-- Download Button 4 -->
                                         <?php $file = get_field('assignment_4'); ?>
                                         <?php
                                         if( $file ): ?>
-                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-                                              <div class="bg-img-prop download-single4 col-12">
-                                                    <?php the_field('assignment_4_name'); ?>
-                                              </div>
-                                            </a>
+                                        <div class="download-faculty">
+                                          <a target="#" class="" href="<?php echo $file['url']; ?>">
+                                          <p><?php the_field('assignment_4_name'); ?></p>
+                                          <i class="material-icons"> cloud_download </i>
+                                        </a>
+                                        </div>
                                         <?php endif; ?>
                                         <!-- Download Button 5 -->
                                         <?php $file = get_field('assignment_5'); ?>
                                         <?php
                                         if( $file ): ?>
-                                            <a target="#" class="down-faculty-a" href="<?php echo $file['url']; ?>">
-                                              <div class="bg-img-prop download-single5 col-12">
-                                                    <?php the_field('assignment_5_name'); ?>
-                                              </div>
-                                            </a>
+                                        <div class="download-faculty">
+                                          <a target="#" class="" href="<?php echo $file['url']; ?>">
+                                          <p><?php the_field('assignment_5_name'); ?></p>
+                                          <i class="material-icons"> cloud_download </i>
+                                        </a>
+                                        </div>
                                         <?php endif; ?>
-
 
 
                                         <!-- End__ Download Button  -->

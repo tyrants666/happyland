@@ -799,35 +799,29 @@ line-height: 56px;
   color: slategray;
 }
 /* **** Download Button **** */
-.bg-img-prop{
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 81px;
-  padding: 8% 8px 0 40%;
-  margin-bottom: 10px;
-  line-height: 16px;
-}
-.download-single1{
-  background-image: url(images/down1.svg);
-}
-.download-single2{
-  background-image: url(images/down2.svg);
-}
-.download-single3{
-  background-image: url(images/down3.svg);
-}
-.download-single4{
-  background-image: url(images/down4.svg);
-}
-.download-single5{
-  background-image: url(images/down5.svg);
-}
 
-a.down-faculty-a{
-  color: azure !important;
+.download-faculty{
+  padding: 13px 24px;
+  border-radius: 27px;
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #00A86B 0%, #8ac753 100%);
 }
-a.down-faculty-a:hover{
-  color: #5a6a79 !important;
+.download-faculty:hover {
+  background-image: linear-gradient(to left, #0d885b 0%, #64bb14 100%);
+}
+.download-faculty a {
+   display: inline-flex;
+}
+.download-faculty p {
+  margin: 0;
+  margin-right: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.download-faculty i{
+  color:white;
 }
 .contact-body p {
   padding: 0;
@@ -836,11 +830,6 @@ a.down-faculty-a:hover{
   font-family: "Poppins", sans-serif;
   line-height: 24px;
   font-weight: 300;
-}
-.contact-body i{
-  font-size: 40px;
-  margin-top: 5px;
-  /* display: flex; */
 }
 .contact-body a{
   display: -webkit-inline-box;
@@ -988,18 +977,19 @@ a.down-faculty-a:hover{
   flex: 0 0 31%;
   max-width: 31%;
 }
-.notice{
+.col-down{
+  height: fit-content;
   border-radius: 10px;
-  padding: 32px 18px;
-  box-shadow: 0px 0px 18px 4px #e6e6e6;
+  padding: 41px;
+  box-shadow: 0px 0px 20px 2px #e6e6e6;
   margin-bottom: 18px;
 }
-.notice h3{
+.col-down h3{
+  margin-bottom: 30px;
   color: #9b9c9c;
   font-family: "Poppins", sans-serif;
 }
 .download{
-  height: 50px;
   padding: 13px 18px;
   border-radius: 27px;
   margin-top: 16px;
@@ -1016,10 +1006,10 @@ a.down-faculty-a:hover{
   font-family: "Poppins", sans-serif;
 }
 .down-notice{
-  background-image: linear-gradient(to right, #a0e860 0%, #00deaa 100%);
+  background-image: linear-gradient(to right, #00A86B 0%, #8ac753 100%);
 }
 .down-notice:hover {
-  background-image: linear-gradient( 21deg, rgba(27,173,128,1) 0.6%, rgb(41, 249, 185) 101.1% );
+  background-image: linear-gradient(to left, #0d885b 0%, #64bb14 100%);
 }
 .down-resources{
   background: linear-gradient(90deg, rgba(125,75,206,1) 0%, rgba(218,97,226,1) 100%);
@@ -1027,15 +1017,24 @@ a.down-faculty-a:hover{
 .down-resources:hover {
   background-image: linear-gradient(to left, rgba(125,75,206,1) 0%, rgb(160, 24, 169) 100%);
 }
-/* .download p:hover{
-  color:#827373;
-} */
 .download i{
   color:white;
 }
-/* .download i:hover{
-  color:#827373;
-} */
+.select1,.select2{
+  /* background: linear-gradient(to right, #cb2d3ebd, #efa73a); */
+  border-radius: 29px;
+  color: #929598ed;
+}
+.select1:focus,
+.select2:focus {
+    color: #929598ed;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+.down-routine{
+  background: linear-gradient(to right, #cb2d3ebd, #efa73a);
+}
 /* *************** Events Calendar Page ******************************************* */
 #main-content{
       margin-top: 130px;

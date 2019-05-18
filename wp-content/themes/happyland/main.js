@@ -117,3 +117,115 @@
     $(window).resize(resize);
     resize();
   }).call(this);
+
+
+  // **************************************   Select change Download page  ******************************************
+
+    function change(){
+      var x = document.getElementById("select1").value;
+      var y = document.getElementById("select2").value;
+
+      if (x == 1 && y == "a") {
+          $('.anchor').attr("href", a1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "c") {
+          $('.anchor').attr("href", c1);
+      }
+      else if (x == 2 && y == "a") {
+          $('.anchor').attr("href", a2);
+      }
+      else if (x == 2 && y == "b") {
+          $('.anchor').attr("href", b2);
+      }
+      else if (x == 2 && y == "c") {
+          $('.anchor').attr("href", c2);
+      }
+      else if (x == 3 && y == "a") {
+          $('.anchor').attr("href", a3);
+      }
+      else if (x == 3 && y == "b") {
+          $('.anchor').attr("href", b3);
+      }
+      else if (x == 3 && y == "c") {
+          $('.anchor').attr("href", c3);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+      else if (x == 1 && y == "b") {
+          $('.anchor').attr("href", b1);
+      }
+
+    }
