@@ -25,6 +25,9 @@ Tags:
   padding: 14% 0;
   background-position: center;
 }
+.shadow{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
 /* ********************** containerr ****************************** */
 ::-webkit-scrollbar {
     display: none;
@@ -482,8 +485,7 @@ stroke-dasharray: 1px 220px;
   margin-top: 135px;
 }
 .work-list {
-  margin-bottom: 64px;
-
+  margin-bottom: 56px;
 }
 .work-list a {
   display: inline-block;
@@ -506,7 +508,19 @@ stroke-dasharray: 1px 220px;
   color: grey;
   font-family: Apercu;
 }
-
+.category{
+  display: inline-flex;
+}
+.category a{
+  background: #88939c;
+  border-radius: 12px;
+  padding: 0px 8px;
+  color: white !important;
+  margin-right: 4px;
+}
+.category a:hover{
+  background: #1169af;
+}
 
 /* ************************ Single News page ***************************** */
 .mt--138{

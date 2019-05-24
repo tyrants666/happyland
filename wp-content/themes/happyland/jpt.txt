@@ -4,7 +4,9 @@ onchange="change()"
 
 
 ////////////////////////////////
-
+Huawei Customer Service Center Itahari
+Ground floor, Fulbari market, Itahari
+Tel: 025-587547
 
 
     background: linear-gradient(90deg, rgb(37, 218, 176) 0%, rgb(156, 232, 72) 100%);

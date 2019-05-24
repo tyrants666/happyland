@@ -21,7 +21,7 @@
                         <h2 class=""><?php the_title();?></h2>
 
                     <h3><?php the_excerpt(); ?></h3></a>
-                    <small><?php the_time('l, F j'); ?> </br> Category: <?php the_category(); ?></small>
+                    <small><?php the_time('l, F j'); ?> </br> <div class="category"><?php the_category(); ?></div></small>
               </div>
 
               <!-- <?php echo $flag;  ?> -->

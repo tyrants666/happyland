@@ -118,7 +118,6 @@
     resize();
   }).call(this);
 
-
   // **************************************   Select change Download page  ******************************************
 
     function change(){
@@ -152,80 +151,80 @@
       else if (x == 3 && y == "c") {
           $('.anchor').attr("href", c3);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 4 && y == "a") {
+          $('.anchor').attr("href", a4);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 4 && y == "b") {
+          $('.anchor').attr("href", b4);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 4 && y == "c") {
+          $('.anchor').attr("href", c4);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 5 && y == "a") {
+          $('.anchor').attr("href", a5);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 5 && y == "b") {
+          $('.anchor').attr("href", b5);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 5 && y == "c") {
+          $('.anchor').attr("href", c5);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 6 && y == "a") {
+          $('.anchor').attr("href", a6);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 6 && y == "b") {
+          $('.anchor').attr("href", b6);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 6 && y == "c") {
+          $('.anchor').attr("href", c6);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 7 && y == "a") {
+          $('.anchor').attr("href", a7);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 7 && y == "b") {
+          $('.anchor').attr("href", b7);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 7 && y == "c") {
+          $('.anchor').attr("href", c7);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 8 && y == "a") {
+          $('.anchor').attr("href", a8);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 8 && y == "b") {
+          $('.anchor').attr("href", b8);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 8 && y == "c") {
+          $('.anchor').attr("href", c8);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 9 && y == "a") {
+          $('.anchor').attr("href", a9);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 9 && y == "b") {
+          $('.anchor').attr("href", b9);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 9 && y == "c") {
+          $('.anchor').attr("href", c9);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 10 && y == "a") {
+          $('.anchor').attr("href", a10);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 10 && y == "b") {
+          $('.anchor').attr("href", b10);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 10 && y == "c") {
+          $('.anchor').attr("href", c10);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 11 && y == "science") {
+          $('.anchor').attr("href", s11);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 11 && y == "commerce") {
+          $('.anchor').attr("href", c11);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 12 && y == "science") {
+          $('.anchor').attr("href", s12);
       }
-      else if (x == 1 && y == "b") {
-          $('.anchor').attr("href", b1);
+      else if (x == 12 && y == "commerce") {
+          $('.anchor').attr("href", c12);
       }
 
     }
