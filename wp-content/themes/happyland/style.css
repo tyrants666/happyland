@@ -1339,6 +1339,12 @@ a svg:hover #facebook,
 a svg:hover #instagram {
   fill: #ffffff;
 }
+svg.twitter{
+  margin-left: 5px;
+}
+svg.twitter:hover{
+  fill: white;
+}
 .copyright{
   text-align: right;
   color: #a2b2bbf0;

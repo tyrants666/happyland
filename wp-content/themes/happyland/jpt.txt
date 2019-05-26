@@ -2,7 +2,7 @@ onchange="Change()"
 onchange="change()"
     background-image: linear-gradient(to right, #00A86B 0%, #8ac753 100%);
 
-
+about-banner{padding:25%;background-size:contain;background-repeat:no-repeat;background-position:center;margin-bottom:48px}.about2{height:559px}.about-card{margin-bottom:48px;font-size:24px;height:auto;padding:89px 17px 45px 28px;background-color:#8ed8f8;line-height:35px;color:#000}
 ////////////////////////////////
 Huawei Customer Service Center Itahari
 Ground floor, Fulbari market, Itahari
