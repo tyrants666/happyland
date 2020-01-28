@@ -1,27 +1,89 @@
-onchange="Change()"
-onchange="change()"
-    background-image: linear-gradient(to right, #00A86B 0%, #8ac753 100%);
-
-about-banner{padding:25%;background-size:contain;background-repeat:no-repeat;background-position:center;margin-bottom:48px}.about2{height:559px}.about-card{margin-bottom:48px;font-size:24px;height:auto;padding:89px 17px 45px 28px;background-color:#8ed8f8;line-height:35px;color:#000}
-////////////////////////////////
-Huawei Customer Service Center Itahari
-Ground floor, Fulbari market, Itahari
-Tel: 025-587547
 
 
-    background: linear-gradient(90deg, rgb(37, 218, 176) 0%, rgb(156, 232, 72) 100%);
-    background-image: linear-gradient( 21deg, rgba(27,173,128,1) 0.6%, rgba(0,255,177,1) 101.1% );
 
-Katatonia - In The White
+*Top 10 Sites for your career:*
 
-<?php if( get_field('top_heading') ): ?>
-<h1><?php the_field('top_heading'); ?></h1>
-<?php endif; ?>
+1. LinkedIN
+2. Indeed
+3. Careerealism
+4. Job-Hunt
+5. JobBait
+6. Careercloud
+7. GM4JH
+8. Personalbrandingblog
+9. Jibberjobber
+10. Neighbors-helping-neighbors
 
-#171942    for body background
+ *Top 10 Tech Skills in demand in 2019:*
+
+1. Machine Learning
+2. Mobile Development
+3. SEO/SEM Marketing
+4. Data Visualization
+5. Data Engineeringj
+6. UI/UX Design
+7. Cyber-security
+8. Cloud Computing/AWS
+9. Blockchain
+10. IOT
+
+ *Top 10 Sites to learn Excel for free:*
+
+Search for these on Google:
+
+1. Microsoft Excel Help Center
+2. Excel Exposure
+3. Chandoo
+4. Excel Central
+5. Contextures
+6. Excel Hero
+7. Mr. Excel
+8. Improve Your Excel
+9. Excel Easy
+10. Excel Jet
+
+ *Top 10 Sites for Free Online Education:*
+
+ *Search for these on Google:*
+
+1. Coursera
+2. edX
+3. Khan Academy
+4. Udemy
+5. iTunesU Free Courses
+6. MIT OpenCourseWare
+7. Stanford Online
+8. Codecademy
+9. Open Culture Online Courses
+
+ *Top 10 Sites to review your resume for free:*
+
+1. Zety Resume Builder
+2. Resumonk
+3. https://t.co/h1BWIRqFVJ
+4. VisualCV
+5. Cvmaker
+6. ResumUP
+7. Resume Genius
+8. Resumebuilder
+9. Resume Baking
+10. Enhancv
+
+ *Top 10 Sites for Interview Preparation:*
+
+1. Ambitionbox
+2. AceTheInterview
+3. Geeksforgeeks
+4. Leetcode
+5. Gainlo
+6. Careercup
+7. Codercareer
+8. InterviewUp
+9. InterviewBest
+10. Indiabix
 
 
-Mr. Sonam Wangle
+
 
 wp id - wp-akash
 wp password - 9AABfQB5oXJjLylo&h
