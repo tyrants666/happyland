@@ -20,18 +20,18 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'happylandd');
+define('DB_NAME', 'l591beXMdT');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'l591beXMdT');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'bOvTNQrrgF');
 define('WP_SITEURL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']);
 define('WP_HOME',    $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']);
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'remotemysql.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
